@@ -1,0 +1,3894 @@
+0
+00:00:00,000 --> 00:00:01,600
+非常感谢你的介绍。
+Thanks so much for the introduction.
+
+1
+00:00:01,760 --> 00:00:04,000
+我能看出来。这是可怕的。
+Um, I can see. It's awesome.
+
+2
+00:00:04,160 --> 00:00:09,080
+我不需要问你们是否能看到屏幕，因为我可以在动物园里看到你们确实能看到屏幕。
+I don't have to ask if you can see the screen, because I can see on the zoo that you can indeed see the screen.
+
+3
+00:00:09,240 --> 00:00:11,140
+这很好。是啊，谢谢你邀请我。
+That's good. Yeah, thanks so much for having me.
+
+4
+00:00:11,300 --> 00:00:16,150
+我希望我能亲自去那里，但我因为签证的原因要去德国旅行，所以我希望我能有机会
+I wish I could be there in person, but I'm travelling through Germany for Visa reasons, so I'll hope I get the chance
+
+5
+00:00:16,380 --> 00:00:17,230
+亲自去那里
+to be there in person
+
+6
+00:00:17,620 --> 00:00:23,070
+改天再说吧。所以，这是，我很兴奋。
+again some other time. Um, so, uh, yeah, this is, I'm very excited.
+
+7
+00:00:23,090 --> 00:00:25,890
+这是我第一次在机器人观众面前讲话。
+This is the 1st time I'm speaking in front of the robotics crowd.
+
+8
+00:00:26,000 --> 00:00:30,680
+这也是我第一次在这个框架下讨论这些事情。
+And this is also the 1st time that I'm talking about some of these things in this in this framework.
+
+9
+00:00:30,840 --> 00:00:40,400
+我自己还不是一个机器人专家，所以，我将主要从海洋表象的角度来看待这个问题，就像一位pretiquester说的。
+I am not, uh, yet, a robotics expert myself, so, uh, I will mostly look at this from the perspective of sea representations, as a pretiquester said.
+
+10
+00:00:40,660 --> 00:00:42,220
+让我们开始吧。
+So let's get started with that.
+
+11
+00:00:42,380 --> 00:00:53,440
+通常我会从一个小实验开始，这个实验实际上和机器人技术非常相关，我希望你们所有人都闭上眼睛，抓住你知道就在你附近的东西。
+So usually I start with a little um experiment, which is actually very relevant to, uh, to robotics, which is, I'd like all of you to close your eyes and grasp for something that you know is in your direct vicinity.
+
+12
+00:00:53,600 --> 00:01:02,560
+举个例子，在演讲之前，我拿到了这个茶壶，我刚拿来的，我显然能抓住它，我可以，你知道，不用睁开眼睛。
+So, for instance, before the talk, I got at this teapot that I just, um, that I just fetched, and I can obviously grasp it, and I can, you know, without having my eyes open.
+
+13
+00:01:02,580 --> 00:01:04,220
+我可以抓住它们，我可以移动它。
+I can grasp them, and I can move it around.
+
+14
+00:01:04,420 --> 00:01:07,800
+所以这对我们来说是一项非常琐碎的任务。
+So that seems like a very trivial task to all of us.
+
+15
+00:01:07,860 --> 00:01:08,840
+我们经常这样做。
+We do this all the time.
+
+16
+00:01:09,000 --> 00:01:13,200
+但我想让你们注意到这实际上是非常令人印象深刻的。
+Um, but I'd like you to notice that this is actually extremely impressive.
+
+17
+00:01:13,220 --> 00:01:24,930
+你用这两只眼睛行走在这个世界上，它不断地捕捉到你周围环境的两个D观察，从这些观察中，你不断地推断出你周围世界的3D表现。
+I so you walk through the world with these two eyes, which constantly captured two D observations of the environment around you, and from these tutty observations, you constantly infer this 3D representation of the world around you.
+
+18
+00:01:25,110 --> 00:01:28,070
+UM这样你就可以和世界互动了。
+UM And that is then what allows you to interact with the world.
+
+19
+00:01:28,230 --> 00:01:41,140
+这种3D表现形式比你最初想到的，UM，要丰富得多，比如几何形状和外观，这些都是你可以直接观察到的，因为你可以推断出很多你无法直接观察到的环境，对吧?
+And that 3D representation is much, much richer than what you would UM initially, maybe think about, which is geometry and appearance, which is the things you can directly observe, because you infer many things about the environment that you cannot directly observe, right?
+
+20
+00:01:41,200 --> 00:01:43,920
+比如物体的材质，比如物体的重量。
+Like the material of things like how heavy something would be.
+
+21
+00:01:43,940 --> 00:01:50,060
+你对某件事的感觉有一个预期，你需要施加多大的力量，所有这些基本上都是从视觉推断出来的。
+You have an expectation of how something will feel, how much force you will have to apply, and all of these things you basically infer from vision.
+
+22
+00:01:50,190 --> 00:02:06,710
+然后如果我们把计算机科学,我们看看这些应用程序在屏幕上一对像机器人一样,图形,物理模拟,或自主导航和规划,很明显,所有这些应用程序都依赖于我所说的种子代表,或者像我们所说的现场代表,对吧?
+And then if we turn to computer science, and we look at these applications that have on screen pair like robotics, graphics, physics simulations, or autonomous navigation and planning, It's clear that all of these applications rely on what I call a seed reps, or like what we would call a scene representation, right?
+
+23
+00:02:06,730 --> 00:02:10,130
+就像底层街头世界的一些表现。
+Like some representation of the underlying street world.
+
+24
+00:02:10,130 --> 00:02:24,940
+通常，我们用手工制作的场景表示来处理这些事情，这基本上意味着通常数据结构和存储在数据结构中的功能是手工的，对于每个应用程序都是单独的，这有优点也有缺点。
+And conventionally, we tackle these things with handcrafted scene representations, which basically means that usually the data structure and the feature stored in the data structure a handcraft, and for each of these applications separately, and that has pros and cons.
+
+25
+00:02:25,420 --> 00:02:34,440
+例如，在图形中，这些手工制作的特征可能是，你有一个测量表示法，然后你吸收，像反照率或高光颜色之类的东西在表示法中。
+And so for instance, in graphics, right, these handcrafted features might be, you have a measure representation, and then you absorb, like things like the albedo or the speclar color and stuff in the in the representation.
+
+26
+00:02:34,640 --> 00:02:41,700
+这样做的缺点是很多表述都不太容易被接受。
+And the downsides of that is that many of these representations are not very amenable to um ms.
+
+27
+00:02:41,860 --> 00:02:50,630
+现代机器学习算法。通常它们被内置在框架中，通常是不可区分的，比如经典渲染等等。
+modern machine learning algorithms. Usually they are built in um in frameworks that are not usually differentiable, like classic renders and so on.
+
+28
+00:02:50,630 --> 00:02:54,490
+通常情况下，这些表征是很难推断的，所以很难有一个新的网络。
+Oftentimes, these representations are hard to infer, so it's hard to have a new network.
+
+29
+00:02:54,650 --> 00:03:03,300
+Predict可能是一个网格，它们通常不会呈现出我们关心的场景的所有属性，但我们必须，以某种方式将它们手工制作到表示中。
+Predict may be a mesh, and they often don't present all the properties of scenes that we might care about, but they we have to, like handcraft them into the representation somehow.
+
+30
+00:03:03,600 --> 00:03:06,360
+这就是为什么我对新的场景表现感兴趣。
+And that's why I am interested in new scene representations.
+
+31
+00:03:06,520 --> 00:03:16,930
+神经场景表征的核心思想是我们能否，以自我监督的方式，学习像人类一样丰富的3D场景表征?
+And the core idea of neural scene representations is can we, in a self supervised manner, learn representations of 3D scenes that are really as rich as what humans would have?
+
+32
+00:03:17,340 --> 00:03:20,360
+酷。那么我们该怎么做呢?
+Cool. So how could we go about doing that?
+
+33
+00:03:20,520 --> 00:03:27,630
+在演讲的第一部分，我要讲一点关于可微渲染和从图像中恢复3D的概念。
+So in the 1st part of the talk, I'm going to talk a little bit about this idea of differentiable rendering and recovering 3D just from images.
+
+34
+00:03:27,750 --> 00:03:35,300
+然后我们会看两个例子关于我们如何在机器人技术中使用这些表示。
+And then we're going to look at two instantiations of how we might use these representations in in robotics, past downstream.
+
+35
+00:03:35,420 --> 00:03:40,680
+其中的核心是我们想要以自我监督的方式学习这个。
+Okay, so the the core inside is we want to learn this in a self supervised manner.
+
+36
+00:03:40,840 --> 00:03:45,840
+训练数据只占一半，而我们想要建立的模型，它们应该只吸收D数据。
+The training data wehalf, and the and the models we want to build, they should really only ingest to D data.
+
+37
+00:03:45,860 --> 00:03:53,090
+我们不希望建立一个依赖于零散数据的模型，因为这很难捕捉，有时甚至是不可能捕捉到的。
+We don't want to build models that I rely on ground with feedy data, because that's hard to capture, and sometimes even impossible to capture.
+
+38
+00:03:53,310 --> 00:03:58,950
+所以，我们想使用的媒介是工作室图像，我们有很多线程，就像我们在youtube上。
+So really, the the medium that we want to use is studio images, and that we have obviously a lot of thread like we just go on youtube.
+
+39
+00:03:59,110 --> 00:04:01,310
+有数十亿小时的视频。
+There is billions of hours of video.
+
+40
+00:04:01,590 --> 00:04:11,980
+所以我们一直在思考的模型，基本上都遵循相同的框架，也就是我们有一组图像，然后根据这组图像，我们进行推断。
+So the the kinds of models we're we're always thinking about, are basically following the same framework, which is we have a set of images, and from that set of images, we perform inference.
+
+41
+00:04:12,140 --> 00:04:18,530
+这意味着我们有一些算法可以预测底层CDC的一些表示的参数。
+And what that means is we have some algorithm that predicts the parameters of some representation of the underlying CDC.
+
+42
+00:04:19,330 --> 00:04:20,990
+那么我们如何监督呢?
+And then how do we supervise that?
+
+43
+00:04:21,090 --> 00:04:38,050
+鉴于我们只有图片,我们要监督它的方法是我们要有一个新的Orendra需要这些,这些,这newal场景表示,并再次呈现出来的图片,我们可以提供相同的图片,我们已经在我们的观察,这就是我们如何监督整个事情,以形象的损失作为结束。
+Is, given that we only have images, the way we're going to supervise it is we're going to have a new Orendra that takes these, these, this newal scene representation, and renders it out to images again, and we can render the same images that we have in our set of observations, and that's how we can supervise the whole thing, and to end just with an image loss.
+
+44
+00:04:39,130 --> 00:04:42,630
+这就是自我监督的高级表征学习。
+And this is then self supervised, senior representation learning.
+
+45
+00:04:42,790 --> 00:04:50,670
+它本身被监督，因为我们只从图像中学习，它被看作是表示学习，因为我们的目标是学习底层3D场景的一些丰富的表示。
+Itself supervised because we only learn from images, and it's seen representation learning because our goal is to learn some rich representation of the underlying 3D scene.
+
+46
+00:04:51,270 --> 00:04:55,590
+酷。那么我们应该如何看待3D场景呢?
+Cool. So how should we think about a 3D scene?
+
+47
+00:04:56,040 --> 00:05:01,520
+我想建议大家从总体上考虑一下CDC。
+Um, I'd like to propose to think about the CDC in a very general way.
+
+48
+00:05:01,680 --> 00:05:04,100
+让我们把这个小玩具放在这里。
+Let's consider this little toy uh seating here.
+
+49
+00:05:04,260 --> 00:05:07,660
+这很直观。我们有三个物体，一个圆，一个正方形和一个三角形。
+So it's like intuitive. We have three objects, a circle, the square and the triangle.
+
+50
+00:05:07,820 --> 00:05:10,470
+我们有很大的空间，上面是自由空间，我们有一点
+And we have great back on which is free space, and we have a little
+
+51
+00:05:10,670 --> 00:05:15,790
+coorded系统。所以考虑三维场景的一个很好的可靠的方法是考虑故障。
+coorded system. So one very good and reliable way to think about three D scenes is to think of the misfunctions.
+
+52
+00:05:15,950 --> 00:05:18,070
+3dc是一个映射到3d的函数
+So a three DC is a function that maps a three D
+
+53
+00:05:18,310 --> 00:05:19,270
+坐标是在
+coordinate to whatever is at
+
+54
+00:05:19,350 --> 00:05:24,200
+这的3 d坐标。所以蓝色三角形中的所有向量都应该映射到，我是一个蓝色三角形。
+that 3D coordinate. So all the expordinates in the blue triangle should be mapped to something that says, I'm a blue triangle.
+
+55
+00:05:24,220 --> 00:05:37,830
+小球体中的所有expordinates应该映射到的东西说,我一个红色的正方形,所以一旦我们做了,我们可以问,我们该如何把这个函数以这样一种方式,我们可以与之交互,我们可以学习函数的内容。
+All the expordinates in little sphere should be mapped to something that says, I'm a red square and so And then once we have done that, we can ask, how should we parametized that function in such a way that we can interact with it and that we can learn the contents of that function.
+
+56
+00:05:37,870 --> 00:05:50,260
+一个非常动态的方法，事实上，一个非常合理的方法，是将它参数化为一盒砂砾，这样你就可以继续将你的3D空间离散化为小盒子，然后你将每个盒子，或者那个盒子里的东西存储起来。
+So one very kinetical way, and in fact, a perfectly reasonable way, is to parametize this as a box of grit, so you can go ahead and you discretize your 3D space into little boxels, and then you store in every box, or what is in that box.
+
+57
+00:05:50,320 --> 00:06:03,840
+我在2018年左右也做了这个，这几天又有一些很酷的工作，我们用盒子香烟从图像中恢复三维表示。
+So, and I also did that around 2018, and that is, and there's some really cool work these days again, where we use box cigarettes to recover three D representations just from images.
+
+58
+00:06:04,390 --> 00:06:09,830
+例如，在2018年，我们有这个纸盒，你可以在这里看到它工作得相当好。
+For instance, in 2018, we have this paper de boxels, and you can see here that that work reasonably well.
+
+59
+00:06:10,150 --> 00:06:24,580
+有一些关于一箱货物的问题主要问题是，如果你想预测它的盒子，就像一些狂热的盒子的输出，你处理和记忆的问题，有一些谨慎的东西是有问题的。
+And there's some problems with box of goods um which the main problem is, if you want to predict the box of it, like if the output of some arvidness box of it, you deal with and memory issues, and its, uh, somehow problematic to have something that is discreet.
+
+60
+00:06:24,740 --> 00:06:27,960
+所以很多问题都是用离散表示的。
+And so that many problems come with discreet representations.
+
+61
+00:06:28,260 --> 00:06:29,840
+也许我们可以做点别的。
+So maybe we can do something else.
+
+62
+00:06:30,440 --> 00:06:40,420
+我相信，嗯，你们所有人，但是现在，嗯，已经看过这个了，嗯，我们我们可以把我们的CD表示作为一个神经网络进行参数化。
+And I'm sure, um, all of you, but now have, um, have seen this, um, we we can parametize our CD representation as a neural network.
+
+63
+00:06:40,580 --> 00:06:47,460
+所以我们建议将种子表示为神经网络，它将一个3D坐标映射到该3D坐标上的某个特征表示。
+So we proposed to represent the seed as neural network that maps a 3D coordinate to some feature representation of whatever is at that 3D coordinate.
+
+64
+00:06:47,620 --> 00:06:51,960
+这可以是几何的表示，比如占用率，或者边长。
+And that could be some representation of geometry, like occupancy, or like a side distance.
+
+65
+00:06:52,120 --> 00:06:54,080
+可能是颜色。可以是材料性质。
+It could be the color. It could be material properties.
+
+66
+00:06:54,240 --> 00:06:58,210
+它可能是任何东西。为什么这很有趣?
+It could really be anything. Why is that interesting?
+
+67
+00:06:58,370 --> 00:07:02,690
+这很有趣，因为这个表示是连续的，因为它只是一个新的网络，对吧?
+It's interesting because this representation is continuous, because it's just a new network, right?
+
+68
+00:07:02,710 --> 00:07:05,250
+它是一个连续函数，所以你不能对它进行采样。
+It's a continuous function, so you can't sample it anywhere.
+
+69
+00:07:05,310 --> 00:07:07,390
+你可以在任意分辨率下进行采样。
+And you can sample it arbitrary resolutions.
+
+70
+00:07:07,810 --> 00:07:11,890
+嗯。它表示拓扑。它可以表示底层事物的拓扑结构。
+Um. it represents the topology. It can represent the topology of the underlying thing.
+
+71
+00:07:11,910 --> 00:07:21,040
+如果你想一盒香烟，或者你想一个点，举个例子，在它的自然状态下大声点，并不代表表面。
+So if you think about a box cigarette, or if you think about a point out, for instance, right the point loud in its native state, does not represent surfaces.
+
+72
+00:07:21,040 --> 00:07:22,620
+只有表面的样本。
+You just have samples on the surface.
+
+73
+00:07:22,720 --> 00:07:26,370
+实际上你不知道表面应该在哪里运行一些额外的。
+You don't know actually where the surface is to be to run some extra um.
+
+74
+00:07:26,530 --> 00:07:35,250
+这需要的内存并不像你想要达到的分辨率那样可以缩放，就像装箱一样，但是它可以缩放你想要参数化的潜在PHD场景的复杂性。
+And the memory that this requires doesn't scale with a re a resolution that you want to achieve, like with a boxing good, but it scales with the complexity of the underlying PHD scene that you want to parameterize.
+
+75
+00:07:35,410 --> 00:07:39,870
+所以如果你有一堵白墙，那么你就不需要更多的参数。
+So if you have a white wall, then you don't need more parameters.
+
+76
+00:07:40,210 --> 00:07:44,790
+如果你想对白墙上密度更大的点进行采样，你只需要采样密度更大的点。
+If you want to sample points on that white wall, more more dense, you just sample more dense.
+
+77
+00:07:45,450 --> 00:07:50,470
+好吧，假设这是你的场景再现，如果我们在2018年有一篇关于它的论文。
+Okay, so let's say that would be on your scene representation if we had a paper on that in 2018.
+
+78
+00:07:50,490 --> 00:07:55,150
+它被称为场景再现网络。我接下来要讲的是新的渲染。
+It's called Scene Representation Networks. And I'm going to talk next about the new render.
+
+79
+00:07:55,310 --> 00:08:04,770
+我会很快地过一遍这个，基本上是为了让你们知道高层次的想法，因为我们想要进入更多的机器人应用。
+I'm going to go through this rather quickly, just basically to to let you know the high level idea, um, because we want to move onto the more robotics applications of this.
+
+80
+00:08:04,790 --> 00:08:08,170
+但我仍然认为，这是重要而有趣的背景。
+But I think, still think it's, it's important and interesting background.
+
+81
+00:08:08,330 --> 00:08:18,540
+所以我们需要建立一个新的渲染，这样我们就可以修复学习刚刚给图像的表现，我们需要考虑的投降的属性是什么?
+So we need to build a new render, such that we can repair learn the representation just given to the images, and what are the properties of the surrender that we need to consider?
+
+82
+00:08:18,700 --> 00:08:20,680
+这个渲染，需要是可微的。
+So this render, it needs to be differentiable.
+
+83
+00:08:20,720 --> 00:08:27,290
+应该是相当低的。理想情况下，复杂性存在于计算和内存消耗中。
+It should be rather low. Complexities are both in compute and in um and in memory consumption, ideally.
+
+84
+00:08:27,630 --> 00:08:30,530
+我们也没有什么东西来提供信息。
+And we do not have some bound to feed information.
+
+85
+00:08:30,690 --> 00:08:36,750
+所以我们需要以一种自我监督的方式来恢复几何。
+So we we somehow need to just recover geometry in a self supervised manner.
+
+86
+00:08:37,010 --> 00:08:41,730
+这是我们可以解决这个问题的一种方法，这是我们在2018年提出的。
+So here's one way in which we can solve this, which is what we proposed in 2018.
+
+87
+00:08:42,030 --> 00:08:45,090
+让我们回到这里。
+So let's say we go back to our little plicing here.
+
+88
+00:08:45,360 --> 00:08:49,060
+我们现在要在我们的twice seen中放置一个摄像机，我们想在这里渲染这些比赛。
+We're now going to place a camera in our twice seen and we want to render these race here.
+
+89
+00:08:49,440 --> 00:08:58,290
+所以在3D渲染的第一步总是找到每个托盘与场景几何图形的交集。
+So the 1st step of of rendering in 3D representations always finding the intersection of each tray with the geometry of the scene.
+
+90
+00:08:58,650 --> 00:09:04,310
+怎么做呢?这就提出了一个问题，如何在最初渗透场景的几何形状。
+How can we do that? That raises the question of how to permetize the geometry of the scene in the 1st place.
+
+91
+00:09:05,500 --> 00:09:10,240
+我们当时做这个的方法是把几何参数作为边距。
+And the way we did it back then is we parameters the geometry basically as a side distance.
+
+92
+00:09:10,400 --> 00:09:18,600
+想象一下你放大右上角的这个小正方形，你就有了一个新的网络将它映射到某个特征上。
+So imagine you zoom in on the top right corner here of this little square, and you just have a new network that maps that to some feature.
+
+93
+00:09:18,730 --> 00:09:23,910
+然后在红色的方块中，我可能会说，哦，我是红色的，我是正方形，这里是自由空间。
+Then in the red square, I would maybe say, oh, I'm, I'm red, and I'm a square, and here it's like free space.
+
+94
+00:09:24,070 --> 00:09:26,810
+但这在几何学上是行不通的。
+But that's not a workable differention of of geometry.
+
+95
+00:09:27,190 --> 00:09:33,450
+相反，我们可以使用一个科学的函数，这个函数每三个d坐标映射到最近的基因表面的距离。
+Instead, we can use A-A scientistine function, which is the function that maps every three d coordinate to the distance to the closest gene surface.
+
+96
+00:09:33,610 --> 00:09:41,630
+例如，这里的这个点会映射到这个射电的值，映射到这个小圆的半径，因为这是最近的曲面。
+So for instance, this point here would be mapped to the value of this radio, to the radius of this little circle here, because that's the closest surface.
+
+97
+00:09:41,850 --> 00:09:45,090
+类似地，这个点会映射到这个球的半径。
+Similarly, this point here would be mapped to the radius of this sphere here.
+
+98
+00:09:45,170 --> 00:10:11,880
+,重要的是,所有的表面将被映射到零,因为这是他们是表面上,所以,科学家的表面,你知道的,所以我们可以参数化几何距离标志,然后让我们做什么我们现在可以找到每个路口的射线与场景的几何形状,沿着这条路径找到零水平集，找到函数趋于零的位置。
+And importantly, all the surfaces will be mapped to zero, because that's they're they are on the surface, so that scientists to the surfaces, you know, so we can parametize our geometry with as a sign distance, and then what that allows us to do is we can now find the intersections of each ray with the geometry of the scene, by marching along the way and and finding the the zero level set, so finding where that that function goes to zero.
+
+99
+00:10:12,040 --> 00:10:16,230
+你可以这样做，你可以从靠近摄像机的地方开始。
+And the way you can do that is you start close to the camera on that ray.
+
+100
+00:10:16,500 --> 00:10:24,550
+在这一点0处，你对种子进行抽样，得到科学距离值，然后把科学距离值解释为
+At this point at zero, you sample your seed representation, you get the science distance value, and now you interpret that science distance value as
+
+101
+00:10:24,760 --> 00:10:25,770
+一步一个脚印和你
+a stepping and you
+
+102
+00:10:25,890 --> 00:10:37,030
+沿着你所预测的科学家的路线前进，然后你重复获胜，重复，直到你找到零。
+just march along the way according to the scientists that you predicted, and then you just repeat wins and repeat until you find zero.
+
+103
+00:10:37,230 --> 00:10:46,830
+很好的一点是，它保证了收敛到曲面上，这很容易说服你自己，因为，嗯，你知道，当你不在曲面上时，你预测的是正的步长。
+And the nice thing is that this is guarantee to converge to the surface, which is easy to convince yourself off, because, um, you know, whenever you're not on the surface, you're predicting a positive step length.
+
+104
+00:10:46,990 --> 00:10:49,070
+所以最终你会出现在水面上。
+So eventually you'll be on the surface.
+
+105
+00:10:49,130 --> 00:11:01,120
+因为它总是到表面的距离的最保守估计你能做的，它是到最近的场景表面的距离，你也保证不穿过一个表面，所以你保证最终找到这个表面。
+And because it's always the most conservative estimate of the distance to the surface and that you can make, which is it's the distance to the closest scene surface, you also guaranteed not to step through a surface, so you are guaranteed to eventually find the surface.
+
+106
+00:11:02,080 --> 00:11:16,110
+我们可以对它进行固定次数的迭代，然后我们把最终的迭代称为交集估计，或者我们可以迭代它，直到我们有一些条件，比如距离小于某个值。
+And so we can iterate that a fixed number of time of times, and then we just call the final iterate our intersection estimate, or we can iterate it until we have some of, uh, some criteria, like the distance is lower than some value.
+
+107
+00:11:17,230 --> 00:11:32,010
+然后有趣的是,最后的迭代,所以无论我们最后,告诉我们基本上的深度几何,我们就像就像估计的深度,因为我们只是一路上我们旅行的距离。
+And then the interesting thing is that the the final iterate, so wherever we ended up, that tells us basically the depth of the geometry that we put is like a it's like an estimate of the depth, because we just have the the distance along the way that we traveled.
+
+108
+00:11:32,330 --> 00:11:38,570
+酷。最后，我们可以通过对最后时间的表示进行抽样并预测颜色来渲染颜色。
+Cool. So finally, we can render a color by just sampling our representation of final time and predicting a color.
+
+109
+00:11:38,740 --> 00:11:49,650
+然后我们可以通过各种方式，预测颜色，从而得到图像，现在我们可以将图像与地面实况进行比较，我们可以，呃，我们可以反向传播整个过程。
+And then for every way we can, we can predict the color, which gives us an image, and now we can compare that image to ground truth, and we can, uh, and we can back propagate through the whole thing.
+
+110
+00:11:49,810 --> 00:11:52,210
+有趣的是，这个算法是可微的。
+And it's interesting because this algorithm is naively differentiable.
+
+111
+00:11:52,370 --> 00:11:57,430
+如果迭代次数固定，这个算法是可微的。
+So if you just do a fixed number of iterations, this algorithm is differentiable naively.
+
+112
+00:11:57,590 --> 00:12:07,980
+如果你想用更有趣的方式，比如说，哦，我想步进直到满足某个标准，你必须更聪明一点。
+If you want to have some slightly more interesting way of like saying, oh, I want to step until some criterion is fulfilled, you have to get a little bit smarter.
+
+113
+00:12:08,360 --> 00:12:11,480
+但有。我现在也在努力。
+But there is. I am also work on that by now.
+
+114
+00:12:11,640 --> 00:12:16,720
+这是很酷的。好了，这是进入法语，你可以学习几何和指导。
+It's really cool. Okay, so this is enter end to Frenchable, and you can just learn the geometry and supervise.
+
+115
+00:12:16,880 --> 00:12:18,180
+这是怎样的呢?
+So how does that look like?
+
+116
+00:12:18,360 --> 00:12:20,800
+我们已经制定了场景再现方案。
+Um, so we have formulated our scene representation.
+
+117
+00:12:20,960 --> 00:12:22,420
+我们还有一个小女孩瑞德拉。
+Again, we have a little girl redra.
+
+118
+00:12:22,720 --> 00:12:26,200
+那么现在我们如何找到我们的海表示的参数呢?
+So now how can we actually find the parameters of our sea representation?
+
+119
+00:12:26,360 --> 00:12:27,580
+那么我们如何进行推理呢?
+So how can we do inference?
+
+120
+00:12:28,100 --> 00:12:36,740
+这很有趣。让我们考虑一个简单的情况，第一种情况，我们有一个场景，我们对这个场景有很多观察。
+And now this is interesting. So let's consider a simple, a simple case 1st, which is we have a single scene, and we have lots of observations for that single scene.
+
+121
+00:12:37,430 --> 00:12:41,270
+我们有了小场景表示，它参数化了底层的3D场景。
+So we have our little scene representation, which parameterizes the underlying 3D scene.
+
+122
+00:12:41,450 --> 00:12:47,950
+我们有一个小的渲染算法，现在我们有一个场景，假设我们有一辆小玩具车，对吧?
+We have our little rendering algorithm, and now we have, like, a scene that's imagine we have a little toy car, right?
+
+123
+00:12:47,970 --> 00:12:53,130
+比如，我们有一辆小玩具车，在玩具车上，我们有很多观察，也就是图像，加上相机的姿势。
+So, like, we have this little toy car, and off the toy car, we have lots of observations, which is images, plus the camera poses.
+
+124
+00:12:54,110 --> 00:13:11,740
+现在我们可以配合,配合现场表示的数据,因为我们有我们的渲染,所以我们可以选择一个相机波兰人,我们渲染场景表示,我们得到了一个图像,我们怀疑一路反馈现场代表和优化它,适应它。
+Now we can just fit this, fit the scene representation to the data, because we have our render so we can just pick a camera poles, we render our scene representation, we get an image, and we suspect propagate all the way back to the scene representation and optimize it and fit it.
+
+125
+00:13:11,960 --> 00:13:12,880
+这就是它的样子。
+And this is what this looks like.
+
+126
+00:13:13,040 --> 00:13:14,900
+对于这个，这是一个小玩具车。
+So for this, this is a little toy car here.
+
+127
+00:13:15,180 --> 00:13:17,940
+这就是你们刚才看到的优化。
+And this was actually the optimization you just saw.
+
+128
+00:13:18,100 --> 00:13:22,520
+一开始是完全随机的，然后转换成这个小的3D表示。
+It started out completely random, and then it converted to this little 3D representation.
+
+129
+00:13:22,570 --> 00:13:33,110
+然后，我们可以移动，嗯，我们可以移动摄像机，啊或者不，啊，我们可以移动摄像机从新的角度渲染场景。
+And then afterwards, we can move, um, we can move the camera around, ah or not, ah, we can move the camera around and render the scene from novel perspectives.
+
+130
+00:13:33,470 --> 00:13:36,850
+所以当它第一次起作用的时候，我非常兴奋。
+So I was very excited when that, when that worked for the 1st time.
+
+131
+00:13:36,950 --> 00:13:49,570
+这对我来说有点疯狂，我们参数化了这个小神经网络中的小种子，所以几何形状和外观都存储在看不见的新生儿中，好了，现在，这给我们留下了什么，你知道，理解3D场景?
+It was kind of crazy to me that we parameterized this little feedy seed in this little neural network, so both the geometry and appearance are stored in the invisible neonatric Okay, so now, where does that leave us in terms of, you know, understanding 3D scenes?
+
+132
+00:13:49,730 --> 00:13:50,850
+对吧?这很酷。
+Right? This is, this is cool.
+
+133
+00:13:51,010 --> 00:13:54,590
+所以我们可以，比如，如果我们有很多观测，我们可以恢复三维几何。
+So we can, like, if we have lots of observations, we can recover 3D geometry.
+
+134
+00:13:54,660 --> 00:14:01,160
+但如果我们只有一个观察结果，或者是不完整的观察结果，这是你在现实世界中经常感兴趣的情况。
+But what if we only have a single observation, or impoverished observations, which is regularly the case that you're interested in in the real world.
+
+135
+00:14:01,180 --> 00:14:05,450
+对吧?在现实世界中，你不会从所有不同的角度观察事物。
+Right? In the real world, you don't have observations of something from all different perspectives.
+
+136
+00:14:05,750 --> 00:14:07,230
+想象一下站在你面前的东西。
+Imagine the thing that is standing in front of you.
+
+137
+00:14:07,290 --> 00:14:13,910
+也许当你开始气体化的时候，你通常只看到它的一面，你看不到所有可能的观察结果。
+Maybe when you gas something initially, and you only usually see one side of it, you don't see all the possible observations from it.
+
+138
+00:14:14,170 --> 00:14:16,090
+让我们考虑一辆小玩具车。
+So let's consider a far little toy car.
+
+139
+00:14:16,190 --> 00:14:22,320
+我们只有一张图像，也就是说，这张图像中没有三维信息。
+We only had a single image, which means there's in fact, no 3D information in that single image.
+
+140
+00:14:22,340 --> 00:14:25,650
+只是有点，有点太形象了。
+It's just a little, a little too the image.
+
+141
+00:14:25,990 --> 00:14:32,860
+当然，如果我们只是试图通过渲染器反向传播来适应我们的表示，那不会有任何作用，对吧?
+So of course, if we just try to fit our representation by back propagating through the renderer, that's not going to do anything, right?
+
+142
+00:14:32,880 --> 00:14:34,420
+这就是它实际的样子。
+So this is what this looks like in fact.
+
+143
+00:14:34,580 --> 00:14:36,420
+在顶部你可以看到磨牙。
+So on the top you can see ground tooth.
+
+144
+00:14:36,580 --> 00:14:46,770
+然后如果你试图渲染并将摄像机放置在新的观察点上，当摄像机移动到训练集中它所在的位置时，你会得到一些合理的结果，但除此之外，你什么也得不到。
+And then if you try to render and place the camera at novel observations, you're going to get something reasonable when the camera moves to the spot where it was in our training set, but then, other than that, you just don't get anything.
+
+145
+00:14:47,330 --> 00:14:49,970
+所以这并不奇怪，嗯?
+So this is not surprising, um?
+
+146
+00:14:50,270 --> 00:14:52,110
+在这种情况下，我们需要更聪明一点。
+So in this case, we have to get a little bit smarter.
+
+147
+00:14:52,270 --> 00:15:02,960
+我们需要做的是我们需要建立一些推断算法，一些算法从一组观察，可能只有一个观察，到我们的场景表现的参数。
+And what we need to do is we need to build some kind of inference algorithms, so some algorithm that goes from a set of observations, potentially only a single observation, to the parameters of our scene representation.
+
+148
+00:15:03,720 --> 00:15:10,830
+我们将在第二节中讲到机器人的例子，这将立即与机器人教育联系起来。
+And we're going to get to the robotics case in a 2nd This is actually going to connect immediately to to robotics education.
+
+149
+00:15:10,890 --> 00:15:15,950
+让我们看看。那么我们可以用什么简单的方法来做呢?
+So let's see. So what is the What is a simple way that we could do this?
+
+150
+00:15:16,050 --> 00:15:17,670
+如果我们能建立一个国会神经测量系统
+If we could build a congressional neurometric
+
+151
+00:15:17,990 --> 00:15:25,760
+编码器吗?细节不是很重要，想象一下，我给你一个图像，你把它塞进一个最终的新网络，它会给你一些晚期代码。
+encoder? And the details are not that important, but just imagine I give you an image, you stuff it into a conclusional new network, and it's going to give you some late en code.
+
+152
+00:15:26,230 --> 00:15:29,570
+太好了。然后，嗯，你有圆滑的代码。
+Great. And then, um, you have the slicking code.
+
+153
+00:15:29,730 --> 00:15:30,090
+现在如何
+And now how
+
+154
+00:15:30,290 --> 00:15:35,250
+你会用迟到代码来调整你的场景表现吗?
+do you, um, use that lateing code to condition your scene representation?
+
+155
+00:15:35,410 --> 00:15:39,030
+那么你是如何将延迟代码转化为你的神经场景表征的呢?
+So how do you translate that lating code into your neural scene representation?
+
+156
+00:15:39,550 --> 00:15:41,350
+有很多方法可以做到这一点。
+There's many ways you can do this.
+
+157
+00:15:41,660 --> 00:15:44,040
+你可以把它污染到输入端或别的地方。
+You can just contaminate it to the input or something.
+
+158
+00:15:44,300 --> 00:15:58,120
+嗯。一种很普遍的方法是，你有另一个完全连接的小尼尔网络它获取数据代码然后输出你的小神经场景表示的所有参数，或者你的小尼尔网络。
+Um. One way of doing it, which is quite general, is you just have another little fully connected neal network that takes the data code and just outputs all of the parameters of your of your little neural scene representation, or your little neal network.
+
+159
+00:15:58,580 --> 00:16:07,120
+在你的网络中编写完全连接的代码，只输出你用来参数化场景的小neor网络的所有参数。
+So take late and code fully connected in your network, just output all of the parameters of the little neor network that you used to parameterize the scene.
+
+160
+00:16:07,300 --> 00:16:10,940
+想象一下，你也可以拿着一箱货物做这个。
+The equip Imagine this is also, you know, like you could also do this as a with a box of goods.
+
+161
+00:16:11,100 --> 00:16:21,420
+对于一箱好东西来说，等价的是你有一箱好东西，你有一个小的神经网络，它把泄露的代码输入输出所有的盒子，这将是非常浪费的，但你可以这样做。
+The equivalent of this for the box of good would be you have your box of good and you have a little neural network that takes the leaking codes input and just outputs all of the boxals, which would be extremely wasteful, but you could do that.
+
+162
+00:16:21,990 --> 00:16:26,250
+我们来做一下。所以我们现在可以，训练这东西了。
+Okay, so let's do that. Um, so we can now, um, train this thing.
+
+163
+00:16:26,270 --> 00:16:28,900
+现在。我们要训练它学习3D场景的分布。
+Now. We're going to train it on a distribution of 3D scenes.
+
+164
+00:16:29,060 --> 00:16:33,980
+现在我们没有一辆车，但我们有很多玩具车。
+So now we have not a single single car, but we have, let's say, lots of toy cars.
+
+165
+00:16:34,140 --> 00:16:36,680
+对于每一辆玩具车，我们几乎没有观察到什么。
+And for each of the toy cars, we have few observations.
+
+166
+00:16:37,070 --> 00:16:51,200
+现在我们通过总是拉一辆车来拟合这个东西，为了拉一张图像，通过编码器做四次传递，得到表示的权重，渲染那个图像，然后优化整个的权重。
+And now we're basically fitting this thing by always pulling a car, for pulling an image, doing four pass through our encoder, getting the weights of our representation, rendering that image, and then optimizing the weights of the whole thing.
+
+167
+00:16:52,150 --> 00:16:53,970
+这很酷。你可以这样做。
+And this is cool. So you can actually do this.
+
+168
+00:16:53,990 --> 00:16:55,810
+这是它在考试时的样子。
+This is what it looks like at test times.
+
+169
+00:16:55,830 --> 00:17:00,550
+你从一张图像中得到一张图像，现在你将这个小车参数化。
+So you have a single image from the single image, now you parameterize this little treaty car.
+
+170
+00:17:00,710 --> 00:17:02,510
+太好了。这很酷。
+Great. So this is quite cool.
+
+171
+00:17:02,670 --> 00:17:06,170
+你知道，这不是不太好，但也不坏。
+You know, it's not not great, but not bad either.
+
+172
+00:17:06,190 --> 00:17:14,270
+有趣的事情发生了。想象一下，你把相机移动到一个在训练之前从未出现过的位置。
+So now something interesting happens. Imagine you move the camera to a position where it has never been before a training time.
+
+173
+00:17:14,460 --> 00:17:17,640
+所以你拿起相机，把它移到离车很近的地方。
+So you take the camera and you move it really close to the car.
+
+174
+00:17:17,800 --> 00:17:20,660
+也许这个模特从未见过一辆车关门。
+And maybe the model has never seen a car close.
+
+175
+00:17:21,060 --> 00:17:31,910
+嗯，如果你作为一个人看这张照片，你会有一个猜测，那就是这可能是一辆近距离的车，而不是一辆巨大的车，就像，呃，离相机5米远，对吧?
+Um, if you look at this image as a human, you will have a guess, which is that this is probably a car up close, and not a gigantic car that is, like, uh, 5 m away from the camera, right?
+
+176
+00:17:31,930 --> 00:17:49,010
+你认为你会认为摄像头的脸靠近车,但模型并不知道,嗯,因为它是,呃,这不是ecband,并不是不变的,这些相机停顿,它预测给你这是什么样子,很奇怪的看着车,但是,你知道,这是一辆车,但仅此而已。
+You think you would think the cameras face close to the car, but the model doesn't know that, um, because it's, uh, it's not ecband, it's not invariant to to these, to these camera pauses, and what it predicts to what it gives you is this like, really weird looking car, but, you know, it's a car, but that's about it.
+
+177
+00:17:49,210 --> 00:17:54,770
+基本上，这个入口函数不考虑问题的三维结构。
+So basically, this entrance function doesn't respect the 3D um structure of the problem.
+
+178
+00:17:54,780 --> 00:18:00,360
+所以你可以做很多有趣的事情来解决这个问题，这是一个开放的问题。
+So there's many interesting things you could do to fix this, and this is a wide open problem.
+
+179
+00:18:00,520 --> 00:18:05,410
+但有一件有趣的小事，我们一会儿会讲到。
+But one interesting little thing is, which we're going to exploit in a moment.
+
+180
+00:18:05,930 --> 00:18:08,930
+有，有，有一个简单的解决办法。
+There's, there's one, there's one easy way of fixing that.
+
+181
+00:18:10,250 --> 00:18:15,210
+我们来建立一个不同的函数，一个不同的交集，一个需要d结构的函数。
+So let's build a different function, a different intersection, something that has to d structure.
+
+182
+00:18:17,200 --> 00:18:19,340
+这一次，我们要做一些非常简单的事情。
+This time, we're going to do something very simple.
+
+183
+00:18:19,360 --> 00:18:22,160
+我们的训练集里有每个场景。
+We're going to have every scene in our training set.
+
+184
+00:18:22,380 --> 00:18:25,160
+对于每一个场景，我们将有一个单独的模拟代码。
+For each of these scenes, we're going to have a separate aping code.
+
+185
+00:18:25,420 --> 00:18:30,180
+在这个例子中，我们将对每一辆玩具车随机地初始化一个独立的跳跃代码，对吧?
+We're going to dis randomly initialize a separate leaping code for each of little toy cars in this example, right?
+
+186
+00:18:30,340 --> 00:18:35,110
+所以对于每一辆紧凑的小车，都有一个小的latencode。
+So for each of these little tight cars, you're just going to have one, one, little, one, little latencode.
+
+187
+00:18:36,230 --> 00:18:38,050
+福特Cap通行证长什么样?
+How does the Ford Cap pass look like?
+
+188
+00:18:38,210 --> 00:18:44,840
+现在，这一次，你把鳕鱼再次放入你的超网络中，它会给你场景表现的参数。
+Now, this time, you take the ladencod you put it through your hyper network again, which gives you the parameters of your scene representation.
+
+189
+00:18:45,260 --> 00:18:53,370
+你渲染出快速的表示，你得到一个输出，你把它和带图像的地面比较，现在你优化了整个东西。
+You render out the soon representation, you get an output, you compare that to the ground with image, and now you optimize the whole thing.
+
+190
+00:18:53,430 --> 00:19:00,290
+最后，你优化了超网络的参数参数和小林肯庭院。
+And to end, so you optimize both the parameters of the hyper network and the parameters and the little Lincoln Court.
+
+191
+00:19:00,310 --> 00:19:07,700
+所以你基本上是联合优化模型，你联合优化3D场景的种子空间，或者在这个例子中是3D玩具汽车。
+So you basically jointly optimizing the model, and you're jointly optimizing the space of seeds of 3D scenes, or 3D toy cars in this case.
+
+192
+00:19:08,020 --> 00:19:09,480
+所以没有编码器了。
+So there is no encoder anymore.
+
+193
+00:19:09,540 --> 00:19:11,540
+这叫做自动解码器框架。
+So this is called the Auto Decoder Framework.
+
+194
+00:19:11,820 --> 00:19:15,260
+这也是一个深的，如果使用的f，如果，如果。
+This is also a deep as the f used if um if if.
+
+195
+00:19:15,280 --> 00:19:16,600
+你们有些人知道那篇论文。
+Some of you know that paper.
+
+196
+00:19:17,200 --> 00:19:19,660
+那么现在，在这种情况下如何进行推理呢?
+So now, how do you do inference in this case?
+
+197
+00:19:19,820 --> 00:19:27,100
+编码器，对吧?如果我在测试时给你一张新的图片，你可以拿着这张图片把它放到你的网络的结论里，这就给了你一个新的女士代码。
+So with the encoder, right? If I give you a new, a new image at test time, you can just take the image and you put it into your conclusion on your network, and that gives you a new lady code.
+
+198
+00:19:27,120 --> 00:19:29,200
+我们不能再这么做了。你没有硬币。
+We can't do that anymore. You don't have any quarter.
+
+199
+00:19:29,510 --> 00:19:44,190
+所以我们要做的应该是我们要随机初始化lacon代码,我们将呈现出一个图像,这一开始是一个随机图像,然后我们将只优化代码泄漏,不再接触网络的权重。
+So what we're going to do instead is we're going to randomly initialize the lacon code, and we're going to render out an image, which in the beginning is going to be a random image, and then we're going to only optimize the leaking code, not touching the weights of the network anymore.
+
+200
+00:19:44,350 --> 00:19:50,520
+我们只是对泄露的代码进行了优化这样我们得到的图像就和我们观测到的图像最接近了。
+We're only optimizing the leaking code such that the image that we get most closely resembles the image observation that we have.
+
+201
+00:19:50,960 --> 00:19:55,420
+思考这个问题的方法有点像综合分析框架。
+So a way of thinking about this is kind of like an analysis by synthesis framework.
+
+202
+00:19:55,580 --> 00:20:02,600
+我们已经学习了一个模型，它参数化了我们对3D场景应该是什么样子的信念。
+So we are, we have learned a model which parameterizes our belief of how our 3D scenes should look like.
+
+203
+00:20:02,760 --> 00:20:09,020
+我们只是问，描述新观测的最佳潜在变量集是什么。
+And how we are just asking, what is the best set of latent variables that describes the new observation.
+
+204
+00:20:09,620 --> 00:20:15,050
+现在，这很有趣，因为这个，这个没有。
+So now, this is interesting because this, this thing does not have a um.
+
+205
+00:20:15,050 --> 00:20:16,830
+这件事没有同样的失败
+This thing does not have the same failure
+
+206
+00:20:17,270 --> 00:20:19,990
+传统神经网络，因为这个模型
+of conventional neural networks, because this model
+
+207
+00:20:20,170 --> 00:20:24,870
+嗯，当它回来的时候，通过渲染传播嗯来做推断。
+um, as it back, propagates through the render um to to do inference.
+
+208
+00:20:25,310 --> 00:20:30,510
+当你把相机移到模型附近的时候，它就不再超出分布范围了。
+And when you move the camera close to something to the model that is not out of distribution anymore.
+
+209
+00:20:30,670 --> 00:20:31,870
+之前，当你移动摄像机
+So earlier, when you move the camera
+
+210
+00:20:32,030 --> 00:20:34,730
+最后，你的网络上的结论是，哦，我从没见过这个。
+close, the conclusion on your network was like, oh, I've never seen this.
+
+211
+00:20:34,910 --> 00:20:44,820
+但这个模型没有。对于这个模型，这没有什么特别的了，因为你实际上不用3D结构的rendra来做推断。
+But this model here doesn't. For this model here, this is nothing special anymore, because you're actually disusing the the rendra that is 3D structured to do inference.
+
+212
+00:20:45,780 --> 00:20:53,480
+这在实践中意味着如果你有这些非分布摄像机暂停，比如摄像机会离物体很远而它实际上是很近的。
+So what this means in practice is that if you have these out of distribution camera pauses, like the cameras will be far away from the object where it's really up close.
+
+213
+00:20:53,820 --> 00:20:59,760
+然后，这个模型成功地再现了外观合理的汽车。
+Then this model succeeds at rendering out at reconstructing reasonable looking cars.
+
+214
+00:20:59,790 --> 00:21:05,590
+如果你使用结论编码器，它会给你这些，我不知道，看起来很奇怪的车。
+Well, if you use the conclusion encoder, it's going to give you these, I don't know, weird looking cars.
+
+215
+00:21:06,710 --> 00:21:13,250
+这很酷。三维结构使我们能够概括出分布外的摄像机姿势。
+OK So this is cool. So 3-D structure enables us generalization to out of distribution camera poses.
+
+216
+00:21:13,410 --> 00:21:16,580
+基本上就是这里的信息。我们现在怎么能?
+Is basically the message here. How can we now?
+
+217
+00:21:16,940 --> 00:21:18,620
+好了，这就是全部。
+Okay, so this is the whole thing.
+
+218
+00:21:19,000 --> 00:21:22,500
+这是一些结果。所以你可以取一张图像然后重建物体。
+Here's a few results. So you can take a single image and you can reconstruct objects.
+
+219
+00:21:22,770 --> 00:21:27,590
+嗯?好了，我跳过这个因为我们现在要讲机器人技术。
+Um? And okay, I'm going to skip this because we want to talk about robotics now.
+
+220
+00:21:27,590 --> 00:21:31,820
+你也可以将小房间paramatize化，但我们将在实践中看到它。
+You can also paramatize small rooms, but we're going to see this in practice now.
+
+221
+00:21:31,980 --> 00:21:38,480
+好吧，所以，在INMOS图形公司，有很多工作要做，这一定很令人兴奋。
+Okay, so, um, there has been this, uh, you know, this explosion of of work at INMOS Graphics, which has to be exciting.
+
+222
+00:21:38,520 --> 00:21:40,340
+大部分人都看过神经。
+So most of you have seen Nerve.
+
+223
+00:21:40,500 --> 00:21:41,960
+《神经》是一篇非常棒的论文。
+Nerve is a really fantastic paper.
+
+224
+00:21:41,960 --> 00:21:49,660
+嗯。所以在这里，只是，呃，讨论一下区别是什么，以及，关键的贡献是什么。
+Um. So here just, just, uh, to discuss what the differences are, and what the, what the key contributions are.
+
+225
+00:21:49,680 --> 00:21:53,300
+所以把它放在同一个框架中，这也是一个不同的渲染。
+So to put it in the same framework, this is also a differential rendero.
+
+226
+00:21:53,460 --> 00:22:09,430
+也是parametrising现场neal网络,但neonendra在这种情况下不是raymark,不是这个步骤,如像一个基于距离函数的渲染,其追随者,度量呈现,但你也样很多点,但是你,嗯,它的工作原理就像不同。
+It's also parametrising the scene as a neal network, but the neonendra in this case is not a raymark, is not a This thing that steps along the way, like like a side distance function based rendering, its following, metric rendering, but you also sample lots of points along the way, but you, UM, it works like differently.
+
+227
+00:22:09,810 --> 00:22:16,980
+嗯。他们引入了一个很酷的方法来参数化高频细节，它也允许你回顾忏悔。
+UM. And they introduced a really cool way of parametizing high frequency detail, and it also allows you to review the penance.
+
+228
+00:22:17,160 --> 00:22:19,580
+现在，结果看起来非常棒。
+Now, the results look really fantastic.
+
+229
+00:22:20,410 --> 00:22:25,990
+不做泛化的真正意义是什么。
+And the what this is really enabled by not doing generalization.
+
+230
+00:22:26,150 --> 00:22:34,870
+如果你有一个场景的很多图像，你只是在一个场景上过度拟合，那么这就允许你得到这些超棒的照片逼真的结果。
+So if you have lots of images of the single scene, and you're just overfitting on a single scene, then then that is what allows you to get these super awesome photo realistic results.
+
+231
+00:22:34,910 --> 00:22:41,620
+还有其他很酷的工作id R，还有pixel Nerve，它会泛化，我鼓励你们也去检查一下。
+There's also other really cool work id R, and then there's pixel Nerve, which does do generalization, which I encourage you to check that out as well.
+
+232
+00:22:42,980 --> 00:22:46,820
+但是真的，在这个空间里发生了很多事情，这真的很令人兴奋。
+But really, there's like so much happening in this space, it's really exciting.
+
+233
+00:22:47,240 --> 00:22:50,800
+好了，现在我们来看机器人应用。
+Um, okay, so now let's get to the robotics application.
+
+234
+00:22:50,960 --> 00:22:53,880
+我，我，我通常没有这些项目幻灯片。
+So, I-I-I usually don't have these project slides.
+
+235
+00:22:54,040 --> 00:23:05,790
+在我的演讲中，我希望它们能连贯，但在这里，我想强调的是这篇论文是由Yunju和Shang Yi领导的，我只是对这个项目贡献了一些观点。
+Um, in my talks, I'd like them to be coherent, but here, I really want to highlight that this paper was led by Yunju and by Shang Yi, and and I really just contributed some perspectives to this project.
+
+236
+00:23:07,020 --> 00:23:19,100
+所以我们在这篇论文中想要回答的关键问题是，我们如何学习环境的三维结构表示，然后我们如何将它们用于机器人?
+So the key question that we wanted to answer in this paper is, how can we learn 3D uh structure representations of environments, and then how can we use them for robotics?
+
+237
+00:23:19,260 --> 00:23:28,850
+具体来说，我们想要做的是解决机器人任务任务和目标状态用图像来指定。
+And specifically, the thing that we wanted to do is we wanted to um solve robotics tasks where the task and the goal state are specified with images.
+
+238
+00:23:29,530 --> 00:23:36,330
+好，让我们想象一下，举个例子，我们有一个机器人的任务把水倒进一个像这样的小容器里。
+Okay, so let's imagine, for instance, we had this task of a robot pouring water into a little container like this one.
+
+239
+00:23:37,110 --> 00:23:47,330
+所以我们通过图像指定了高尔夫球的构型，机器人可能甚至无法得到那个图像。
+So we we specified the golf configuration by an image, and the robot might might not even get that image.
+
+240
+00:23:47,490 --> 00:23:56,310
+机器人也能观察到周围的环境，但它可能不会像我们用来指定目标状态的那样得到相同的视角。
+So the robot gets an observation of the of their environment as well, but it might not get the same camera perspectives as the one that we used to specify the goal state.
+
+241
+00:23:56,970 --> 00:24:02,890
+这可能很重要，例如，如果你从演示中学习之类的东西。
+And this might be important, for instance, if you do things like learning from demonstrations and things like that.
+
+242
+00:24:03,360 --> 00:24:08,920
+特别是降温。现在你可以看到这和刚才讨论的东西有什么联系。
+Cool And specifically. And now you can see how this connects to the thing that be just discussed.
+
+243
+00:24:09,350 --> 00:24:23,420
+具体来说，我们想要做的是确保如果视点在训练分布之外，那么即使目标状态在交易时间之前从未见过的视点中指定，我们仍然希望能够控制系统。
+Specifically, what we wanted to do is you wanted to make sure that if the viewpoint is outside the training distribution, so even if the goal state is specified in the perspective that was never seen before a trading time, we still want to be able to control the system.
+
+244
+00:24:24,260 --> 00:24:33,830
+在这个案例中，数据集大概是，成千上万条轨迹，300个时间步和30个不同类型任务的视图。
+Okay, so the dataset in this case was like, thousands, thousands trajectories, with 300 time steps and 30 views of of different kinds of of tasks.
+
+245
+00:24:33,850 --> 00:24:36,130
+在这种情况下，就是倒水的任务。
+In this case, it's this water pouring task.
+
+246
+00:24:36,460 --> 00:24:38,120
+我们还有别的任务吗，鲍勃?
+Have we had a few other tasks this, bob?
+
+247
+00:24:38,340 --> 00:24:41,560
+就像这里，你可以看到，这些例子相机让你看起来像什么。
+And like here, you can see, like, what these example camera have you looked like.
+
+248
+00:24:42,200 --> 00:24:44,870
+系统是这样的。
+And the system looked like this.
+
+249
+00:24:45,050 --> 00:24:47,330
+我要走它的各个部分，但基本上就是这样。
+I'm going to walk its parts, but basically it's it.
+
+250
+00:24:47,490 --> 00:24:52,330
+它遵循一个和我们刚才描述的非常相似的系统，只是更抽象一点。
+It follows a very similar system to the to the one that we just described, that just a little bit more abstractly.
+
+251
+00:24:52,490 --> 00:24:53,950
+这个更具体一些。
+This one is a little bit more specific.
+
+252
+00:24:54,190 --> 00:25:00,210
+假设你有一幅图像，我们有一个有争议的编码器，一个结论编码器把图像映射到一个ladencode。
+So imagine you have an image, we have a controversial encoder, and a conclusion encoder maps the image to a ladencode.
+
+253
+00:25:00,330 --> 00:25:06,170
+现在我们要说，午睡代码代表了这个系统的状态，对吧?
+And now we're going to say that that naping code represents the state of this system, right?
+
+254
+00:25:07,010 --> 00:25:10,190
+还有一些可动的部分。
+And there are a few moving pieces.
+
+255
+00:25:10,350 --> 00:25:23,190
+第一种是我们用时间对比来确保来自同一时间步的图像很接近，而来自不同时间步的图像是不同的。
+The 1st one is we used a time contrast to flaws to make sure that the the the images from the same time step are close together, while in images from different time steps are, uh, it are different.
+
+256
+00:25:23,710 --> 00:25:28,190
+它只是识别你的座位空间，确保它不会坍塌成不有趣的东西。
+And that just recognizes your seat space and make sure it doesn't collapse to something that's not interesting.
+
+257
+00:25:28,690 --> 00:25:33,310
+现在我们有了一个解码器，这个解码器用的是神经
+And now we had a little decoder, and the decoder is using a nerve
+
+258
+00:25:33,510 --> 00:25:36,310
+但它实际上遵循的是我们刚才讨论的框架。
+in this case, but it really follows the same framework as we just discussed.
+
+259
+00:25:36,330 --> 00:25:43,750
+这里有一个小的神经场景表示，这是一个小的神经网络它将一个3D坐标映射到那个3D坐标上的任何东西。
+So you just have a your little neural scene representation here, which is just a little neural network that maps a 3D coordinate to whatever is at that 3D coordinate.
+
+260
+00:25:43,950 --> 00:25:56,740
+现在你在使用睡眠代码来调整表现，然后你可以渲染，渲染场景从任意的摄像机角度通过移动摄像机，对吧?
+And now you're using the sleeping code to condition that's in representation, and then you can just render, render the scene from arbitrary camera perspectives by moving camera around, right?
+
+261
+00:25:57,780 --> 00:26:05,640
+好的。最后，最后一部分是一些动力学，动力学模型。
+OK. And then the last, the last part was a little dynamics, dynamics model.
+
+262
+00:26:05,800 --> 00:26:08,540
+所以动力学模型在潜在空间上是奇怪的。
+So the dynamics model is strange on the latent space.
+
+263
+00:26:09,140 --> 00:26:12,280
+那么，你你可以打开屏幕的左边，对吗?
+So, uh, you you can the left side of the screen, right?
+
+264
+00:26:12,300 --> 00:26:17,120
+这个你可以大便。只是一个新颖的你综合任务与这一点时间对比，如果失去了顶部。
+This you can stool. Is just a novel you synthesis task with this little time contrast if lost on top.
+
+265
+00:26:17,280 --> 00:26:19,680
+你可以在没有监督的情况下对数据集做这个，对吧?
+You can just do this unsupervised on your data set, right?
+
+266
+00:26:19,780 --> 00:26:26,180
+对吧?你只是训练你的东西为另一个用途合成呈现出所有这些不同类型状态的不同视图。
+Right? You just train your thing for another use synthesis to render out all of these different views for these different kinds of states.
+
+267
+00:26:26,550 --> 00:26:36,530
+在你完成这些之后，你可以限制一个潜在空间的动力学模型，它基本上是在一个动作的参数化中，获取加载的代码，然后预测下一个加载的代码应该是什么。
+And then after you have done that, you can restrain a little dynamics model on the latent space, which basically takes the laden code and in some parametization of an action, and then predicts what the next laden code should be.
+
+268
+00:26:38,000 --> 00:26:42,000
+酷。所以，嗯，就是这样。
+Cool. So, um, that's exactly that.
+
+269
+00:26:42,440 --> 00:26:48,360
+好的，这是，这是，然后，你可以用这个动态模型来做规划。
+Okay, so this is, so this is, and then afterwards, you can use this dynamic model to do planning.
+
+270
+00:26:49,050 --> 00:26:50,350
+这就是它的样子。
+And this is what this looks like.
+
+271
+00:26:50,510 --> 00:26:52,850
+在左边，你可以看到bantooth。
+So here on the left, you can see bantooth.
+
+272
+00:26:52,970 --> 00:26:57,670
+所以我们给机器人动作。
+So we we give the, we give the robot the actions.
+
+273
+00:26:57,830 --> 00:27:01,530
+我们从一些开始的构型开始，然后我们给出动作。
+So we start out in some in some starting configuration, then we give actions.
+
+274
+00:27:01,550 --> 00:27:06,610
+我们总是预测系统的动态。
+We always predict the the ford, the dynamics of the system.
+
+275
+00:27:06,770 --> 00:27:14,810
+然后在右手边的这个是你所预测的视图，所以你可以真正地看到我们清楚地了解到的负载空间和代码对抗一些相关的信息。
+And then this on the right hand side are the views that you're predicting, so you can really see that the laden space that we learned clearly and codes fight a bit of relevant information.
+
+276
+00:27:14,830 --> 00:27:18,230
+它真正编码了系统的状态，包括杯子里的水。
+It really encodes the state of the system, including the water in the glass.
+
+277
+00:27:18,540 --> 00:27:22,420
+它很模糊，但很明显它有一些关于玻璃成分的信息。
+You know, it's blurry, but clearly it has some information about the content of the glass.
+
+278
+00:27:22,580 --> 00:27:32,630
+还有另一个例子，比如机器人推着一个装满水的小容器漂浮着新立方体和其他东西。
+Well, so is another example of, like the robot pushing a little container with with water and and floating the New Cube and like other stuff.
+
+279
+00:27:32,790 --> 00:27:46,410
+好的，现在我们从广义分布塔的观点中得到了一些见解我们刚刚在现实世界的机器人技术中对玩具车进行了研究，例如，你有你的目标配置，对吧?
+Okay, and now here comes the insight from from the generalization tower of distribution viewpoints that we just had with little toy cars just now in real world robotics, example, so you you have your goal configuration, right?
+
+280
+00:27:46,430 --> 00:27:52,580
+你放置一个摄像头，你就有了目标图像，现在你可以用目标图像得到一件满载的外套。
+You place a camera, you have the goal image, and now you can take that goal image to get a laden coat.
+
+281
+00:27:52,920 --> 00:27:59,470
+这些满载的代码允许你进行控制，因为你有你的初始会众，你的目标状态。
+And that laden code then allows you to do control, because you have your starting congregation, you have your your goal state.
+
+282
+00:27:59,630 --> 00:28:06,550
+我们有一个动态模型可以用来规划，然后你可以规划并解决这个问题，解决这个问题。
+We have a dynamics model that you can use for planning, and then you can just plan and solve that, solve that problem.
+
+283
+00:28:06,710 --> 00:28:07,850
+这就是它的样子。
+And here's what it looks like.
+
+284
+00:28:08,160 --> 00:28:10,100
+这就是我们所做的计划。
+So this is the the planning that was done.
+
+285
+00:28:12,540 --> 00:28:20,370
+在这里我们展示了我们预测的状态和磨牙的状态有很大的重叠。
+And here basically we show that the state that we predicted really overlaps highly with the with the ground tooth state.
+
+286
+00:28:20,610 --> 00:28:22,950
+但现在，这就是诀窍。
+But here's now, here's now the trick.
+
+287
+00:28:23,110 --> 00:28:24,230
+这是我们的高尔夫球结构。
+So we have our golf configuration.
+
+288
+00:28:24,390 --> 00:28:26,550
+如果把相机放在一个全新的视角会怎样?
+What if the camera is placed in a completely new perspective?
+
+289
+00:28:26,650 --> 00:28:28,490
+我们以前从未见过这种观点。
+So we have never seen this perspective before.
+
+290
+00:28:28,490 --> 00:28:33,350
+这是这是目标图像，这是上面。
+Um, this is the this is the goal image, and this is up.
+
+291
+00:28:33,510 --> 00:28:37,290
+这是我们见过的最接近的一次训练。
+This is for um, more close than what we've ever seen a training time.
+
+292
+00:28:37,450 --> 00:28:40,310
+这也是一个不同的，也是一个不同的拍摄角度。
+And it's also a different, it's also a different camera angle.
+
+293
+00:28:40,870 --> 00:28:51,780
+现在，如果我们只对国会的编码器这样做，我们把这幅图像映射到我们的极限，我们的劳工法典，然后我们再解码，然后你就得到了这个。
+So now, um, if we do this with only the Congressional encoder, so we take this image and we map it to our limits, to our labor code, and then we decoded again, then this is what you get.
+
+294
+00:28:52,300 --> 00:28:56,400
+这和我们之前看到的小车的失败案例完全一样。
+And this is really exactly the same failure case that we saw earlier with the little cars.
+
+295
+00:28:56,560 --> 00:29:03,930
+对吧?所以现在解码后的图像是不合理的，因为这个，这个视图超出了商业和季度的分布范围。
+Right? So now the decoded image is, is, like, not reasonable, because this, this view is out of distribution for the commercial and quarter.
+
+296
+00:29:04,410 --> 00:29:10,410
+给什么?现在我们可以做刚才那个玩具车的例子。
+So what gives? Well, now we can do the same thing that we did in our little toy car example a moment ago.
+
+297
+00:29:10,570 --> 00:29:21,960
+所以我们不只是依赖于我们预测的睡衣我们可以，我们可以，我们可以用这个图像，我们可以用几个很好的步骤优化泄漏区。
+So instead of just relying on the sleeping coat that we predicted with our conclusion importer, we can take, we can take this image, and we can just optimize the leaking court with a few great intercent steps.
+
+298
+00:29:22,040 --> 00:29:25,500
+只是通过渲染直接传播到了林肯宫。
+Uh, just back propagating through the render directly into the Lincoln Court.
+
+299
+00:29:25,660 --> 00:29:32,610
+总而言之，你得到图像，你通过编码器给你一个初始化的状态估计。
+So just to sum up, you take the image, you do afford pass through the encoder that gives you basically an initialization for the state estimate.
+
+300
+00:29:32,960 --> 00:29:38,900
+现在你们要用你们已经学过的纽伦德拉来通过反向传播来改进状态估计。
+And now you're going to use the Neorendra that you have already learned to refine that state estimate by back propagating through the Neorendra.
+
+301
+00:29:40,330 --> 00:29:42,150
+这是完全一样的。
+This is really exactly the same.
+
+302
+00:29:42,310 --> 00:29:51,570
+这和CNN的季度和基于优化的推断是完全相同的，和我们的例子是一样的，只是我们刚刚看了。
+Is exactly the same difference as with the CNN quarter versus the the optimization based inference, and the same as in our example, just that we just looked at.
+
+303
+00:29:51,730 --> 00:30:02,100
+现在，如果你这样做，那么你会得到一个非常非常好的状态估计，因为从新的渲染器的角度来看，从这个I Beck传播方案的角度来看，这没什么特别的。
+Now, if you do that, then you get a much, much better state estimate, because from the perspective of the new renderer, and from the perspective of this I Beck propagation scheme, this is nothing special.
+
+304
+00:30:02,580 --> 00:30:13,530
+在这里你可以看到在做了这些改进之后，你得到了，你得到了一个状态估计值这个状态估计值和你想要的状态更接近。
+And here you can see after after doing this refinement, and you get, you really get a state estimate that really much more closely matches the the state that you were interested in.
+
+305
+00:30:14,010 --> 00:30:19,350
+酷。然后，你可以，你可以听到的是在实践中是什么样的。
+Cool. And then, you know, you can, you can hear is what that looks like in practice.
+
+306
+00:30:19,370 --> 00:30:19,790
+这些是
+So these are
+
+307
+00:30:20,030 --> 00:30:25,150
+所有机器人之前没有，没有观察到的监控暂停。
+all out of distribution camera pauses that the robot has not been, hasn't observed before.
+
+308
+00:30:25,410 --> 00:30:28,590
+如果你不做音频解码，你的状态估计就是完全错误的。
+And if you don't do audio decoding, your state estimate is just completely wrong.
+
+309
+00:30:29,210 --> 00:30:33,910
+但是在你做了基于顺序解码的推理之后，你会得到这些更合理的状态
+But after you do this order decoding based inference, you get these much more reasonable state
+
+310
+00:30:34,270 --> 00:30:36,090
+可以进行实际规划的估计。
+estimates with which you can actually do planning.
+
+311
+00:30:37,760 --> 00:30:42,820
+酷。然后，你知道，同样的事情，你可以做，你可以用它来做计划。
+Cool. And then, you know, same thing again, you can do, you can use that to do planning.
+
+312
+00:30:42,980 --> 00:30:45,860
+这段视频显然不是。好了。
+This video apparen'tly not. Ah, there we go.
+
+313
+00:30:46,020 --> 00:30:54,660
+所以现在你的计划成功了，你可以解决这个任务了，尽管这个黄金状态在这篇摄像机文章中被描述了，这是以前从未被观察到的。
+So now you're planning succeeds, and you can solve the task, even though the the gold state was described in this camera post that was never observed before.
+
+314
+00:30:55,620 --> 00:31:01,220
+然后定子和嫦娥飞船，shrang Li，也在一个真实的世界系统中运行这个。
+Cool And then the Dingi and Chang ship, shrang Li, also ran this on a real world system.
+
+315
+00:31:01,240 --> 00:31:05,940
+所以这只是一个新的渲染器的演示，加上学习的动态模型。
+So this is just a demonstration of the new renderer, plus the dynamics model that was learned.
+
+316
+00:31:06,100 --> 00:31:12,770
+这里的训练集是倒，我猜是倒，可乐，到一个小杯子里。
+So here the training set is pouring, a pouring, I guess, coke, into into a little glass.
+
+317
+00:31:14,130 --> 00:31:20,020
+你们可以看到，这是动力学模型的预测。
+And you can see that you can, uh, here's the prediction of the of the dynamics model.
+
+318
+00:31:20,040 --> 00:31:22,220
+你可以看到杯子里也装满了水。
+You can see that the glass also fills with water.
+
+319
+00:31:22,380 --> 00:31:36,970
+我会注意到这里的保真度受到很多因素的限制，但是模糊度实际上只是不确定性的影响。
+I will note that the the fidelity here is is is really limited by the by many, by many factors, but that the blurineness is really just an effect of the of uncertainty.
+
+320
+00:31:37,190 --> 00:31:47,140
+你也许可以摆脱它，但为了控制的目的，真正重要的事情是，以某种方式有状态表征，比如，杯子在哪里，满吗?
+You could probably get rid of it, but for the purposes of control, the thing that is really important is like, somehow have the state representation of, like, where is the Where is the glass, how full?
+
+321
+00:31:47,300 --> 00:31:49,470
+杯子里还有多少液体?
+How much liquid is in the glass still?
+
+322
+00:31:49,630 --> 00:31:52,050
+目标杯中有多少液体?
+And how much liquid is in your target glass?
+
+323
+00:31:52,570 --> 00:32:01,190
+酷。总结一下，这是自我监督场景表现框架的一个非常真实的应用，对吧?
+Cool. So, in summary, um, here is now a very real application of the self supervised scene representation framework, right?
+
+324
+00:32:01,350 --> 00:32:10,290
+所以我们使用了自我监督场景表示框架通过学习机器人任务的状态空间，自我监督，仅仅从图像，没有3D信息或什么都没有。
+So we used the self supervised scene representation framework by learning a state space of a robotics task, self supervised, just from images, no 3D information or nothing.
+
+325
+00:32:10,390 --> 00:32:12,550
+我们只是不使用渲染来学习我们的状态空间。
+We just use no rendering to learn our state space.
+
+326
+00:32:12,860 --> 00:32:14,480
+然后在状态空间中，我们可以做规划。
+And then in the state space, we can do planning.
+
+327
+00:32:14,660 --> 00:32:20,680
+通过使用我们在问题中建立的三维结构，我们也可以推广到非分布姿势。
+And by using the 3D structure that we built into the problem, we can generalize to out of distribution poses as well.
+
+328
+00:32:21,450 --> 00:32:29,870
+这真的很酷。当然，这里有很多限制，对吧?
+This is really cool. Um, of course, there are many limitations, right that that are relevant here.
+
+329
+00:32:30,030 --> 00:32:36,480
+也许我想提的最重要的一点是泛化的概念是非常有限的。
+And maybe the most important one that I just want to bring up is this is the the notion of generalization here is really limited.
+
+330
+00:32:36,640 --> 00:32:41,660
+所以这概括了同一任务的两个不同实例。
+So this generalizes two the two different instances of the same task.
+
+331
+00:32:41,710 --> 00:32:44,630
+但这仍然是一个适合每个任务的模型。
+But this is still a model that is fit per task.
+
+332
+00:32:44,670 --> 00:32:54,460
+所以你仍然需要在这个特定任务的很多实例上训练这个模型，在这种情况下，这个状态的板条空间参数化是有效的。
+So you still need to train this model on lots of instances of this specific task, and in that case, this, this slaten space parametization of the state really works.
+
+333
+00:32:54,800 --> 00:33:05,630
+想象一下，现在你想让这个问题变得更复杂通过在太空中添加另一个对象或添加另一个任务，你在太空中的状态将不能代表那个状态。
+Imagine now you wanted to make this problem more complicated by adding another object or adding another task this late in space, the state in space that you learned will not be able to represent that state at all.
+
+334
+00:33:05,790 --> 00:33:07,710
+所以这是一个开放的研究问题。
+So this is, this is a wide open research problems.
+
+335
+00:33:07,810 --> 00:33:15,950
+很有趣。好了，我们继续，我们要看一下这些新场景表示的另一个属性，这很酷。
+Very interesting. Okay, so um, moving on, we are going to look at another property of these new scene representations, which is really cool.
+
+336
+00:33:16,110 --> 00:33:19,140
+想象一下，你在玩具车的空间里学习了这么久。
+So imagine you had to learn this little late in space of toy cars.
+
+337
+00:33:19,300 --> 00:33:22,240
+所以你训练这个模型来概括玩具车，对吧?
+So you train this model to generalize across toy cars, right?
+
+338
+00:33:22,460 --> 00:33:23,220
+你可以做一件有趣的事。
+Here's a funny thing you can do.
+
+339
+00:33:23,280 --> 00:33:27,300
+你可以使用代表不同汽车的链接代码，然后你可以解释它们。
+You can take the linking codes that represent different cars and then you can interpretate them.
+
+340
+00:33:27,700 --> 00:33:32,210
+这里你可以看到，实际上，我想回到那个。
+So here you can see, like, actually, I want to go back to that a little bit.
+
+341
+00:33:32,370 --> 00:33:38,550
+这里你可以看到这辆车插值到这辆很酷的一级方程式赛车上，对吧?
+So let's So here you can see this car interpolating to this really cool Formula one car, right?
+
+342
+00:33:38,710 --> 00:33:51,830
+我想让你们注意的是当你们从一辆车看到另一辆车的时候，你们真的可以看到湖面的空间是平滑的就像这辆车的轮胎和另一辆车的轮胎融合在一起一样。
+And the thing that I'd like you to notice is when you look from thing to a thing, you can really see that the lake space is smooth in the sense that the cars of the the tires of this car move merge into the tires of the next car.
+
+343
+00:33:51,980 --> 00:33:55,120
+你们能看到吗?就像轮胎靠得更近。
+Can you see that? So like the tires are moving closer together.
+
+344
+00:33:55,280 --> 00:33:59,920
+这与轮胎突然消失然后又突然出现形成了鲜明的对比。
+This is in contrast to the tires popping out of existence and then popping into existence again.
+
+345
+00:34:00,020 --> 00:34:04,620
+事实并非如此。这是不同物体之间的平滑插值。
+That's not what's happening. It's really a smooth interpolation between these different kinds of objects.
+
+346
+00:34:04,860 --> 00:34:10,690
+这里的观点是，嗯，实际上，我要跳过这些东西。
+So the the insight here is that, um, actually, I'm going to skip this stuff here.
+
+347
+00:34:10,710 --> 00:34:19,990
+这里的观点是，这个潜在的空间，在某种程度上，已经编码了你所谓的对应，或者语义，基本上，语义分割。
+The insight here is that this latent space, to some degree, already encodes what you would call correspondent, or semantic go, basically, semantic segmentation.
+
+348
+00:34:20,170 --> 00:34:29,550
+我们在2019年的一篇3D论文中使用了这个，来解决这个问题，解决这个半监督语义分割的小问题。
+And we used this in the 3D paper, um, some in 2019, to solve this, to solve this little problem of doing semi supervised semantic segmentations.
+
+349
+00:34:29,710 --> 00:34:31,890
+假设你已经学会了眼泪的睡意。
+Let's say you had learned the sleepy space of tears.
+
+350
+00:34:32,280 --> 00:34:38,500
+有个靠背，然后有个，腿，还有座位表面。
+Um, you know, there's like a back rest, and then there's like, you know, there's like, legs, and the the seating surface.
+
+351
+00:34:38,600 --> 00:34:42,500
+假设你已经了解了这样一个潜在的空间，现在你想做语义分割。
+Let's say you have learned such a latent space already, and now you want to do semantic segmentation.
+
+352
+00:34:42,660 --> 00:34:48,410
+实际上你只需要2到3个样本，因为你的模型已经知道对应关系了。
+Well, you actually only need maybe two or three samples, because your model already knows correspondence.
+
+353
+00:34:48,570 --> 00:34:52,660
+它已经学会了对应关系，就像你在插值例子中看到的那样。
+It has already learned correspondence, as you have just seen in the little interpolation example.
+
+354
+00:34:52,820 --> 00:34:57,280
+这就意味着你只能用很少的样本来做语义分割。
+And that meant that you can only use very few samples to actually do semantic segmentation.
+
+355
+00:34:57,400 --> 00:35:10,120
+关键的见解，我们现在要从一个机器人的例子中再次提到，如果你学习了一类物体的拉丁空间，那你就能买到东西。
+And, um, the the key insight, which we're now going to pick up in a robotics example again, is that if you learn a latin space of a class of objects, um, then that buys you something.
+
+356
+00:35:11,240 --> 00:35:13,520
+我们现在会看到什么?
+And what are we going to see now?
+
+357
+00:35:13,810 --> 00:35:17,790
+这是我们最近做的另一个项目，这个团队的人。
+So this is another project that we did recently with this, with this team here of people.
+
+358
+00:35:17,990 --> 00:35:23,130
+这是由Anthony Gillen Poket和我领导的，我是一个联合组织。
+This is really led by Anthony and Gillen and Poket and I, I'm a joint.
+
+359
+00:35:23,150 --> 00:35:25,670
+你监督他们。这是一个很酷的项目。
+You supervise them. This is a really cool project.
+
+360
+00:35:26,670 --> 00:35:33,950
+那么，嗯，让我们看看，微笑可以做什么。
+So, um, let's see, here s what the smile can do.
+
+361
+00:35:34,430 --> 00:35:42,370
+假设我给你一个，嗯，我给你看，我给一个机器人看一个任务，比如我想要挑选和放置的任务。
+Let's say I give you a, um, I show you, I show a robot a task like I want to pick and pick and place task.
+
+362
+00:35:42,530 --> 00:35:44,870
+你有这个，你有这个挑选和放置任务。
+So you have this, you have this pick and place task.
+
+363
+00:35:45,150 --> 00:35:47,730
+你让机器人捡起一个杯子，把它挂在残骸上。
+You show the robot pick up a mug and hang it on the wreck.
+
+364
+00:35:47,950 --> 00:35:56,460
+现在，我们想要做的就是从这个演示中，我们想要学习这个任务并让机器人做同样的拾取和放置任务，一个新种类物体的任务。
+Now, what we want to do is from that demonstration, we want to learn that task and to allow the robot to do the same pick and place tasks, a task for new kinds of objects.
+
+365
+00:35:57,060 --> 00:36:07,190
+好了，你得到了这个任务的一些演示，比如，嗯，也许，比如，不同种类的杯子，但是，你知道，杯子总是在相同的杆上。
+Okay, so you get a few demonstrations of this task of, like, um, with maybe, like, different kinds of mugs, but, you know, the mugs are always gonna be kind of in the same poles.
+
+366
+00:36:07,350 --> 00:36:10,030
+嗯。你知道，你只是想向机器人展示基本的想法。
+Um. You know, you just want to show the robot the basic idea.
+
+367
+00:36:10,190 --> 00:36:13,230
+然而，现在测试用例要困难得多。
+And now the the test cases, however, are much more difficult.
+
+368
+00:36:13,390 --> 00:36:21,200
+你想让机器人用它从未见过的杯子完成同样的任务，让杯子摆出完全不被观察到的姿势。
+You want the robot to solve the same task with mugs that it hadn't seen before, and with mugs in completely unobserved poses.
+
+369
+00:36:24,320 --> 00:36:28,110
+所以,呃。这就像是，这些是泛化的概念。
+So, uh. So it's like, really, these are the notions of generalization.
+
+370
+00:36:28,270 --> 00:36:32,150
+我们想要在不同的例子中进行归纳，我们想要归纳到新的姿势。
+We want to generalize across different instances, and we want to generalize to new poses.
+
+371
+00:36:32,310 --> 00:36:37,900
+这里的问题是我们有少量的演示，我们有看不见的对象实例。
+So the problems here really are we have a small number of demonstrations, we have unseen instances of objects.
+
+372
+00:36:38,060 --> 00:36:47,090
+我们想要的不仅仅是具体的掌握，我们想要的是整个任务的参数，通过，你知道，有一个启动态和一个在态。
+We want to not only specify the grasp, we really want to part parametries the whole, the whole task by, you know, having a starting configuration and having an in configuration.
+
+373
+00:36:47,130 --> 00:36:52,750
+你想将对象推广到任意停顿，因为它真的不是很好，对吧?
+And the objects you want to generalize to arbitrary pauses, because it's really not great, right?
+
+374
+00:36:52,810 --> 00:36:59,850
+如果你需要演示，你有各种不同的演示，你需要为所有不同的停顿演示一些东西。
+If you have to demonstrate, you have, you have demonstrations for all kinds of different You need to demonstrate something for all the different pauses.
+
+375
+00:37:00,250 --> 00:37:06,640
+那么，嗯，让我们想一个简单的，这个问题最简单的感觉。
+So, um, let's let's think about a simple, the simplest sensation of this problem.
+
+376
+00:37:06,800 --> 00:37:14,690
+首先，让我们假设这个演示是在同一个对象上，和你想要操作的那个对象，测试时间是一样的。
+1ST let's imagine that the demonstration is on exactly the same object as the object that you want to manipulate a test time.
+
+377
+00:37:14,870 --> 00:37:20,830
+演示在这个杯子上，最后的任务也在这个杯子上。
+Okay, so the demonstration is on this mug, and the the task at the end is also with this mug.
+
+378
+00:37:21,010 --> 00:37:26,100
+在这种情况下，你可以做一些非常简单的事情，你可以添加一个小的坐标系统到杯子上。
+So in this case, you can do something very simple, which is you can just add attach a little coordinate system to the mug.
+
+379
+00:37:26,260 --> 00:37:28,320
+你会在你的抓手上附加一个小坐标系吗?
+Do you attach a little coordinate system to your gripper?
+
+380
+00:37:28,700 --> 00:37:32,960
+现在你要记住这两个坐标系在训练或演示的时候。
+And now you just memorize these two coordinate systems at training time or at demonstration time.
+
+381
+00:37:33,220 --> 00:37:37,920
+现在，当你想要执行这个任务时，你只需把杯子的模型装进去。
+And now when you want to execute the task, you just fit the model of the mug that you have.
+
+382
+00:37:38,220 --> 00:37:41,920
+你只是，让我们说你有一个点，错误，抱歉，你有一个点，自鸣得意。
+You just to, let's say you had a point out of the bug, sorry, you have a point out of the smug.
+
+383
+00:37:42,080 --> 00:37:44,520
+你只要注册那个指向市场的点。
+You just register that point out to to the market.
+
+384
+00:37:44,680 --> 00:37:47,120
+测试时间。这就得到了这个小坐标系。
+Test time. That gives you this little coordinate system.
+
+385
+00:37:47,140 --> 00:37:52,930
+现在你只需要移动手柄到相同的坐标，到你观察演示的相同位置。
+And now you really just have to move the gripper to the same coordinate, to the same position that you observe the demonstration.
+
+386
+00:37:53,030 --> 00:37:58,170
+时间,容易。好吧，但是现在想象这个杯子是另外一个。
+Time, easy. OK, but now imagine that the mug is a different one.
+
+387
+00:37:58,510 --> 00:38:01,070
+所以在训练的时候，你会得到这个说话标记的演示。
+So at training time, you get the demonstration with this talk mark.
+
+388
+00:38:01,090 --> 00:38:03,530
+在测试的时候，你会得到这个带有小标记的演示。
+At test time, you get this demonstration with this small mark.
+
+389
+00:38:03,840 --> 00:38:07,440
+如果只考虑注册，就会遇到一些麻烦。
+Now you're in a little bit of trouble if you try to just do registration.
+
+390
+00:38:07,600 --> 00:38:14,330
+假设这个杯子里有个废物，你试着把它和这个标志里的废物登记在一起来估计这个协管系统会给你什么垃圾。
+So let's say you have the punk out of this mug, and you just try to register it with the punk out of this mark to estimate this little co ordinance system that's gonna give you garbage.
+
+391
+00:38:14,490 --> 00:38:18,390
+嗯?这样你就能掌握现场情况了。
+Um? So then you're gonna have a field grasp.
+
+392
+00:38:19,350 --> 00:38:28,360
+你真正想要做的是附加一个坐标系，但是你想要附加它，不是在某个任意的位置，就像一个刚体。
+What you really want to do is you want to attach a coordinate system, all right, but you want to attach it, not at like some arbitrary position, like the like a rigid object.
+
+393
+00:38:28,520 --> 00:38:35,000
+你想把它附加到你想要执行抓取的任何特征上。
+You want to attach it to whatever feature is the one that you want to um, that you want to execute the grasp with.
+
+394
+00:38:35,160 --> 00:38:41,070
+在这个例子中，草被放置在杯子的边缘。
+So in this instance here, the grass is executed at the at the at the rim of the mug.
+
+395
+00:38:41,350 --> 00:38:43,970
+所以你要把系统连接到杯子的边缘上。
+And so you want to attach according system to the rim of the mug.
+
+396
+00:38:43,990 --> 00:38:48,950
+然后你想，你想估计那个坐标系在新物体上的位置。
+And then you want to simm You want to estimate the location of that coordinate system on the new object.
+
+397
+00:38:49,780 --> 00:38:51,900
+然后你的把握就会成功。
+And then your grasp will succeed.
+
+398
+00:38:53,540 --> 00:38:55,640
+放置也是一样，同样的故事。
+And similarly for placing, same story.
+
+399
+00:38:55,800 --> 00:39:00,560
+对于放置，然而，坐标系假设你已经拿起了物体，现在你想要放置它。
+So for placing, however, the coordinate system that imagine you had already picked up the object, and now you wanted to place it.
+
+400
+00:39:00,720 --> 00:39:02,160
+什么坐标系对放置是重要的?
+What coordinate system is important for placing?
+
+401
+00:39:02,180 --> 00:39:06,220
+在这种情况下，是地板。
+Well, in this case, it's the the the floor.
+
+402
+00:39:06,810 --> 00:39:09,410
+对不起，不是母语为英语的人。不知道这叫什么。
+Sorry, not a native speaker. Not sure what this is called.
+
+403
+00:39:09,590 --> 00:39:10,350
+标记的底部。
+The the bottom of the mark.
+
+404
+00:39:10,510 --> 00:39:15,630
+对不起。嗯。你想要估计与标记底部相连的坐标系。
+sorry. Um. So you want to estimate the coordinate system that is attached to the bottom of the mark.
+
+405
+00:39:15,790 --> 00:39:17,650
+然后，你就会成功。
+And then again, you'll place and will succeed.
+
+406
+00:39:20,560 --> 00:39:28,730
+嗯。所以这就是，就像这就是我们所面临的问题的形式化。
+Um. So this is then, like this is then the formalization of the problem that we cast ourselves with.
+
+407
+00:39:28,890 --> 00:39:36,740
+所以形式化就是我们想要对应任何与特定任务相关的局部坐标系。
+So that the the formalization is that we want to correspond and any kind of local coordinate frame that is relevant for a particular task.
+
+408
+00:39:37,540 --> 00:39:42,670
+这里重要的是我们不想描述前面提到的协调。
+And the important thing here is that we do not want to describe this coordin came up front.
+
+409
+00:39:43,050 --> 00:39:51,470
+我们想要，我们想要学习像你一样，呃，呃，你想要能够在任何任务中做这个。
+We want to, we want to learn represent like you, um, uh, you want to be able to do this for any kind of task.
+
+410
+00:39:51,630 --> 00:39:56,690
+而这些，这些你需要匹配的坐标系统，在任务之间是非常广泛的。
+And these, these coordinate systems that you need to match, find and match, are mind very widely between tasks.
+
+411
+00:39:56,850 --> 00:39:59,370
+你不会想要收集这个的。
+You don't want to collect dap that.
+
+412
+00:39:59,430 --> 00:40:01,450
+这是忙碌的。好。那么我们怎么解这个呢?
+That's busy. Good. So how do we solve this?
+
+413
+00:40:01,610 --> 00:40:03,670
+我们建议在没有描述符字段的情况下解决这个问题。
+We propose to solve this with no descriptor fields.
+
+414
+00:40:04,080 --> 00:40:05,080
+我来告诉你这是怎么回事。
+Let me tell you how this works.
+
+415
+00:40:05,240 --> 00:40:15,340
+关键思想如下。想象一下，我们要把我们的小杯子参数化，作为一种神经表征，就像我们之前讲过的一样。
+The key ideas as follows. Imagine we are going to parametric our little mug as A-A neural representation, just the same story that we had already.
+
+416
+00:40:15,500 --> 00:40:20,480
+这是一个小的神经网络它把一个坐标映射到这个坐标的未来表示。
+So this is just a little neural network that maps a coordinate to a future representation of whatever is at that coordinate.
+
+417
+00:40:21,520 --> 00:40:25,060
+所以，我们要把它放在点云上。
+So, and we're going to condition this on the point cloud.
+
+418
+00:40:25,220 --> 00:40:27,900
+之前，我们做过这个我们有一个接收图像的编码器。
+So earlier, we did this thing where we had an encoder that took in an image.
+
+419
+00:40:28,060 --> 00:40:31,080
+现在我们有一个编码器接收点云，同样的事情。
+Now we have an encoder that takes in the point cloud, same thing.
+
+420
+00:40:31,350 --> 00:40:38,240
+这就是这个编码器，接收一个点，给我们一个制作代码，然后我们用它来参数化我们和你的scriptor字段。
+So this is just this encoder, takes in a points out, gives us a making code, and then we use that to parametric our and your scriptor field.
+
+421
+00:40:38,400 --> 00:40:40,830
+现在神经描述域的概念就是你
+And now the idea of the neural descriptor field is you
+
+422
+00:40:41,280 --> 00:40:48,710
+根据X的样本，它将它映射到一个特征表示，它是该坐标的描述符。
+sample according to X, and it math maps it to a feature representation that is a descriptor of that coordinate.
+
+423
+00:40:48,870 --> 00:40:52,810
+它类似于该坐标的特定类语义描述符。
+It's like a class specific semantic descriptor of that coordinate.
+
+424
+00:40:52,970 --> 00:41:00,450
+这意味着，当你移动。当你在三个体中移动一个点时，你希望它映射到，你希望它映射到非常不同的地方。
+What that means is, when you move the when you move the point around in the three volume, you want it to map to, you want to map it too different.
+
+425
+00:41:00,690 --> 00:41:06,890
+嗯描述符。嗯。但是这些描述符应该跨实例匹配。
+Um descriptors. Um. But these descriptors should match across instances.
+
+426
+00:41:07,050 --> 00:41:15,720
+举个例子，如果你把点移动到，如果你把点移动到bug的句柄，那么不管bug的句柄在哪里。
+So for instance, if you move the point to, if you move the point to the handle of the bug, then wherever the handle of the bug is.
+
+427
+00:41:16,060 --> 00:41:19,420
+对于这两个不同的杯子，你需要描述匹配。
+And for that, for these two different mugs, you want the description to match.
+
+428
+00:41:19,580 --> 00:41:22,440
+你想要建立通信。
+So you want to want to establish correspondence.
+
+429
+00:41:23,930 --> 00:41:26,430
+那么如何获得这些描述符呢?
+So how do you obtain these descriptors?
+
+430
+00:41:26,590 --> 00:41:28,800
+你是如何训练这个神经描述场的?
+How do you actually train this neural descriptive field?
+
+431
+00:41:28,960 --> 00:41:35,460
+这是基于我们刚刚讨论过的即时插值。
+And this now is based on the little inside we just discussed with the with the with the instant interpolation.
+
+432
+00:41:35,590 --> 00:41:45,620
+这是基于这样的认识:如果你学习了一个新的场景表征的潜在空间，那么之后的空间已经有了对应的信息。
+This is based on the insight that if you learn a latent space of newal scene representations, then that later space already has information about correspondence.
+
+433
+00:41:47,140 --> 00:41:55,980
+所以练习的意义是我们实际上使用了一个训练前模型，我们要解决我们要训练一个占用网络从所有美妙的论文中测量。
+So what that means of practice is that we're actually using a pre train model, and we're going to solve we're going to train an occupancy network from measured at all fantastic paper.
+
+434
+00:41:56,160 --> 00:42:09,540
+我们要训练一个占用网络在我们的类的对象,比方说我们班的对象是杯子或者,你知道,一些其他的类对象,我们要训练它自我监督的方式和代码,学习这些形状的潜在空间。
+We're going to train an occupancy network on our class of objects, let's say our class of objects are mugs or, you know, some other class objects, and we're just going to train it in a self supervised manner to just and code, to just learn a latent space of these shapes.
+
+435
+00:42:09,700 --> 00:42:10,840
+这只是一个形状空间。
+This is just a shape space.
+
+436
+00:42:12,280 --> 00:42:15,300
+这和SDF的演示非常相似。
+And this is very, very similar to the SDF for presentation.
+
+437
+00:42:15,360 --> 00:42:23,110
+所以想象一下，如果你不熟悉我们刚才描述的这条线，有这个新的奥伦多和这个新的场景再现。
+So just imagine, in case you're not familiar with this line of work that we just described, this case of having this new Orendo and this new scene representation.
+
+438
+00:42:23,270 --> 00:42:28,360
+假设现在我们也有了这个新的场景表示，但现在我们实际上只使用了它的边距部分。
+Imagine now we have this new scene representation as well, but now we are really only using the side distance part of it.
+
+439
+00:42:28,520 --> 00:42:29,800
+我们并没有使用新的奥伦德拉。
+We are not actually using the new Orendra.
+
+440
+00:42:29,960 --> 00:42:32,140
+我们只是在使用几何参数化。
+We are just using the geometry parametization.
+
+441
+00:42:32,850 --> 00:42:46,460
+好吧?我们的火车。其中的关键是，如果我们现在取特征，比如现在，我们取一个坐标，我们做一个穿过，我们会看到表示，这给了我们一组特征，每一层都显示出来了。
+Okay? We train that. And then the key inside is that if we now just take the feature, like now, we take a coordinate, we do a ford pass through, that we will see representation, and that gives us a set of features that every layer and it shows.
+
+442
+00:42:46,620 --> 00:42:52,480
+事实证明，如果你只是把这些特性弄脏了，这是语义对应的一个很好的描述符。
+It turns out that if you just take these features and you contaminate them, that is a really good descriptor of semantic correspondents.
+
+443
+00:42:52,740 --> 00:42:55,170
+有很多方法可以考虑这个问题。
+There are lots of ways to think about this.
+
+444
+00:42:55,330 --> 00:42:59,910
+现在，你可以相信我这是真的，你可以自己试一下。
+For now, you can just believe me that that's true, and you can try it out yourself in correctly.
+
+445
+00:43:00,250 --> 00:43:04,450
+但这也是有原因的为什么这是一个有意义的假设。
+But there's also reasons for why that happens and why that is a meaningful thing to assume.
+
+446
+00:43:04,510 --> 00:43:06,430
+我们在论文中有描述。
+We have a description of that in the paper.
+
+447
+00:43:06,790 --> 00:43:09,330
+嗯，但是，嗯，你嗯，是的。
+Um, but, uh, you uh, yeah.
+
+448
+00:43:09,610 --> 00:43:11,970
+不幸的是，我们没有足够的时间来思考这个问题。
+Unfortunately, we won't have enough time to think about that.
+
+449
+00:43:12,610 --> 00:43:15,150
+好的，结果证明这很有效。
+Okay, and then it turns out that that works really well.
+
+450
+00:43:15,310 --> 00:43:18,890
+这就是你如何训练描述域让它在自我监督任务中进行训练。
+Okay, so this is how you train the descriptive fields to just train it on a self supervised task.
+
+451
+00:43:19,120 --> 00:43:22,840
+现在我们来解决第二个问题。
+Um, can now we tackle the 2nd problem.
+
+452
+00:43:23,000 --> 00:43:26,900
+第二个问题是暂停泛化。
+The 2nd problem is that of pause generalization.
+
+453
+00:43:27,180 --> 00:43:36,940
+现在的问题是，如果我们描述的东西，是可行的，如果这些杯子在训练时处于相同的姿势。
+So the problem now is if the thing that we describe, that would work, if the the mugs are in the same poses that were observed at training time.
+
+454
+00:43:37,420 --> 00:43:43,210
+但是现在，如果杯子处于完全不同的脉冲中，点云被旋转了，或者类似的情况?
+But now what if the mug is in a completely different pulse, so the point cloud is now rotated, or something like that?
+
+455
+00:43:43,690 --> 00:43:49,830
+您仍然希望能够匹配这些描述符，但不幸的是，编码器不会一般化到这些东西。
+You still want to be able to match these descriptors, but unfortunately, your encoder is not going to generalize to these things.
+
+456
+00:43:49,990 --> 00:43:54,120
+如果编码器没有在那个方向上看到这个对象，你就倒霉了。
+So if your encoder hasn't seen that object in that orientation, you're out of luck.
+
+457
+00:43:57,080 --> 00:44:03,930
+抱歉，这在实践中意味着基本上如果你试着这样做的话你的通信将会是错误的。
+And what that, sorry, what that means in practice is basically that if you try to do this your the correspondence is going to be wrong.
+
+458
+00:44:04,090 --> 00:44:05,910
+它可能不会给你任何合理的东西。
+It might not give you anything reasonable whatsoever.
+
+459
+00:44:06,150 --> 00:44:07,990
+好吧，我们要怎么解决这个问题?
+Okay, how are we going to fix that?
+
+460
+00:44:08,340 --> 00:44:17,030
+嗯?解决这个问题的方法是，让UM编码器sc3为acvariant。
+UM? The way we're going to fix it is we're going to make our little UM encoder sc3 acvariant.
+
+461
+00:44:17,190 --> 00:44:19,250
+我们要把整个场地做成一个三英亩的场地。
+We're going to make the whole thing as a three acre band.
+
+462
+00:44:19,550 --> 00:44:23,710
+ssri Acuran是什么意思?经验意味着，在这个例子中，我看到了三个获得者。
+What does ssri Acuran mean? Experience means mean, in this case, I see three acquivarians.
+
+463
+00:44:23,870 --> 00:44:34,200
+意思是如果我们指出这一点然后被任意的，3变换修改，然后我们想要我们的描述符场通过完全相同的变换。
+Means that if we take the point out and be um and be modified by some arbitrary, I see, three transform, then we want our descriptor field to transform by exactly the same essay.
+
+464
+00:44:34,360 --> 00:44:41,840
+三个变换。这不是，我们要采取的方式这不是我们的贡献。
+Three transform. And this is not, um, the the way we're going to do This is not our contribution.
+
+465
+00:44:41,940 --> 00:44:45,520
+这是一篇叫做Becton神经元的论文，这是一篇很棒的论文。
+This is a paper called Becton Neurons, which is a great paper.
+
+466
+00:44:45,680 --> 00:44:53,350
+你应该去看看。基本上，受害者跑用了一个编码器的智能参数化来保证这是真的。
+You should check it out. And basically, victim Runs uses a smart parametization of the encoder to guarantee that that is true.
+
+467
+00:44:54,000 --> 00:44:56,440
+不幸的是，我们没有时间讲细节。
+And we unfortunately won't have time to go to detail.
+
+468
+00:44:56,880 --> 00:45:05,610
+但基本上现在你有了A-I，我保证如果你修改了要点，那么你的描述也会被相同的东西修改。
+But basically now you have A-I guarantee that if you modify the pointout, then your description feels also, is modified by the same thing.
+
+469
+00:45:05,770 --> 00:45:11,940
+现在你有一个更强的保证，如果你看到一个分布之外的极点，那么你仍然会得到一些可见的东西。
+And now you have a much stronger guarantee that if you see an out of distribution poles, then you're still gonna get something visible.
+
+470
+00:45:13,020 --> 00:45:17,290
+好了，最后，我们怎么用这个来进行对应匹配呢?
+OK, so now finally, how do we use this for correspondence matching?
+
+471
+00:45:17,450 --> 00:45:22,130
+到目前为止，我们有描述符，但我们还没有办法建立对应关系。
+So so far, we have descriptors, but we don't have no way of actually establishing correspondence.
+
+472
+00:45:22,290 --> 00:45:26,190
+比如我给你两个不同的物体，你怎么找到彼此对应的点?
+Like if I give you two different objects, how do you actually find the points that correspond to each other?
+
+473
+00:45:26,350 --> 00:45:28,250
+假设这些点在左上角。
+So let's say you have the points out here at the top left.
+
+474
+00:45:28,430 --> 00:45:31,430
+如果沾沾自喜，你有这个目标点用绿色标出。
+If the smug, you have this target point that is marked in green here.
+
+475
+00:45:31,590 --> 00:45:33,090
+就像把手上的某个地方。
+So it's like somewhere on the handle.
+
+476
+00:45:34,730 --> 00:45:36,570
+现在得到这个新的点。
+And now you get this new point.
+
+477
+00:45:36,690 --> 00:45:44,220
+抱歉，现在你在一个新的脉冲中得到这个新的bug，你想找到对应的点。
+Sorry, now you get this new bug in a new pulse, and you want to find the corresponding point.
+
+478
+00:45:44,480 --> 00:45:45,280
+也许你开始
+So maybe you start out
+
+479
+00:45:45,480 --> 00:45:53,100
+对于这个，这个未知的，随机的点X，现在你想找到这个点对应于标记上的绿点。
+with this, with this unknown, with this random point X, and now you want to find the point that corresponds to the group green point on the mark that you had.
+
+480
+00:45:53,360 --> 00:45:55,280
+方法就是最小化这里的能量。
+And the way you do this is you minimize this energy here.
+
+481
+00:45:55,440 --> 00:46:00,140
+所以有这个，这个能量，就是距离L2距离，描述符之间的一个距离。
+So there is this, this energy, which is just the distance L2 distance, while one distance between the descriptors.
+
+482
+00:46:00,740 --> 00:46:09,110
+在右边的内部，你可以看到能源景观是什么样的，在这里，我们只是把它密集地取样到一个深处，你可以看到最小值确实是在手柄处。
+And here at the right inside, you can see what that energy landscape looks like out, in which we just sample it densely into a deep And you can see that the minimum is indeed at the handle.
+
+483
+00:46:09,490 --> 00:46:12,440
+太好了。所以这是这个能量的最小值。
+So great. So this is the minimizer of this, of this energy.
+
+484
+00:46:12,620 --> 00:46:15,600
+所以你可以找到对应的方法来最小化能量。
+So the way you can find correspondences to just minimize this energy.
+
+485
+00:46:16,120 --> 00:46:18,380
+这个，这个对我来说很好用。
+And this, this works to me quite nicely.
+
+486
+00:46:18,540 --> 00:46:23,870
+举个例子。所以这是一个带点的杯子我们只是我们决定。
+So you can see example. So this is a is a mug with a point that we just that we that we determine.
+
+487
+00:46:24,090 --> 00:46:28,030
+这是能量的样子，不同的新杯子。
+And then this is what the energy looks like, um, for for different new mugs.
+
+488
+00:46:28,050 --> 00:46:32,090
+你会发现，你对自己的经历有着完美的诠释。
+And you can really see that, uh, you have perfect esay to your experience.
+
+489
+00:46:32,130 --> 00:46:40,120
+如果你平移或旋转杯子，整个描述符字段保持稳定。
+So if you translate or rotate the mug, the whole thing stays perfectly stable the descriptor field.
+
+490
+00:46:40,280 --> 00:46:44,950
+你总能看到最小化器还是很合理的。
+And you can always see that the minimizer stays pretty, pretty reasonable.
+
+491
+00:46:46,430 --> 00:46:53,770
+所以这里你可以看到一个失败的例子，它实际上没有完全得到正确的新娘指。
+So here you can actually see what is somewhat of a failure case, where it doesn't actually perfectly get the right the bride pointed.
+
+492
+00:46:54,490 --> 00:47:00,990
+好了，这就是整个过程和趋势，我们只需要解决最后一个小问题。
+Okay, so this is now the whole thing and trend We only have to solve one final, last little problem.
+
+493
+00:47:01,150 --> 00:47:03,410
+到目前为止，我们已经建立了点通讯员。
+So so far, we have established point correspondent.
+
+494
+00:47:03,650 --> 00:47:06,790
+但一开始我们说我们需要的是对应的坐标。
+But initially we said what we need is we need to correspond coordinate.
+
+495
+00:47:06,950 --> 00:47:16,250
+点的扇子有三个自由度，嗯，开放的，因为你可以围绕点旋转夹持器，那不会改变任何东西。
+Fans that points points leave three degrees of freedom, um open, because you could rotate the gripper around the point, and that wouldn't change anything.
+
+496
+00:47:16,630 --> 00:47:18,730
+那么我们如何参数化系统中的支持呢?
+So how do we parameterize support in system?
+
+497
+00:47:18,770 --> 00:47:22,750
+这真的很简单。而不是使用单个点，你只是失去了一点点云。
+It's really quite simple. Instead of using a single point, you just lose a little point cloud.
+
+498
+00:47:22,910 --> 00:47:28,210
+所以你只要定义一个小点云，然后对于每个点，你得到一个描述符。
+So you just define a little point cloud, and then for each of the points, you get a descriptor.
+
+499
+00:47:28,370 --> 00:47:32,650
+你中断所有点的描述符，然后你称它为你的描述符，还有点。
+You discontinate all of the descriptors of all the points, and then you call that your descriptor, and the point out.
+
+500
+00:47:32,810 --> 00:47:38,870
+现在，A- s - c 3有一个动作，一个消化动作，在这个点上。
+Now, um, A um, A-S-C three has an action, an entravial action, on this point lout.
+
+501
+00:47:38,930 --> 00:47:44,080
+现在，如果你移动这个点，这实际上限制了你作为一个3变换对于那个点计数。
+So now, if you move the point out around, that actually does constrain you as a three transform for that point count.
+
+502
+00:47:44,760 --> 00:47:47,650
+完美的。这很好。嗯。
+Perfect. And so that's great. Um.
+
+503
+00:47:47,690 --> 00:47:53,290
+现在我们可以对应姿势，而不仅仅是点。
+And now we can actually correspond poses, not just points.
+
+504
+00:47:54,170 --> 00:47:58,570
+太棒了。所以,嗯。现在，又是同样的故事。
+Fantastic. So, um. And now, uh, same story again.
+
+505
+00:47:58,890 --> 00:48:02,920
+我们现在基本上得到了这个小点。
+We basically now get a um and this little point out.
+
+506
+00:48:03,080 --> 00:48:10,020
+现在我们连接到抓手上，在演示中，我们只记录抓手上所有点的描述符。
+Now we just attached to the gripper, and at demonstration, we just record the descriptors of all of the points on the gripper.
+
+507
+00:48:10,390 --> 00:48:21,170
+现在，在测试的时候，我们要做的就是初始化这个点指向某个任意位置，然后最小化描述距离，这样就会把点移到正确的位置。
+And now, at test time, all we have to do is for we initialize this point out that some arbitrary location, and we dis minimize the descriptive distance, and that will move our point out to the right position.
+
+508
+00:48:23,010 --> 00:48:24,430
+这就是它的样子。
+This is what this looks like.
+
+509
+00:48:24,590 --> 00:48:28,140
+这里有个小例子。代码是在线的，所以你可以尝试自己开始。
+Here's a little example. The code is online, so you can actually try to start yourself.
+
+510
+00:48:28,340 --> 00:48:30,440
+这里你可以看到优化是什么样的。
+So here you can see what that optimization looks like.
+
+511
+00:48:30,600 --> 00:48:33,960
+绿色的点是。这是我们连接到抓手上的点。
+So the green point out is the it's the point out that we attach to the gripper.
+
+512
+00:48:34,120 --> 00:48:36,540
+这些是我们计算描述符的点。
+These are the points that we compute descriptors for.
+
+513
+00:48:36,920 --> 00:48:48,900
+这是演示。我们从这里开始，从这个货车脉冲开始，这是我们在最小化描述差之后转换的结果，然后我们对草也这样做。
+And this is the demonstration. And we started out at this, at this van impulse here, and this is what we converted to after we minimize the the descriptive difference, and then we do that for the grass.
+
+514
+00:48:49,160 --> 00:48:52,040
+现在我们对安置任务做同样的事情。
+And now we do the same thing for the placement task.
+
+515
+00:48:52,200 --> 00:49:00,700
+对于位置，我们只在放置目标上加上一个小点，然后我们再做同样的优化。
+So for the place, we just attach a little, a little point out to the placement target, and then we do the same optimization again.
+
+516
+00:49:01,140 --> 00:49:05,720
+我应该说，这只是解决了抓手姿势。
+And I should say this is, this is all really only solving for the gripper poses.
+
+517
+00:49:05,760 --> 00:49:08,380
+所有的计划，运动和避免碰撞。
+All the planning and the motion and the collision avoidance.
+
+518
+00:49:08,540 --> 00:49:10,580
+这并不是经典计划的全部。
+This is not that is all done with classic planning.
+
+519
+00:49:10,740 --> 00:49:11,720
+所以这些都不存在。
+So there is none of that.
+
+520
+00:49:12,690 --> 00:49:27,420
+好吧?现在很酷的事情是，我们对杯子的表现真的，嗯，不了解，嗯，你最后要连接的坐标系。
+Okay? And the cool thing now is that, right our, our representation of the mug is really, um, egnostic to what, um, what coordinate system you're going to attach at the end.
+
+521
+00:49:27,430 --> 00:49:38,070
+所以在我们学习了杯子的表示方法之后，仅仅通过在演示时选取不同的通过采样不同的点，我们基本上可以在那个点上附加一个坐标系。
+So after we have learned our representation of mugs, just by picking different by sampling different points at demonstration time, we can basically attach a coordin frame at that point.
+
+522
+00:49:38,070 --> 00:49:42,870
+比方说，你想根据坐标系把它连接到这个点上。
+So let's say, for instance, you wanted to attach according frame to this, to this point here.
+
+523
+00:49:42,890 --> 00:49:52,780
+你要做的是对靠近那个点的点进行抽样，然后每个点都会给你一个Scriptor如果你选择这些点会发生什么?
+What you want to do is you want to sample your points close to that point, and then each of your points is going to give you a Scriptor what would happen if you would pick these points?
+
+524
+00:49:52,780 --> 00:49:55,880
+在交流的时候不是这样。
+Um, not at the point of interactions.
+
+525
+00:49:55,900 --> 00:50:04,240
+举个例子，你的交互点是边缘，但现在你要选择采样杯子把手上的点。
+So let's say, for instance, your point of interaction was the rim, but now you're going to choose to sample the points on the on the hang handle of the mug.
+
+526
+00:50:04,420 --> 00:50:07,420
+这将导致任务失败。
+That is going to result in failed tasks.
+
+527
+00:50:07,580 --> 00:50:16,340
+为什么呢?因为如果你这样做，那么你提取的描述符就是句柄的描述符，即使你感兴趣的是夹持器，是边缘。
+And why is that? Because if you do that, then the descriptor that you extract it is the descriptor of the handle, even though the thing you're interested in is the gripper, is the is the rim.
+
+528
+00:50:16,500 --> 00:50:18,720
+所以要对应句柄。
+So you're going to correspond the handle.
+
+529
+00:50:19,640 --> 00:50:23,320
+基本上你要表示这个坐标系相对于这个把手。
+So basically you're going to express this coordinate system relative to the handle.
+
+530
+00:50:23,340 --> 00:50:27,500
+但是你想用一个相对的工具来表示这个坐标系，就是这个点。
+But what you want to express this coordinate system a relative tool, is that point.
+
+531
+00:50:27,800 --> 00:50:32,710
+这里有一个启发式，就是，你如何，如何选择这些点?
+So there is a heuristic here, which is, how do you, how do you pick these points?
+
+532
+00:50:33,010 --> 00:50:46,190
+非常合理的启发式是你,比如,你样本点的边界框爪,然后基本交互点是你要样本点,然后将导致一分之一合理的连接系统。
+And very reasonable heuristic for this is you just, for instance, you sample those points in the bounding box of the gripper, and then basically the point of interaction is where you're going to sample the points, and then that is going to result in a in a reasonable cording system.
+
+533
+00:50:49,390 --> 00:50:50,970
+好吧?这是什么
+Okay? And then this is what
+
+534
+00:50:51,050 --> 00:50:54,860
+这是怎样的。我是索尔维，记录这个物体的指向。
+this looks like. I'm Solvie, record the point out of this object.
+
+535
+00:50:55,080 --> 00:50:58,340
+我们记录一个抓握姿势。我们记录一个目标姿势。
+We record a grasping pose. We record a target pose.
+
+536
+00:50:58,340 --> 00:51:02,560
+嗯。现在我们做了5到10次，如果所有的dismug。
+Um. And now we do that for like five to ten times with all if dismugs.
+
+537
+00:51:02,720 --> 00:51:10,430
+注意，它们都是直立的，这些是演示杯子，然后我们会在测试时，用我们的模型自己解决这个任务，我是这样的。
+Note that they're all in upright poses so And so these are the demo mugs, and then we're going to self try solving the task with our model at testtime, me like this.
+
+538
+00:51:10,670 --> 00:51:12,130
+这就是它的样子。
+And this is what this looks like.
+
+539
+00:51:12,290 --> 00:51:13,480
+这是汤姆马克杯。
+So this is a tom mug.
+
+540
+00:51:13,640 --> 00:51:17,520
+这是一个小杯子。花时间训练。
+This is a small mug. And spend the training time.
+
+541
+00:51:17,680 --> 00:51:20,440
+这是一个杯子。一个奇怪的姿势也是看不见的。
+This is a mug. And a weird pose also unseen.
+
+542
+00:51:20,600 --> 00:51:23,300
+这是在演示中看不到的训练时间，对吧?
+A training time for like, not seen in the demonstrations, right?
+
+543
+00:51:23,900 --> 00:51:29,260
+但是因为我们的处方是，是的，如果我们准备好了，没什么大不了的。
+But because our our prescription field is yes, if we are prepared, no big deal.
+
+544
+00:51:30,980 --> 00:51:37,670
+这很酷。也适用于其他类型的物体，比如，我不知道什么东西适用于粗体。
+So, so works quite cool. Also works with other kinds of objects, like, I don't know what works with bolds.
+
+545
+00:51:37,870 --> 00:51:39,770
+这也是它的局限性。
+This is the This is also the limitation.
+
+546
+00:51:39,930 --> 00:51:45,540
+它适用于任何你能学到的东西，比如空间中的树叶，这基本上意味着单个物体。
+It works with anything that you can learn, such a leaf in space, for which, which basically means single objects.
+
+547
+00:51:46,020 --> 00:51:57,590
+嗯。注意，如果推断失败，如果你推断的表示法，比如你推断的居住者字段，是错误的，那么你的任务也会是错误的。
+Um. And note that if inference fails, so if somehow the representation that you inferring, like the the occupants field that you're inferring, is wrong, then your task is also going to be wrong.
+
+548
+00:51:57,750 --> 00:52:07,360
+所以如果你，如果你有，一些非常奇怪的东西，在你的潜在空间里是无法表达的，那么你。那么你什么都做不了，那么这就会失败。
+So if you're, if you have, like, some really weird object that is not really, that isn't expressible in your latent space, then you're then there's nothing you can do, then this is going to fail.
+
+549
+00:52:07,760 --> 00:52:13,820
+好的,嗯。所以这是，这是，这是第二个例子泛化能给你带来什么?
+Okay, um. So this is, this is the This is the 2nd instance of what does generalization buy you?
+
+550
+00:52:13,920 --> 00:52:20,150
+在这种情况下，泛化，就像学习状态空间一样，已经给了你一个合理的8来完成你可能要考虑的任务。
+In this case, generalization, just like learning the state space, already gives you a reasonable eight in space for the task that you might consider.
+
+551
+00:52:20,310 --> 00:52:25,650
+然后在测试的时候，你可以用这些你学过的表现来解决有趣的任务。
+And then at test time, you can use these representations that you have learned to solve interesting tasks.
+
+552
+00:52:27,710 --> 00:52:30,250
+酷。这真的很酷。
+Cool. So this, this is really cool.
+
+553
+00:52:30,270 --> 00:52:32,970
+我想，是的，我真的想强调每个人都需要再次使用。
+And I want to, yeah, and I really want to highlight everyone's got to use again.
+
+554
+00:52:33,070 --> 00:52:34,050
+工作真的很酷。
+It was really cool to work.
+
+555
+00:52:34,210 --> 00:52:39,050
+这是我第一次与Alberto合作，第二次与Pocket合作。
+This was the 1st time I collaborated with Alberto, and the 2nd time I collaborate with Pocket.
+
+556
+00:52:39,210 --> 00:52:44,860
+安德莉亚很棒。非常非常棒的茶。
+And Andrea is awesome. Really fantastic, really fantastic, really fantastic tea.
+
+557
+00:52:46,180 --> 00:52:54,420
+好了，这就是我想要展示的关于自我支持的应用，视觉表征，学习。
+Okay, so now this is now the applications that that I wanted to show for for this notion of self support, seen representation, learning.
+
+558
+00:52:54,580 --> 00:52:58,130
+我想我想说，我想用我是另一个东西。
+And I think I want to talk, I want to use I am one more thing.
+
+559
+00:52:58,150 --> 00:53:05,890
+这些新领域有很多不同的应用，这些三维函数，这些三维场景的新网络表示。
+So there's like lots of different applications of these newal fields, which are these three D functions, these new network representations of three D scenes.
+
+560
+00:53:06,310 --> 00:53:09,370
+你知道，黑帮里有很多令人兴奋的东西。
+And, you know, there's like, really exciting stuff on gangs.
+
+561
+00:53:09,570 --> 00:53:15,590
+你知道，如果你知道，sag和be Three, sag和be Three实际上已经没有任何传统的尼尔网络了，而不是五年前的dance。
+You know, if you know, sag and be Three, sag and Be Three actually doesn't have any conventional neal networks anymore, as opposed to dance five years ago.
+
+562
+00:53:15,770 --> 00:53:17,290
+这些都是新的领域。
+This is all these new fields by now.
+
+563
+00:53:17,310 --> 00:53:21,440
+这些都是新的网络它们将坐标映射到，在这个例子中，颜色。
+These are all these new networks that map coordinates to, in this case, colors.
+
+564
+00:53:21,780 --> 00:53:23,900
+还有3D手链，还有各种很酷的东西。
+And there's 3D gands, and there's all kinds of cool stuff.
+
+565
+00:53:24,060 --> 00:53:31,360
+我们有一篇关于这方面的评论论文，叫做《视觉计算及超越中的骡场》，它也有一部分是关于机器人的，这可能是一个很好的起点。
+And we have a review paper on this, which is called Mule Fields in Visual Computing and Beyond, which also has a part on robotics, which that might be a good starting point.
+
+566
+00:53:31,840 --> 00:53:34,420
+好了，接下来呢?我还有四分钟。
+Okay, so what's next? So I have four more minutes.
+
+567
+00:53:34,580 --> 00:53:40,150
+我将用4分钟的时间来讨论哪些东西还没有被探索，这是一个开放问题吗?
+I'm going to use, see, 4 min to talk out what are things that are not explored, get an open problem?
+
+568
+00:53:40,310 --> 00:53:41,570
+当然，有很多这样的例子。
+There's of course, many of those.
+
+569
+00:53:41,990 --> 00:53:43,870
+我要很快地过一遍。
+And I'm going to have to go through this quite quickly.
+
+570
+00:53:43,970 --> 00:53:50,060
+但最核心的一点是，如果你看这张图，你从底层PC得到的表现是非常丰富的。
+But the core point again, is that if you look at this image, the representation you get from the underlying PC is incredibly rich.
+
+571
+00:53:50,220 --> 00:53:54,070
+它包含了很多你看不到的关于这三个场景的信息。
+And it includes lots of information about the three scene that you cannot see.
+
+572
+00:53:54,230 --> 00:54:01,940
+所以，你知道，你知道球大概有多重，你知道如果你赤脚走过草地会是什么感觉，或者如果你抚摸狗狗会是什么感觉。
+So, you know, you know how heavy the ball will be approximately, you know how the grass will feel like if you walked over a barefoot, or how the dog would feel if you petted it.
+
+573
+00:54:02,100 --> 00:54:06,940
+或者你知道太阳在照耀，有树挡住了太阳，这就是为什么有这些阴影。
+Or you know that the the sun is shining, and there's trees that are like, blocking the sun, that's why there's all these shadows.
+
+574
+00:54:06,960 --> 00:54:10,040
+所以你所做的推断是非常非常令人印象深刻的。
+So the inference you do is really, really with the impressive um.
+
+575
+00:54:10,160 --> 00:54:19,900
+如果你有这样的表示法你只能从视觉中学习，或者如果你有这样的表示法，那么这些对机器人来说会非常有用。
+And if you had representations like this that you can just learn only from vision, or like if you had representations like this, then these would be incredibly useful for robotics.
+
+576
+00:54:20,060 --> 00:54:24,400
+对吧?一个问题是关于以对象为中心的表示。
+Right? Okay, so one question is on object centric representations.
+
+577
+00:54:24,690 --> 00:54:31,750
+最近有一篇论文将其应用于机器人，就像，他们使用物体中心神经。
+And there has actually recently been a paper that uses this for robotics as well, which is like, they use an object centric nerve.
+
+578
+00:54:31,950 --> 00:54:36,470
+我忘了写在这里了，不过，记得看看。
+I forgot to include it here, but, uh, do check it out.
+
+579
+00:54:36,510 --> 00:54:40,330
+嗯。我们在这方面也做了一些工作。
+Um. So we also have work coming out on this.
+
+580
+00:54:40,490 --> 00:54:50,970
+以对象为中心是很重要的，因为如果有一个场景有很多不同的对象，你希望能够把那个传递到单个对象，然后你希望能够表达这些不同对象上的任务。
+So objectcentric is really important, because you want to be able, if there's a scene with lots of different objects, you want to be able to pass that into the single objects, and then you want to be able to express tasks on these different objects.
+
+581
+00:54:51,150 --> 00:54:59,910
+我们有一篇论文，即将发表，是关于学生的，主要是学习如何以自我监督的方式将场景分解成物体。
+And we have a paper, um that is going to come out on arch Iffy Student, that basically learns to to decompose scenes into objects in a self supervised manner.
+
+582
+00:54:59,930 --> 00:55:03,610
+所以仅仅从图像中，你就可以学习物体的三维表示。
+So just from images, you can learn these three D representations of objects.
+
+583
+00:55:03,630 --> 00:55:05,510
+在这种情况下，这些是光场。
+In this case, these are light fields.
+
+584
+00:55:05,990 --> 00:55:09,990
+然后你可以，呃，你可以从一个庄严的组合中得到。
+And then you can, uh, you you get from a single majesty composition.
+
+585
+00:55:10,270 --> 00:55:13,990
+然后你可以做编辑之类的事情。
+And then you can do things like editing and things like that.
+
+586
+00:55:14,070 --> 00:55:22,010
+这是由Cameron和copen领导的工作，这是与Jajan Wu和其他丰田研究人员的合作。
+So this, this is a work that is led by Cameron and by copen And this is a collaboration with Jajan Wu and other folks at Toyota Research, actually.
+
+587
+00:55:22,170 --> 00:55:33,660
+这真的很酷。然后还有其他的模式你可能会关心，不仅仅是视觉或几何，还有像触觉，触觉，音频，我不知道，柔软。
+So this is really cool. Then there's other modalities that you might care about, not only vision or geometry, also things like touch, haptics, audio, I don't know, softness.
+
+588
+00:55:33,700 --> 00:55:36,760
+有一个一般的问题你如何参数化其他模态?
+And there is this general question of how do you parametize other modalities?
+
+589
+00:55:36,920 --> 00:55:43,690
+这个公式的好处是，作为一个3D场景，作为一个函数，它允许你参数化所有的东西。
+Well, the nice thing about these, about this formulation, as a 3D scene, as a function, is that it really allows you to parameterize all kinds of things.
+
+590
+00:55:43,850 --> 00:55:44,810
+例如，我们有这个
+For instance, and we have this
+
+591
+00:55:45,050 --> 00:55:53,980
+一篇叫做Siren的论文，我们展示了你可以参数化，任何类型的信号，用有正确架构的尼尔网络。
+paper called Siren some time ago where we really show it that you can parametries, any kinds of kind of signal with these, with neal networks that have the right kind of architecture.
+
+592
+00:55:54,280 --> 00:55:58,750
+你可以把它用在非常复杂的3D场景中，像这样，房间大小
+And you can use this for really complicated 3D scenes like this, room scale boom scale
+
+593
+00:55:58,920 --> 00:56:07,110
+几何学。你也可以用它来解偏微分方程和参数化部分防御方程的解，这对其他事情可能很重要。
+geometry. You can also use this for solving partial differential equations and parametizing solutions to partial defense equations, which might be important for other things.
+
+594
+00:56:07,950 --> 00:56:10,830
+然后，这是我非常兴奋的事情。
+And then, and this is something that I'm quite excited about.
+
+595
+00:56:11,130 --> 00:56:13,190
+我们真的做到了，所以时间非常准时。
+And then we've really done so it's exactly on time.
+
+596
+00:56:13,460 --> 00:56:15,820
+这是我有点好奇的东西，对吧?
+So there's this this thing that I'm kind of curious about, right?
+
+597
+00:56:15,880 --> 00:56:22,450
+当我们做，当我们做，嗯，当你想抓住这个物体，对吧?
+So when we do, when we do things like, um, when you think about grasping this object here, right?
+
+598
+00:56:22,810 --> 00:56:37,550
+很多次,当我们将思考如何解决这个问题,我们会考虑考虑计划在3 D,所以我们将我们的手在3 D,然后我们掌握相同的但是如果你打算抓住这个对象,比方说我的手在这里。
+Many, many times, when we would think about how we would solve this problem, is that we would think about thinking about planning this in 3D, so we move our hand in three D, and then we grasp the same But if you plan on grasping this object, I let's say my hand is here.
+
+599
+00:56:37,710 --> 00:56:39,430
+现在我在想，我该怎么问被试?
+And now I think about, how will I ask the subject?
+
+600
+00:56:39,490 --> 00:56:50,330
+我不认为参数化轨迹的方法是先考虑沿着轨迹的点然后自己想，或者，这里有一个包含点，所以我要在这里碰撞，或者，这里没有线索吗?
+I don't think that the way you parameter the trajectory is by thinking about points along the trajectory and then thinking to yourself, or there's, like, there's an included here, so I will collide here, or there's, is there no clue to here?
+
+601
+00:56:50,350 --> 00:56:52,290
+在你来之前，难道一点线索都没有吗?
+Is there no clue to here until you're here?
+
+602
+00:56:52,450 --> 00:56:53,130
+你不是这么做的，对吧?
+That's not how you do it, right?
+
+603
+00:56:53,190 --> 00:56:57,850
+你看到这个，然后你会想，好吧，我的手和这个东西之间没有任何东西，所以我可以抓住它。
+You just see this, and then you're like, okay, there's nothing between me, my hand and this thing, so I can just grasp it.
+
+604
+00:56:57,870 --> 00:57:03,090
+对吧?这就引出了一个问题:在3D中真的应该参数化东西吗?
+Right? So this begs the question Should be really parametized things in 3D at all?
+
+605
+00:57:03,250 --> 00:57:07,840
+或者对于某些任务，也许另一种参数化是合理的?
+Or for some tasks, maybe a different kind of parametization is is reasonable?
+
+606
+00:57:08,100 --> 00:57:11,920
+我们有一篇论文叫做光场网络，我们利用它来绘制英布拉斯的图形。
+And we had this paper actually called Light Field Networks, where we exploit this for Inbras graphics.
+
+607
+00:57:12,180 --> 00:57:23,770
+在Inros Graphics中，有同样的运动你想用我们刚才讨论的方式参数化一个3D场景，渲染总是说，你沿着数组采样很多点，然后这就是你渲染的方式。
+So in Inros Graphics, there is the same motion where you want to parametries a 3D scene in the way we just discussed, and the rendering always says, you sample lots of points along array, and then that's how you do rendering.
+
+608
+00:57:24,110 --> 00:57:33,940
+我们建议直接对种族函数进行参数化，我们对整个射线进行参数化然后问，这条射线是什么颜色的?
+Well, we propose to instead just parametize the function in race based directly, so we just basically take a parametization of the whole ray and then just ask, what color does this ray observe?
+
+609
+00:57:34,500 --> 00:57:37,140
+这样我们就不需要取样和签订协议了。
+And then we don't need to do sampling and treaty at all.
+
+610
+00:57:37,360 --> 00:57:41,100
+我真的认为这也是一个值得思考的有用的问题。
+And I really think this could also be a useful kind of question to think about.
+
+611
+00:57:41,200 --> 00:57:43,440
+很不幸，我得跳过这个，不过没关系。
+So I have to skip off this, unfortunately, but that's fine.
+
+612
+00:57:43,740 --> 00:57:50,800
+所以这基本上是令人失望的，因为有三维表示的替代品，我认为这是值得思考的。
+Um, so this is basically disappointed on there are alternatives to three D representations, and I think this is important to think about.
+
+613
+00:57:50,800 --> 00:57:52,620
+我的演讲到此结束。
+And this really is the end of my talk.
+
+614
+00:57:52,780 --> 00:57:54,180
+所以有很多完整的应用。
+So there's lots of full applications.
+
+615
+00:57:54,340 --> 00:57:57,620
+我们知道，最基本的原则是自我监督。
+The basic principle, as we learn, representation self supervised.
+
+616
+00:57:57,780 --> 00:58:04,300
+然后我们可以把它们应用到各种事情上，从视觉到图形到机器人，嗯，这些都是了不起的人。
+And then we can apply them to all kinds of things, from vision to graphics to robotics and, um, these are all fantastic people.
+
+617
+00:58:04,460 --> 00:58:08,400
+如果你有机会与他们中的任何一个一起工作，我强烈推荐它。
+If you get the chance to work with any of them, I cannot recommend it highly enough.
+
+618
+00:58:09,560 --> 00:58:11,820
+非常感谢你们听我的演讲。
+And thanks so much for listening to my talk.
+
+619
+00:58:11,980 --> 00:58:16,090
+如果有任何问题，尽管提出来。
+And if there's any questions, feel free to feel free to ask away.
+
+620
+00:58:26,970 --> 00:58:28,830
+我感谢你。文森特，太棒了。
+I thank you. vincent, that was amazing.
+
+621
+00:58:28,930 --> 00:58:37,460
+说话。解决一个关于上一个项目的问题，在这个项目中，你谈到了使用相同的表示对生产控制进行建模。
+Talk. Solve a question about, uh, the previous project where you talk about model productive control using the same representation.
+
+622
+00:58:37,740 --> 00:58:48,670
+我注意到了这一点。你试图建立的动态模型基本上是，场景本身的一种编码状态。
+So I noticed that. So, so the dynamics model that you were trying to build was basically, um, an encoded state of the scene itself.
+
+623
+00:58:48,710 --> 00:58:54,950
+所以我在想，是的，就像机器人一样，当我们做MPC的时候，我们经常，我自己为机器人建立模型，对吧?
+So I'm wondering, yeah, so, like robotics, when we do the MPC, we often, I built the model for the robot yourself, right?
+
+624
+00:58:54,970 --> 00:59:01,180
+但这里是真实的场景，包括机器人的场景，还有水和其他一切。
+But here it's actually the scene, which includes the robot the scene, as well as the water and everything.
+
+625
+00:59:01,480 --> 00:59:10,380
+所以我在想，如果我改变水的颜色，或者如果我改变容器的形状，会不会让MPC更脆?
+So so I wonder, like, would that make MPC like more Britle like, if I change the color of the water, or or if I change the shape of the container, would that cause some problems?
+
+626
+00:59:11,080 --> 00:59:14,480
+这是一个很好的问题。答案是肯定的。
+That's a fantastic question. And the answers yes.
+
+627
+00:59:14,660 --> 00:59:17,920
+所以这确实是，这确实是，确实是这样。
+So this is indeed, this is indeed, this is indeed the case.
+
+628
+00:59:18,260 --> 00:59:22,460
+这与，这与这里有一个很深的，很深的内在联系。
+And this relates to, this relates to there's actually a deep, deep inside here.
+
+629
+00:59:22,520 --> 00:59:34,700
+这也是逆向图形中一个基本的问题，你所指出的问题，是你有一个组成的概念。
+This is also something that is a fundamental question in in inverse graphics as well, which the problem that you're pointing to, is one where you have a notion of compositionality.
+
+630
+00:59:34,860 --> 00:59:47,440
+现场的状态,嗯,可以,你可以考虑状态空间就像一个巨大的因素,包括机器人的状态,包括现场的状态,水的状态,所有的东西,你只代表整个事情是一个巨大的因素。
+So the state of the scene, um, you can, you can think about the state space as just like a huge factor, which includes the state of the robot, which includes the state of the scene, the state of the water, all of the things, and you just represent the whole thing as a huge factor.
+
+631
+00:59:47,470 --> 00:59:59,860
+嗯。如果你，如果你用那种方式思考这个场景，这就是我们在这里面对它的方式，因为我们的国家只是一个在法庭上的国家，那么发生的是一个训练时间，你得到。
+Um. And if you, if you think about the scene in that way, which is exactly the way we're facing it here, because our state is just a state in court, then what happens is that a training time, you get.
+
+632
+00:59:59,940 --> 01:00:04,460
+演示，每个演示都是这个高维空间中的一个点。
+Demonstrations, and each of these demonstrations is a single point in this very high dimensional space.
+
+633
+01:00:05,900 --> 01:00:07,630
+而现在的情况是你不能
+And what now happens is you cannot
+
+634
+01:00:08,080 --> 01:00:11,980
+独立地改变向量的部分。
+change parts of that vector independently of each other.
+
+635
+01:00:12,140 --> 01:00:18,680
+因为如果你想这样做，你需要的是你需要在训练时得到样本。
+Um Because the if you wanted to do that, what you would need is you would always need to get samples at training.
+
+636
+01:00:18,840 --> 01:00:20,840
+你需要对这个空间进行密集采样。
+You would basically need to samp densely sample that space.
+
+637
+01:00:21,160 --> 01:00:24,970
+所以你需要在交易时间看到所有这些不同的组合。
+So you would need to see all of these different combinations at trading time already.
+
+638
+01:00:25,130 --> 01:00:31,980
+就像你说的，水色变了，你需要再次对整个状态空间进行采样，只是水机器人的颜色变了。
+So as you say, water color changes, you need to sample the whole state space again, just with a different color of the water robot changes.
+
+639
+01:00:32,000 --> 01:00:34,640
+你需要再用一个不同的机器人对整个空间进行采样。
+You need to set sample the whole space again with a different robot.
+
+640
+01:00:35,480 --> 01:00:41,440
+有趣的是，这和你遇到的问题是一样的如果你只是参数化种子，有很多不同的对象。
+And this, really, interestingly, is exactly the same problem that you run into if you just parametric seeds that have lots of different objects.
+
+641
+01:00:41,830 --> 01:00:49,550
+想象一个房间。如果你用一个编码来描述整个房间，现在你知道了，房间有多少自由度了?
+Imagine a room. If you describe a whole room with a single laden code, and now you know, how many degrees of freedom does room have?
+
+642
+01:00:49,710 --> 01:00:52,730
+比如说，10个刚体。
+Is like, let's say, ten rigid body objects.
+
+643
+01:00:52,900 --> 01:00:56,300
+你可以，移动其中一个物体，让所有东西保持不变。
+Well, you could like, move one of the objects and leave everything the same.
+
+644
+01:00:56,460 --> 01:01:05,200
+如果你把整个房间参数化为一个约会代码，那是一个完全不同的约会代码，所以你必须密集地对所有移动刚体的不同组合进行采样。
+And if you parametize the whole room as one dating code, and that's a completely different dating code, so you would have to densely sample all different combinations of moving these rigid bodies around.
+
+645
+01:01:05,590 --> 01:01:08,590
+嗯。这就像一个问题。
+Um. And this is like a problem.
+
+646
+01:01:08,750 --> 01:01:14,230
+有一些方法可以解决这个问题，但我们现有的基础并不能解决这个问题。
+There's like some ways of solving this, but the foundation that we have doesn't address this.
+
+647
+01:01:14,490 --> 01:01:16,910
+但你完全正确。对不起,回答。
+But you're exactly right. Sorry, long answer.
+
+648
+01:01:18,950 --> 01:01:22,130
+谢谢你！谢谢你的精彩演讲。
+Thank you. Thanks for this great talk.
+
+649
+01:01:22,290 --> 01:01:25,150
+动物园有几个问题要问我们。
+And we have several questions from the zoo.
+
+650
+01:01:25,710 --> 01:01:28,710
+cost Us有一个问题。
+There is one question from cost Us.
+
+651
+01:01:28,940 --> 01:01:48,850
+它更多地是关于单实例，多视图神经场，更多地与塞壬相关问题是，是什么让神经场比一些经典的基于光良心的优化方法工作得更好?
+Ah, it's more, it's more about the single instance, multiple view neural fields, and more related to the siren as question is, what makes a neural field works much better then some kind of classical photoconsicency based optimization method?
+
+652
+01:01:50,650 --> 01:01:54,160
+这是个好问题。嗯嗯,嗯。
+That's a great question. Um yeah, uh.
+
+653
+01:01:54,320 --> 01:01:58,920
+这是个很好的问题。所以有些部分我们不知道答案。
+The is a great question. The So some some parts of this we don't know the answer to.
+
+654
+01:01:59,080 --> 01:02:09,710
+所以，有一些事情，我们不太，嗯，确实是这样的，如果你想，比如说，想重建几何。
+So there are, there are certain things that we don't quite Um, it really is the case that, if you do, if you, for instance, want to reconstruct geometry.
+
+655
+01:02:09,720 --> 01:02:23,180
+事实证明，这些微分Barendra的公式和一个新的领域，如场景顺化，确实比，经典的多重boustereo方法更有效。
+UM It turns out that these formulations with a differential Barendra and a new field at the as the scene paramatization, really do work better than, like, UM, classic multi boustereo approaches do.
+
+656
+01:02:23,230 --> 01:02:27,810
+嗯?其中有很多部分是我们知道的，还有一些是我们不知道的。
+UM? And there is, like, there's many parts to this that we do know and some that we don't know.
+
+657
+01:02:27,970 --> 01:02:33,390
+其中一部分是，这个新的，新的场景表现。
+So one part of it is that this, this new, the new scene representation.
+
+658
+01:02:34,230 --> 01:02:37,110
+这对优化是很有帮助的。
+And the is very aminable to optimization.
+
+659
+01:02:37,550 --> 01:03:15,000
+这是一个非常简单的方法来思考这个问题,那就是,如果是你,如果你想象你的参数,正如你看到的,作为一个网,一个表面,现在你使用微分渲染器支持传播网,或者你只是使用其他类型的优化器来优化网格,还有真的很多局部最小,你无法逃避,喜欢与排除,或者,像,你知道,移动顶点,或者,你知道,喜欢,不是因为什么,其中一个原因,从根本上说,是,如果你使用一个微分网格渲染器,那么你基本上,在任何时候,对于海洋的深度只有一个假设。
+It is a very easy way to think about this, which is, if you, if you imagine your parameter, as you seen, as a mesh which has a single surface um, and now you use a differential renderer to back propagate into the mesh, or you just use some other kind of optimizer to optimize mesh, then there's really lots of local minimal that you won't be able to escape from, like, related to exclusions, or, like, you know, moving vertices around, or, you know, like, what not a And the reason for that, one of the reasons for that, fundamentally, is that if you use a differential mesh renderer, then you basically, at any point in time, has have exactly one um hypothesis for the depth of the sea.
+
+660
+01:03:15,160 --> 01:03:23,220
+你可以想象这些神经场景表示法的作用因为你在射线行进的过程中采样了很多点。
+And what you can imagine these neural scene representations do because you do this ray marching where you really sample lots lots of points along the way.
+
+661
+01:03:23,530 --> 01:03:28,590
+基本上你采样的每个点都是射线深度的假设。
+Basically every point that you sample is a hypothesis for the depth of that ray.
+
+662
+01:03:28,910 --> 01:03:37,380
+海洋的表现是非常灵活的，所以在每一点上，场景表现都很容易产生一个新的表面，或者，在神经的例子中，例如，新的密度。
+And the sea representation is very flexible, so at every point it is very easy for the scene representation to generate a new surface, or, in the case of nerve, new density, for instance.
+
+663
+01:03:37,760 --> 01:03:43,130
+这使得优化变得更加容易，因为有一个非常简单的方法可以跳出局部最小值。
+And that really makes the optimization much more well conditioned, because there is a very easy way to get out of the local minimum.
+
+664
+01:03:43,290 --> 01:03:51,490
+其他的东西是像网络架构给你的归纳。
+Other things are things like the the the inductifies that the network architecture gives you.
+
+665
+01:03:51,510 --> 01:04:00,490
+所以这些新的网络，它们可以这样想它们给了你一种上校功能，它们在你训练时看到的点之间进行解释。
+So these new networks, they one way to think about them is that they basically give you a kind of colonel function, where they interpretlate between the points that you have seen up at training time.
+
+666
+01:04:00,650 --> 01:04:03,400
+上校的工作很好，很规矩。
+And that colonel function is quite, quite nice and well behaved.
+
+667
+01:04:03,480 --> 01:04:06,340
+但还有很多点我们根本不知道。
+But then there's many points that we just fundamentally don't know yet.
+
+668
+01:04:06,500 --> 01:04:08,760
+但这些可能是一些建议。
+But these are maybe some some pointers.
+
+669
+01:04:11,160 --> 01:04:15,800
+啊，还有，cost Us有一条评论。
+Ah, also, there is one comment from cost Us.
+
+670
+01:04:16,100 --> 01:04:24,000
+这次演讲的重点是关于机器人中的神经场和等价性。
+At the highlight this talk really made the case for neural fields and equivalence in robotics.
+
+671
+01:04:24,660 --> 01:04:31,100
+是的,我同意。我们还有动物园的其他问题。
+Yes, I agree. And also, we have other questions from the zoo.
+
+672
+01:04:31,410 --> 01:04:58,340
+一封来自爱德华。他问倒的项目,如果我们知道将会有一个分布的观点,为什么不使用其他类似的简单方法,如深度图像或训练的角度不变的图像表示为动机的数据,而我们需要经过培训考试昂贵的新的呈现。
+One is from Edward. He's asking about on the pouring project, if we know there will be a out of distribution viewpoints at that time, why not use other similarly simpler methods, like the depth images or a training viewpoint invariant image representations for motivated data, while we need to go through the training an exam expensive new render.
+
+673
+01:05:00,540 --> 01:05:06,340
+我想我不太理解这个问题，因为我不明白他提出了什么替代方案。
+I think I don't quite understand that question, in the sense that I do not understand what, what alternative he proposes.
+
+674
+01:05:06,540 --> 01:05:07,990
+是的,
+Yeah,
+
+675
+01:05:08,460 --> 01:05:20,620
+我想问题是，为什么我们不，我只是提高深度，这是操纵任务的更结构化的表示?
+I guess the question is, why not we, I just improve the depths, that's kind of more structured representation of the manipulation task?
+
+676
+01:05:20,890 --> 01:05:22,670
+或者我们把
+Or we turn
+
+677
+01:05:22,870 --> 01:05:37,940
+到其他像RGB的视角环境表示，事物的颜色信息，为什么我们需要使用昂贵的神经渲染操作篮。
+to other like viewpoint environment representations of the RGB, the color information of the thing, why we need to use a expensive neuro rendering for the manipulation basket.
+
+678
+01:05:38,300 --> 01:05:42,480
+是啊，所以，实际上，我觉得这种深度在这个案子里帮不上什么忙。
+Yeah, so, so, um, actually, I don't think the depth would help you much in this case.
+
+679
+01:05:42,640 --> 01:05:52,830
+所以这个例子中的问题，我同意，如果你采取一个完全不同的方法，我不知道是什么方法，那么很可能是一个没有这个限制的方法。
+So the problem in this case, which which I agree, if you took a completely different approach than then, which I don't know what approach has in mind, then may well be one that doesn't have this limitation.
+
+680
+01:05:52,990 --> 01:05:58,600
+但在这种情况下，我们做计划和依赖学习的方式，是状态空间。
+But in this case, the the way we do planning and is reliant on learning, is the state space.
+
+681
+01:05:58,940 --> 01:06:03,470
+这里的问题是我们需要映射回状态空间。
+And the problem in this case is that we need to map back into the state space somehow.
+
+682
+01:06:03,630 --> 01:06:07,270
+所以如何?我们不能映射到不同的状态空间。
+So how? And we can't map into some different state space.
+
+683
+01:06:07,330 --> 01:06:10,870
+所以我们不能，我们不能改变我们规划的潜在空间。
+So we can't, we can't switch the the latent space in which we do planning.
+
+684
+01:06:11,030 --> 01:06:14,950
+我们注定要在太空中学习动力学模型，在训练时间里冲浪。
+We are bound to that day in space where we learn our dynamics model, and that we surf the training time.
+
+685
+01:06:15,110 --> 01:06:25,570
+在这种情况下，深度不会帮到你太多，因为，好吧，深度可能会帮到你，你可以使用三维点来监督你的东西，它会工作。
+So in that case, the depth wouldn't really help you much because the, um, so okay, the depth might help in the sense you could use the three D points to maybe supervise your thing that that would work.
+
+686
+01:06:26,000 --> 01:06:31,600
+嗯,嗯。但我认为这只是我们在这里所做的感觉上的不同。
+Um, uh. But I think that's basically just a different in sensation of what we're doing there.
+
+687
+01:06:31,760 --> 01:06:38,960
+你基本上会做同样的事情，通过你采样的这三个D点往回传播，你会用它来选择再次回归你的小睡代码。
+You would just basically do the same thing where you back propagate through these three D points that you sample, and you would use that to opt to to regress your naping code again.
+
+688
+01:06:39,120 --> 01:06:40,560
+嗯，我不是，我不是很确定。
+Um, so yeah, I'm not, I'm not quite sure.
+
+689
+01:06:40,620 --> 01:06:43,920
+我不太明白还有什么选择。
+I don't think I quite understand what the alternative would be.
+
+690
+01:06:44,080 --> 01:06:51,400
+嗯，但是，是的，如果我们有一个关于不同图像表示的观点，那就太好了，但我还没有意识到类似的东西。
+Um, but yeah, it would be great if we had an viewpoint in variant image representation, but I'm not aware of of something like that.
+
+691
+01:06:53,240 --> 01:06:57,480
+最后一个问题是丹尼尔提出的。
+And there is a last question in the zoom is from Daniel.
+
+692
+01:06:57,640 --> 01:07:10,680
+是问题吗?你对如何使用这个函数的参数有什么见解吗，近似的参数，非常特定于深度网络的经验属性?
+Are the questions? Are you insights into how to work with the parameters of this function, approximately approximators, very specific to the empirical properties of the deep networks?
+
+693
+01:07:11,060 --> 01:07:20,310
+或者你相信你的操作可以在其他功能，甚至更弱的功能的周边空间内工作吗?
+Or do you believe that your manipulation would work within the perimeter space of other, perhaps even less capable functions?
+
+694
+01:07:20,470 --> 01:07:27,190
+接近者?我想，这是一个好问题。
+Approximators? I guess this, yeah, okay, this is a good question.
+
+695
+01:07:27,570 --> 01:07:28,970
+抱歉，是不是还有我不想说的第二部分?
+Sorry, was there a 2nd part I didn't want to drop?
+
+696
+01:07:29,130 --> 01:07:50,520
+我很抱歉。我想问题是，问题是关于，我想是关于超网络，呃，它如何扩展到，呃，其他类型的，不是深层网络，以及其他参数，函数的参数化方式。
+I'm sorry. I think the question is, the question is about, I guess it's about the hyper networks, uh, how it would extend to, uh, other kind of, not deep networks, and other parameters, parameterized way of the function.
+
+697
+01:07:50,940 --> 01:08:16,870
+这是一个完美的问题。因此,事实上,如果你感兴趣,我给一个你可以谈论你的图形在新的呈现车间,在概括在你的领域,我将涉及一个新的渲染,这我要触及这个问题,从根本上说,就像我提到的，当我在谈论超网络时，我说过，你可以考虑使用，而不是一个新的领域，你也可以使用一个框式网格，你可以忽略所有的参数。
+That's a perfect question. And so, in fact, if you're interested in this, I'm giving a little Can you talk at your graphics on at the New Rendering Workshop, which is on generalization in your fields, where I'm going to touch upon a new rendering, which I'm going to touch upon exactly this question, fundamentally, as I had mentioned with the when I was talking about the hyper networks, I-I said that you could think about using, instead of a new field, you could also use a boxing grid, and you disparmatize all of the parameters.
+
+698
+01:08:17,090 --> 01:08:20,490
+你只需从超网络中预测盒子的所有参数。
+You would just predict all the parameters of the boxicate from the hyper network.
+
+699
+01:08:20,650 --> 01:08:22,050
+事实上，这也是可行的。
+And in fact, that would also work.
+
+700
+01:08:22,210 --> 01:08:29,320
+在这种情况下，你选择的参数化确实没有什么特别的。
+Um that there's indeed, in this case, nothing fundamentally special about the about the parametization of you pick.
+
+701
+01:08:29,660 --> 01:08:43,650
+这里有很多有趣的事情可以做，这与你如何预测参数有关，我实际上与我们之前得到的构成问题有关，这与你如何预测这些语法有关?
+And there are very interesting things to play around here with, which are related to how do you actually predict the parameters, which I actually related to the question of compositionality that we got earlier, which are related to how do you actually predict these Grammars?
+
+702
+01:08:43,810 --> 01:08:45,870
+想象一下，比如说，你有一个。
+Imagine, for instance, you had a um.
+
+703
+01:08:46,350 --> 01:08:50,460
+想象一下，比如你有一盒后悔。
+Imagine for instance you had a box regret um.
+
+704
+01:08:50,620 --> 01:08:53,820
+你可以这样想，嗯，我不知道，你大声说出你的观点。
+You could think about, um, I don't know, you have, like, your point loud.
+
+705
+01:08:53,980 --> 01:09:01,450
+现在，不要把你的观点大声地说出来，把它折成一层唇彩，然后根据这一层唇彩来预测整个盒子。
+And now, instead of taking your point loud and bending it into a single lip coat and then predicting the whole box of it from that single lip code.
+
+706
+01:09:01,810 --> 01:09:21,990
+你可以思考的空间维度的活着,这么说吧,就预测boxels foxins本地的内容,我们称之为当地条件,呃,在新领域或少说话,也是在变化的像素,这确实给你不同的属性泛化。
+You could think about keeping the spatial dimensions of the thing alive, so to speak, and just predicting boxels the contents of foxins locally, and we would call that local conditioning, in uh, in neo field speak or less, is also a pixel of does in a variation, and that indeed does give you different generalization of properties.
+
+707
+01:09:22,390 --> 01:09:27,150
+所以，是的，它完全，呃，是这样的，基本上是一样的。
+So, yeah, it's perfectly, uh, it's this, yeah, basically the same.
+
+708
+01:09:27,410 --> 01:09:34,030
+这些性质的产生，源于你如何学习空间中的睡眠以及如何参数化空间。
+The way that these properties arise, arise from the notion of how you're actually learning the sleep in space and how you're parameterizing space.
+
+709
+01:09:34,210 --> 01:09:42,330
+在拳击机智和新域的例子中，如果你预测拳击位的所有参数就像预测新域的所有参数一样，那么你会得到相同的属性。
+In the case of a boxing wit versus newfield, if you predict all the parameters of the boxing bit similar to how you're predicting all the parameters of the new field, then you get the same property.
+
+710
+01:09:42,710 --> 01:09:50,290
+如果你选择处理局部性，那么你会得到不同的属性，你可能会最大限度地利用它。
+If you choose to do something with locality or something, then you will actually get different properties, and you might exploit that to the best of your ability.
+
+711
+01:09:51,930 --> 01:09:59,500
+谢谢。然后你也要强调这是一个非常有趣和令人兴奋的公园。
+Thanks. Then you also want to highlight that this is a very interesting and exciting park.
+
+712
+01:09:59,700 --> 01:10:05,380
+呃,谢谢你。是的。我还有一个非常，最后一个问题。
+Uh, thank you. Yeah. And, uh, I have a very, I have a last question.
+
+713
+01:10:05,640 --> 01:10:13,200
+关于描述域的，呃，我们知道向量神经元是
+UH, regarding the UH, of the descriptor field, uh, we know that the vector neuron is
+
+714
+01:10:13,640 --> 01:10:18,510
+等同于点云，但我有点好奇是怎么做到的
+equiviant to the point clouds, but I'm a little bit curious how
+
+715
+01:10:18,610 --> 01:10:23,400
+网络或事物执行时所观察到的是相当片面的。
+the network or the matter will perform when the observation is quite partial.
+
+716
+01:10:23,600 --> 01:10:26,060
+这就像一个单一深度的观察。
+It's like a single depth observation.
+
+717
+01:10:26,340 --> 01:10:30,640
+这可能是高度兼容。是的，是个问题。
+That may be high acclusion. Yeah, be a question.
+
+718
+01:10:30,980 --> 01:10:32,480
+它不会那么有效。
+And it will not work that well.
+
+719
+01:10:32,800 --> 01:10:44,060
+原因是这个编码器，向量神经元编码器，基本上是预约，预约有那种限制，所以它不会工作得那么好。
+And the reason for that is that this encoder, the vector neurons encoder, is basically appointment, and the appointment has, um that kind of limitation, so it will not work that well.
+
+720
+01:10:44,220 --> 01:10:53,070
+事实上，这里有一些有趣的事情，你的，呃，它有点，在这种情况下，S-C 3出现的概念真的很奇怪，对吧?
+And in fact, there is something interesting here, which is your, uh, it's, it's kind of, in that case, the notion of S-C three occurrence is really weird, right?
+
+721
+01:10:53,230 --> 01:10:57,030
+让我们说得更准确些，实际上影响神经元的三个A电流是什么?
+So the let's be very precise, what is the actually three A currents affecting neurons?
+
+722
+01:10:57,190 --> 01:11:07,170
+如果你有相同的点，并且你旋转了相同的点，那么你就能保证描述场也以相同的方式旋转，或者边距场在情况效应中是否。
+If you have the same point loud, and you rotate the same point loud, then you have a guarantee that the descriptive field also rotates at the same way, or the side distance fields in the case effect or not.
+
+723
+01:11:07,330 --> 01:11:16,170
+但是现在如果你把那个点拿出来然后用你不喜欢的方式对它进行下标采样，你就会得到下标采样点的血液的特性。
+Okay, so, but now if you take the point out and you sub sample it in some way you do not like, you, you will have that property for the sub sample point blood.
+
+724
+01:11:16,330 --> 01:11:24,360
+如果你对这个点进行采样，然后应用，当你预测一些东西的时候，然后你把它写成子集点，然后你会，你会再次得到那个性质。
+So if you sample the point loud, and then you applyness and you predict something, and then you wrote it the subsetle point loud, then you will, you will get that property again.
+
+725
+01:11:24,520 --> 01:11:28,940
+但是你没有那种性质在含蓄的和完整的点之间。
+But you do not have that property between the subtembled and the full point out.
+
+726
+01:11:29,340 --> 01:11:31,120
+所以它不会那么有效。
+And so it will not work that well.
+
+727
+01:11:31,280 --> 01:11:41,580
+你可能需要多考虑一下编码器，比如，你如何构建一个编码器让它给你那个属性?
+Um, you would probably want to think about the encoder a little bit more, and like, how to, how do would you build an encoder that that gives you that property?
+
+728
+01:11:42,300 --> 01:11:45,100
+谢谢。谢谢你的精彩演讲。
+Thanks. Thanks for this amazing talk.
+
+729
+01:11:45,180 --> 01:11:51,900
+谢谢你这么精彩的演讲。
+And thank you for such a wonderful talk.
+
+730
+01:11:52,080 --> 01:12:03,730
+我有一个问题，或者有多个对象的场景可能更难，比只有几个对象的场景有更多的信息内容。
+I have a one Questions of or scenes with multiple objects are presumably harder, have more information content than scenes with few objects.
+
+731
+01:12:04,030 --> 01:12:12,490
+你有没有注意到你需要更大的网络，MLP需要更大，或者训练时间需要更长的时间?
+So have you noticed that you need larger network, the MLP needs to be larger, or the training time is larger with such things?
+
+732
+01:12:13,850 --> 01:12:21,460
+是的。这与我们的问题有关，问题是，如果你有多个对象，你需要更多的交易数据吗?
+Yeah. It relates to the question that we, um, uh, the question is, if if you have multiple objects, do you need more trading data?
+
+733
+01:12:21,620 --> 01:12:33,020
+简短的回答是，是的，更多的训练数据是因为有杂项，还是因为信景固有的复杂性?
+The short answer is, yes, more training data because of aclusions, or is it because of the inherent complexity of the scene the letter?
+
+734
+01:12:33,340 --> 01:12:42,110
+这是一个非常基本的性质，它也与成本有关，就像之前常说的等差和不变量之类的东西。
+So it's basically So it's a very fundamental, it's a very fundamental property, which also relates to cost, as common earlier about equivarians and invariants and things like that.
+
+735
+01:12:42,270 --> 01:12:52,920
+如果你考虑每个训练样本或每个演示，你有你的状态，你的状态被映射到某个标签。
+Okay, so if you have really think about every training sample or every demonstration, as you have your your state, and your state is mapped to some label.
+
+736
+01:12:53,080 --> 01:12:59,620
+所以在单一物体的情况下，状态可能是，你知道，这种物体和文章，物体的三个极点。
+So in the case of a single object, the state might be the, you know, the the kind of object and the essay, three poles of object.
+
+737
+01:12:59,710 --> 01:13:01,570
+它有多少个自由度?
+So how many degrees of freedom does that have?
+
+738
+01:13:01,630 --> 01:13:07,070
+它有很多自由度就像杯子一类的潜在空间一样，非常低维度。
+It has as many degrees of freedom as like the latent space of that single object class like mugs, pretty low dimensional.
+
+739
+01:13:07,510 --> 01:13:09,590
+然后我们暂停一下，考虑6个自由度。
+And then maybe it as if we pause for the six degrees of freedom.
+
+740
+01:13:09,610 --> 01:13:12,190
+这就是单个物体的自由度。
+So that's your degrees of freedom for a single object.
+
+741
+01:13:12,210 --> 01:13:20,490
+密封。太好了。所以现在你得到的每个演示和每个训练样本都是把一个拉丁人映射到一个标签上。
+Seal. Great. So now every demonstration and every training sample you get is maps one of these latons to one label.
+
+742
+01:13:20,700 --> 01:13:26,260
+现在，如果你有很多物体，那么你的你的潜在空间，你的自由度是多少?
+Now, if you have many objects, then what is your your latent space, your degrees of freedom?
+
+743
+01:13:26,420 --> 01:13:28,400
+不要线性增加。他们增加。
+Do not increase linearly. They increase.
+
+744
+01:13:28,680 --> 01:13:30,160
+让我别，别，让我撒谎。
+Uh, let me don't, don't, let me lie.
+
+745
+01:13:30,180 --> 01:13:34,920
+我认为它是指数的，如果你有一个物体，那么有一个60度的自由度。
+I think it's exponentially So if you have right, if you have one object, then there's a 60 degree freedom.
+
+746
+01:13:34,980 --> 01:13:43,420
+如果你有两个物体，那么对于每一个程度，对于每一篇不同的文章，这个物体的三个极点，这个物体也可以有不同的。
+If you have two objects, then it's like for every degree, for every for every different essay, three poles of this object, this one can also have a different as if we pose.
+
+747
+01:13:43,440 --> 01:13:45,390
+这是6乘以6个自由度。
+So this is six times six degrees of freedom.
+
+748
+01:13:45,450 --> 01:13:48,650
+如果在6的3次方，6的4次方，6的5次方再加1。
+If you add another one at six to the 3rd, six to the 4th, 6th to the 5th.
+
+749
+01:13:48,910 --> 01:13:52,720
+现在新的网络基本上在做插值。
+And now new networks are basically doing interpolation.
+
+750
+01:13:52,880 --> 01:13:55,840
+它们是很好的插值器。嗯。
+They're like, very good interpolators. UM.
+
+751
+01:13:55,880 --> 01:14:03,560
+但是如果你表示空间，如果你的空间很大，那么，呃，你的UM，插值就不再有效了。
+But if you state space, if your space is so huge, then, uh, your you, UM, interpolation doesn't work anymore.
+
+752
+01:14:03,620 --> 01:14:08,520
+这是维度的诅咒。那么你只需要抽样，你有，你有更多的训练例子。
+It's the curse of dimensionality. So then you just need to sample, you have, you have to have more training examples.
+
+753
+01:14:08,680 --> 01:14:20,340
+唯一的解决方法就是基于某种方式分解状态，或者建立一种归纳偏差，就像一种对称性，在你的网络中尊重这种情况。
+The only way to get out of that is to factorize your states based in some way, or to build an inductive bias, like like a symmetry, into your network that respects that thing.
+
+754
+01:14:20,500 --> 01:14:30,490
+实际上，我们在这个充满光线的网络中所做的，就像这个咳嗽论文，它很快就会成为一个档案，每个物体都有一个单独的代表。
+So actually what we did in this light filled network thing here, like this, uh, cough paper, which is going to be an archive very soon, is each of the objects has a separate representation.
+
+755
+01:14:30,650 --> 01:14:34,270
+所以每一个物体都是一个独立的，小小的新场景表示。
+So each of the objects is a separate, little new scene representation.
+
+756
+01:14:34,350 --> 01:14:41,010
+它给你的是，它把场景分解成，在这个例子中，五个物体。
+And what what that gives you is that, uh, it disentangles the scene into, in this case, five objects.
+
+757
+01:14:41,030 --> 01:14:43,560
+每个都有60个自由度。
+Each one of them have 60 degrees of freedom.
+
+758
+01:14:43,720 --> 01:14:46,360
+但是现在你的状态空间，不再是指数的了。
+But now your your state space, is not exponential anymore.
+
+759
+01:14:46,380 --> 01:14:49,200
+现在物体的数量是线性的。
+Now it really is linear in the number of objects.
+
+760
+01:14:49,360 --> 01:14:52,800
+所以，通过巧妙地建立状态空间，你基本上可以绕过这个问题。
+So so yeah, by building your state space in a smart way, you can basically get around that.
+
+761
+01:14:52,960 --> 01:14:57,620
+但如果你不这样做，那么你就会你就会被你需要的训练样本的数量所困。
+But if you don't do that, then you're then you're just stuck with the exponential number of training samples that you need.
+
+762
+01:14:58,010 --> 01:15:02,650
+谢谢,嗯,是的。我还有一个问题。
+Thanks, um, yeah. So I have another question.
+
+763
+01:15:02,830 --> 01:15:14,020
+我在一些作品中读到当你用符号距离场表示这个场景或形状时，问题在于不同技能的分辨率。
+So I read in some works that that when you represent this scene or shape with a sign distance field, a problem is with the resolution at different skills.
+
+764
+01:15:14,420 --> 01:15:18,990
+所以当鳞片很小的时候，表面看起来很光滑，
+So when the scales is really small, the seemingly smooth, uh,
+
+765
+01:15:19,040 --> 01:15:22,580
+表面，在宏观技能上，似乎不那么光滑。
+surface, at a macro skill, would seem less like smooth.
+
+766
+01:15:22,970 --> 01:15:32,630
+所以我想知道是否有办法，你必须以一种能解决这个问题的方式来构建你的网络。
+So so I'm wondering if there is any ways to to, you have to structure the your network like in a way that it resolves to this problem.
+
+767
+01:15:32,790 --> 01:15:34,870
+或者这是一件很难
+Or this is like something that's just hard to
+
+768
+01:15:35,030 --> 01:15:37,620
+处理。是的，你可以这么做。
+deal with. Um, yeah, you can do that.
+
+769
+01:15:37,780 --> 01:15:43,640
+在多尺度表示法上有很多工作，你基本上是参数，东西，看尺度。
+There's lots of work on multi scale representations, where you basically parametries, things at, looking scales.
+
+770
+01:15:43,800 --> 01:15:48,980
+要看的东西。有，像这篇论文，神经几何层次的细节，从视频。
+Things to look at. There are, like this paper, neural geometric level of detail from in video.
+
+771
+01:15:49,390 --> 01:16:03,540
+还有，我的我的。我以前的同事，david Lendel，有一篇论文叫培根，它是基于一个叫做UM乘法到过滤网络的表示，它以一种非常优雅的方式做到了这一点。
+Also, my, uh my, uh. My former colleague, david Lendel, has a paper called Bacon, which is based on a representation called UM Multiplicate to Filter Networks, which does this in a very elegant way.
+
+772
+01:16:03,880 --> 01:16:05,720
+不过，这件事还是有办法解决的。
+Uh, yet, there's, there's ways of dealing with this.
+
+773
+01:16:05,880 --> 01:16:18,170
+如果你想看一看我们写的那篇评论文章，它对这些论文有一个很好的总结，你可以称之为多尺度，我想，更多的尺度。
+If you want to take a look at that review paper that we wrote, has a, it has a nice summary of these papers that you would call this multi scale, I guess, more to scale.
+
+774
+01:16:18,330 --> 01:16:22,190
+新的，旧的场景表现可能是你要找的搜索词。
+And new, old scene representations are something would maybe be the search word that you would look for.
+
+775
+01:16:23,870 --> 01:16:26,730
+我见过，我见过这位先生举手五次。
+I've seen, I've seen the gentleman raising his hand five times.
+
+776
+01:16:26,750 --> 01:16:41,230
+现在,丹尼尔,copycheck。然后。除非你有紧急问题，否则我们就到此结束。
+Now, daniel, copycheck. Then. Unless you have a pressing question, we want to wrap up here.
+
+777
+01:16:41,690 --> 01:16:47,750
+好吧,是的,抱歉。另外，请随时联系我购买。
+Okay, yeah, sorry. By the way, also, please feel free to reach out to me to buy.
+
+778
+01:16:47,910 --> 01:16:52,230
+电子邮件地址。我要我要尽我所能回复你。
+Email address. Uh, and I'm I'm going to do my best to reply.
