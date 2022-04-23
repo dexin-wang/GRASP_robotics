@@ -7,8 +7,8 @@
 
 ### 字幕文件(.srt)及对应的视频链接
 
-1、SPRING 2022 GRASP on Robotics - Vincent Sitzmann, Massachusetts Institute of Technology.srt
+1、SPRING 2022 GRASP on Robotics - Vincent Sitzmann, Massachusetts Institute of Technology.srt \\
 https://www.bilibili.com/video/BV1XF411M7t8?spm_id_from=333.999.0.0
 
-2、Spring 2022 GRASP on Robotics - Jing Xiao, Worcester Polytechnic Institute.srt
+2、Spring 2022 GRASP on Robotics - Jing Xiao, Worcester Polytechnic Institute.srt \\
 https://www.bilibili.com/video/BV1kY4y1a7vh?spm_id_from=333.999.0.0
