@@ -1,0 +1,2614 @@
+0
+00:00:00,000 --> 00:00:06,740
+请。欢迎Chingjiang。谢谢你，马克，谢谢你给我这个机会。
+Please. Welcome Chingjiang. Thank you, mark, thank you for this opportunity.
+
+1
+00:00:07,130 --> 00:00:08,830
+我很高兴能够
+I'm very pleased to be able to
+
+2
+00:00:09,050 --> 00:00:15,560
+有一个亲自的聚会，并从做一个报告。
+have an in person kind of gathering, and from to make a presentation.
+
+3
+00:00:15,900 --> 00:00:25,540
+所以今天我要谈一谈我的小组的研究与机器人的感知，行动，协同和特定环境有关。
+So today I'm going to talk a bit about my group s research relate to robot perceptions, action, synergy and certain environments.
+
+4
+00:00:25,700 --> 00:00:35,240
+我们知道，当机器人工作在一个未知或不确定的词，它需要感觉和感知来引导它的运动。
+We know that when the robot works in an unknown or uncertain word, it requires sensing and perception to guide its motion.
+
+5
+00:00:35,340 --> 00:00:44,170
+但通常也需要机器人的动作来进一步促进感知和动作。
+But often action of the robot is also required to further facilitate perception and action.
+
+6
+00:00:44,330 --> 00:00:52,760
+有时行为本身就是感知行为是感知的一种手段。
+Sometimes the action itself is for perception act as a means for perception.
+
+7
+00:00:53,100 --> 00:01:02,760
+所以我们有兴趣将感知和行动结合起来，为机器人解决问题，完成很多任务。
+So we're interested in combining perception and action to um solve problems for for a robot to accomplish many tasks.
+
+8
+00:01:04,260 --> 00:01:08,260
+我想谈谈四个研究领域。
+And I'd like to talk about four areas of research.
+
+9
+00:01:08,600 --> 00:01:11,940
+在不确定的情况下第一次表现出机器人的同情心。
+The 1st robotic sympathy in the presence of uncertainty.
+
+10
+00:01:12,570 --> 00:01:22,570
+然后是自主目标建模与识别、实时自适应运动规划以及特定环境和语义冲击未知环境。
+Then autonomous object modeling and recognition, real time adaptive motion planning and certain environments and semantic slammi unknown environments.
+
+11
+00:01:23,620 --> 00:01:27,620
+机器人装配是一个长期的问题。
+Robotic assembly is a long term problem.
+
+12
+00:01:27,900 --> 00:01:43,490
+主要的挑战是如何处理通用机器人在大运动和传感不确定性下的紧公差，这可能导致零件和形成不同种类的接触。
+The main challenge is how to deal with tight tolerance with large motion and sensing uncertainty of a general purpose robot, which can result in parts and forming different kinds of contact.
+
+13
+00:01:43,650 --> 00:01:47,820
+嗯。这是一个长期存在的问题。
+States um. So this is a long standing problem.
+
+14
+00:01:47,820 --> 00:02:03,170
+研究可以追溯到20世纪70年代，但主要集中在一些包装呼叫操作，经典的方法，包括使用被动兼容设备或主动限制。
+Research has dated back to the 1970s, even, but mostly focused on some packing call operations, classical approaches, including using a passive compliant device as or active confines.
+
+15
+00:02:03,330 --> 00:02:21,110
+通过接触状态检测和遵从性转换，你可以遵从控制力或阻抗控制，就像他们说的，在我相关的大量工作中，我最近正在学习基于方法的方法。
+By doing contact state detections and compliance transitions, you can comply control force or impedence control, as they say, in the big body of work I related to that, I'm recently learning based approaches.
+
+16
+00:02:21,270 --> 00:02:31,870
+学习是一个很有前途的工具，因为它可以处理很多不确定的，有很多变化的任务。
+Learning is a very promising tool for a means for a lot of tasks that has uncertainties, a lot of variations.
+
+17
+00:02:32,030 --> 00:02:37,890
+所以人们使用演示学习或强化学习等等。
+So people use learning by demonstration or reinforcement learning and so on.
+
+18
+00:02:38,340 --> 00:02:44,860
+但是，这些方法仍然主要局限于任务相关的特定情况。
+But still, the approaches are limited mostly to task dependent specific cases.
+
+19
+00:02:45,020 --> 00:03:05,270
+一种特定的装配作业，或从一般意义上说，是一种简单形状的单包装大厅装配，所以复杂形状零件的一般装配如多包装在其装配任务中仍然是一个开放的问题。
+A particular kind of assembly operation, or in the general sense, is a simple shape, a single packing hall assembly, So general assembly of complex shapes of parts such as multi pack in her assembly task remain an open problem.
+
+20
+00:03:06,070 --> 00:03:12,350
+我们对具有通用的、任务独立的方法的自主复杂装配感兴趣。
+We're interested in autonomous complex assembly with a general, task independent approach.
+
+21
+00:03:12,780 --> 00:03:27,070
+我在这里展示，如果我们有一个双包装大厅组装操作，那么我由于异教徒，结构和整体结构之间的不确定性。
+I show here if we have a double packing hall assembly operation, then I'm due to the uncertainty between the pagan and structure and whole structure.
+
+22
+00:03:27,070 --> 00:03:33,390
+一个多区域复杂的接触可以是结果。
+A multiple region complex contact can be the results.
+
+23
+00:03:33,700 --> 00:03:41,790
+为了克服不确定性，我们必须克服这种意外但复杂的接触结构。
+And to overcome uncertainty, we have to overcome this kind of unintended but complex contacts configurations.
+
+24
+00:03:42,430 --> 00:03:52,260
+所以我们认为一般的问题有两个部分我看到一个PMH，但不是一个。
+So we consider the general problem as having two parts a PMH I see peg, but doesn't mean a single peg.
+
+25
+00:03:52,420 --> 00:03:55,500
+所以我看到了一个桩结构和一个整体结构。
+So I see a peg structure and whole structure.
+
+26
+00:03:55,660 --> 00:04:04,660
+一个关键的事情是，用一个相对独立的几何形状来表示这些部分。
+Pm H And one key thing is represent those parts in a relatively geometry shape independent fashion.
+
+27
+00:04:04,680 --> 00:04:07,380
+我们用它作为精神的象征。
+We use as a spiritual representation.
+
+28
+00:04:07,540 --> 00:04:13,640
+这是一个层次表示，但都是用球体表示的。
+So it's a hierarchical representation, but it's all using spheres.
+
+29
+00:04:14,020 --> 00:04:23,840
+这里，这是最后一层，或者说最低叶层的球体代表了群体结构和整个结构。
+And here, this is the last level, or the lowest leaf level spheres representing the the pack structure and the whole structure.
+
+30
+00:04:23,900 --> 00:04:26,900
+这只是一个例子。实际上是拍卖。
+This is just one example. Is actually the auction.
+
+31
+00:04:27,060 --> 00:04:55,310
+但我们现在使用更有效的精神表征方法，嗯，但整体的想法是，当我们这样做时，就像我们可以用三角形匹配来表示各种形状，各种物体，使用这种空间结构，我们可以对这个装配问题有解决方案，它与特定的几何形状无关。
+But we use more efficient spiritual representation methods now, um, but the whole idea is, when we do that, just like one can use triangle match to represent all kinds of shapes, all kinds of objects using this kind of space structure, we can have solutions for this assembly problem that's kind of independent of the the particular geometrical shapes.
+
+32
+00:04:55,830 --> 00:05:05,970
+我们考虑名义运动，在这种情况下，就是一条插入街道的运动，没有考虑不确定性。
+And we consider nominal motion, uh, in this case, is just A-A street line insertion motion, with no uncertainly considered.
+
+33
+00:05:06,490 --> 00:05:07,030
+但
+But
+
+34
+00:05:07,190 --> 00:05:18,190
+我们肯定地考虑了六维位置定位，包结构相对于整体的不确定性，我们使用力猪肉传感。
+we definitely consider six dimensional position orientation, uncertainty of the pack structure relative to the whole And we use force pork sensing.
+
+35
+00:05:18,370 --> 00:05:22,110
+在这种情况下，我们，呃，只是用它来感知猪肉。
+In this case, we, um, just use for pork sensing.
+
+36
+00:05:22,110 --> 00:05:25,470
+所以整个方法从机器人指令开始
+So the whole approach starts by having the robot command
+
+37
+00:05:25,650 --> 00:05:32,280
+包体结构沿名义运动到整体结构。
+pack structure along the nominal motion to to the whole structure.
+
+38
+00:05:32,440 --> 00:05:42,410
+由于不确定性，像这样的接触，某种接触会被感应力检测到，但我们不知道是哪种接触，对吧?
+And because of uncertainty, some contact like this, some kind of contact will be detected by force for sensing, but we don't know what kind of contact, right?
+
+39
+00:05:42,670 --> 00:05:55,010
+因此，我们预测的不确定孔的包相对于整个结构，但预测可能不是一个实际的接触构型。
+So we predict the uncertain holes of the pack with respect to the whole structure, but the prediction may not be an actual contact configuration.
+
+40
+00:05:55,270 --> 00:05:59,390
+接触配置是很难实现的。
+Contact configuration is it's much harder to to achieve.
+
+41
+00:05:59,610 --> 00:06:05,730
+所以我们必须，我们从这个开始，哦，看不见。
+So we have to, we start from this, oh, cannot see.
+
+42
+00:06:05,790 --> 00:06:09,670
+非常好。我们从这个预先设定的姿势开始。
+very okay. We start from this kind of a predicted pose.
+
+43
+00:06:09,900 --> 00:06:14,320
+然后我们需要计算相应的接触极点。
+Then we we need to compute the corresponding contact poles.
+
+44
+00:06:14,360 --> 00:06:21,180
+这是受到了一些触觉模拟交互的启发。
+And this is inspired by some approach of haptics as interaction simulation.
+
+45
+00:06:21,220 --> 00:06:29,240
+然后利用所述触点计算的力来计算与所述触点配置相关的力和交谈。
+And then use the contact post computed to compute the force and talk related to the contact configuration.
+
+46
+00:06:29,520 --> 00:06:40,620
+但是这个计算力的谈话，当然，要服从各种模型的简化和精确度等等。
+But then this computed force talk is, of course, subject to all kinds of model simplification and and in accuracies and so on.
+
+47
+00:06:40,800 --> 00:06:47,770
+所以我们进一步将其校准为感知力谈话，这是一个学习模型。
+So we further calibrate this to a sense force talk, and this is a learned model.
+
+48
+00:06:48,190 --> 00:06:50,480
+这是一个关键的步骤。
+This is A-A, also a crucial step.
+
+49
+00:06:50,740 --> 00:06:56,180
+然后这个模型的输出与实际的力感和谈话相匹配。
+And then the output of this model is matched to the actually sense force and talk.
+
+50
+00:06:56,340 --> 00:07:24,720
+在这种情况下,如果他们匹配,我们说电脑联系足够准确的与计算机的不确定性,我们可以更新目标状态的装配操作,然后命令机器人开始嗯包更新目标配置结构,限制和减少不确定性和成功。
+In this situation, if they match, we say the computer contact post is accurate enough with the computer uncertainty, and we can update the goal state of this assembly operation, and then command the the robot commenced the um pack structure to the update the goal configuration, confine and and that to reduce uncertainty and to be successful.
+
+51
+00:07:24,730 --> 00:07:33,360
+如果不是，如果计算出的力和传感器不匹配，我们会再做一次。
+And if not, if this computed force and and sensors do not match, we'll do this again.
+
+52
+00:07:33,520 --> 00:07:53,940
+整个过程又开始了。所以现在，如果我们只是给了某种，呃，关于整体的挂钉的姿势，它可以是引起内部渗透的东西，就像绿色包装结构和大厅的这个伟大的部分。
+This whole process starts again. So now, if we're given just some kind of, uh, pose of the kind of the peg with respect the whole, it can be something that causing inter penetration, like this great part at the green pack structure and hall.
+
+53
+00:07:54,740 --> 00:08:03,000
+所以我们需要找到实际对应的内容，因为我们假设，不只是假设，实际上，这部分是刚性的。
+So we need to find the actual corresponding content, because we are assuming, not just assuming, actually, the parts are rigid.
+
+54
+00:08:03,280 --> 00:08:12,290
+我们通过约束优化来实现，避免渗透最小化势能，所谓的势能。
+So, and we do that through constrain optimization, avoid penetration and minimize the potential energies, so called potential energies.
+
+55
+00:08:12,450 --> 00:08:18,000
+我们假设有一个弹簧连接之前的极点。
+We assume there is a the spring connecting the previous poles.
+
+56
+00:08:18,160 --> 00:08:31,920
+我订购客用电线杆和接触电线杆，我试图找到接触点，使这种能量最小化，避免穿透受制于这个约束。
+I order guest poles and contact poles, and I try to find the contacts that minimize this energy and avoid penetrations with subject to to to this constraint.
+
+57
+00:08:32,550 --> 00:08:45,330
+在解决了这个约束优化问题之后，我们有一个接触轮询，接下来我们可以用钩子定律来计算力。
+And after solving this constraint optimization problem, we have this a contact polls, and we next we can compute the force by hooks law.
+
+58
+00:08:45,580 --> 00:08:55,290
+我想说的是，由于剧场模型的存在，油罐车的限制条件变得更容易用一种通用的、统一的方式表达出来。
+I just want to mention that tanker constraints become much easier to formulate in a general, uniform way because of the theater model.
+
+59
+00:08:55,450 --> 00:09:01,780
+这就是我们为什么要这样做的一个主要原因。
+So this is one major reason why we do and this kind of representation of objects.
+
+60
+00:09:02,220 --> 00:09:04,860
+这只是一些例子。
+So this just shows some example.
+
+61
+00:09:05,160 --> 00:09:07,400
+我们有一个两包的大厅。
+And we have a two pack hallcase.
+
+62
+00:09:07,560 --> 00:09:09,340
+这是名义运动。
+This is nominal motion doesn't work.
+
+63
+00:09:10,060 --> 00:09:29,890
+接下来，你可以看到我们检测接触，或预测不确定性，找到接触构型，找到与更新的目标构型匹配的力，然后完全移动包到目标构型。
+Next, you can see we detect contact, or predict uncertainty, and find contact configuration and find force matching an updated goal configuration, and then completely moved the pack to the goal configuration.
+
+64
+00:09:30,450 --> 00:09:34,850
+这很简单，但在这个例子中，这实际上是早期的工作。
+And this is so simple, but this in this example, this is actually earlier work.
+
+65
+00:09:34,850 --> 00:09:56,210
+在这个例子中，我们只考虑，I，沿着角色参数和桃参数A的方向和确定性，你可以看到机器人不知道这个不确定性，即使我们有磨牙，预测的不确定性。
+We only, this example, only considered to, I'm, orientation and certainties along the the the role parameter and peach parameter A And you can see the the robot doesn't know this uncertainty, even though we have the ground tooth, the predicted uncertainty.
+
+66
+00:09:57,330 --> 00:10:05,120
+这是一个不同的预测不确定性的案例，可能与事实有一点不同。
+And this is a different case predict uncertainty, and can be a little bit far from the different from the ground truth.
+
+67
+00:10:05,340 --> 00:10:10,510
+但这仍然是一个更好的预测。
+But still, this, this is a much better prediction.
+
+68
+00:10:10,960 --> 00:10:16,600
+有了顺应性动议，过渡就能成功。
+And, um, with complying motion, the transition can be successful.
+
+69
+00:10:17,110 --> 00:10:24,290
+这个过程还是有点慢，你们可以看到，但稍后，我会给你们看另一个例子。
+This work is still a little bit slow, you can see, but later on, I'll show you another example.
+
+70
+00:10:24,450 --> 00:10:26,150
+我们加快了速度
+We have speed up
+
+71
+00:10:26,340 --> 00:10:31,100
+做程序的时候花了不少功夫。
+quite quite a bit with making the procedures.
+
+72
+00:10:31,420 --> 00:10:33,640
+很多这样的程序都更有效率。
+Lot of these procedures are much more efficient.
+
+73
+00:10:36,640 --> 00:10:44,290
+好了，我想这是，啊，它在重复。
+Okay, so this is, I think, ah, it is repeating now.
+
+74
+00:10:44,450 --> 00:10:48,350
+所以不，我是某某小姐。
+So no, I am Ms. something.
+
+75
+00:10:49,110 --> 00:11:03,480
+对不起。我很快地展示一下。
+Sorry. I'm going to show just quickly.
+
+76
+00:11:03,560 --> 00:11:06,900
+A-A, 3, D的病例。第三，抱歉。
+A-A, three, D case. Now, three, be sorry.
+
+77
+00:11:07,060 --> 00:11:15,840
+我有三个完整的箱子。好的，我们还有整个三种情况。
+I three whole case. Okay, so we also have the three whole case.
+
+78
+00:11:16,100 --> 00:11:21,060
+但是在这种排列中，洞不一定是这样的。
+And, but in this the arrangement, holes don't have to be like that.
+
+79
+00:11:21,220 --> 00:11:23,480
+可以很随意。没关系。
+Can be really arbitrary. It doesn't matter.
+
+80
+00:11:23,480 --> 00:11:27,440
+孔可以是不同的，排列可以是任意的。
+The holes can be different, and the arrangement can be arbitrary.
+
+81
+00:11:27,600 --> 00:11:31,300
+所以整件事还能正常工作。
+Um, so the the whole thing still work.
+
+82
+00:11:31,460 --> 00:11:33,280
+我不知道为什么会停止。
+I'm not sure why this is stopping.
+
+83
+00:11:34,780 --> 00:11:41,620
+希望是好的。快看，快看。
+Hope it's okay. Just quickly see, see that.
+
+84
+00:11:48,860 --> 00:11:53,950
+好，最近，我们认为这家店有漏洞。
+OK So, more recently, we consider this shop hack holes.
+
+85
+00:11:54,110 --> 00:12:04,380
+在这个例子中，有两个三角形的黑客洞和同样的，完全相同的策略，但我们有一个更有效的实施。
+And in this example, have two triangular hacking hole and the same kind, exactly the same strategy, but we have a much more efficient implementation.
+
+86
+00:12:04,540 --> 00:12:09,660
+你看，这个比前一个快得多。
+You see, this is much faster than the um the previous one.
+
+87
+00:12:09,820 --> 00:12:18,850
+在这种情况下，我们考虑了六维不确定性，三个位置和三个方向的不确定性。
+And also, in this case, we consider six dimensional uncertainties, three positional and three orientational uncertainties.
+
+88
+00:12:18,930 --> 00:12:28,750
+尽管如此，与之前的实现相比，这个消息还是相当快的。
+And still, and the message can can be fairly fast comparing to the previous case, a previous implementation.
+
+89
+00:12:30,060 --> 00:12:43,270
+你可以看到有时候第一个预测不一定能导致成功，我是一个预测或估计的联系帖。
+You can see sometimes the 1st prediction may not be able to lead to a successful, I'm a prediction or estimation of contact post.
+
+90
+00:12:43,570 --> 00:12:45,890
+然后整个过程又开始了。
+But then the whole procedure starts again.
+
+91
+00:12:46,050 --> 00:13:01,550
+你可以看到在左边，有时它需要做第二次预测，但仍然，我的任务可以成功。
+And you can see on the left side, sometimes it has to do a 2nd attempt of the prediction, but still, I the task can be successful.
+
+92
+00:13:06,070 --> 00:13:12,020
+这实际上是一个成形混合钉孔任务。
+This is actually a forping mix shaped pegging hole task.
+
+93
+00:13:12,320 --> 00:13:31,120
+它走得很快。但是不同形状的疼痛，哦，嗯。
+It goes pretty fast. But the full pain of the different kind of shapes, oops, um.
+
+94
+00:13:31,600 --> 00:13:36,960
+不管怎样，你想到的是疼痛。forping有两个矩形和两个三角形。
+Anyways, you thought for pain. So forping has two rectangular shapes and two triangle shapes.
+
+95
+00:13:37,120 --> 00:13:40,860
+这种灵感来源于你，你有一个电源插头。
+This kind of inspired by you, you have a power plug.
+
+96
+00:13:40,980 --> 00:13:45,100
+它可以是三大头针或四品脱不同的形状。
+It can be to have a three pin or four pint of different shapes.
+
+97
+00:13:45,430 --> 00:13:46,430
+但是我们可以做到。
+But we we can do that.
+
+98
+00:13:46,590 --> 00:13:55,360
+我们为不同的零件，不同的形状做了这样的组装。
+So we have done this kind of assembly for different parts, different shapes.
+
+99
+00:13:55,520 --> 00:14:05,780
+即使不确定性是任务容限的10倍，也可以在10 ~ 20秒内成功完成装配。
+And successful assembly can always be accomplished in this way in ten to 20 s even when uncertainty is ten times of the task tolerance.
+
+100
+00:14:06,170 --> 00:14:17,320
+在我们的测试用例中，我们的测试公差点在方向上是86度，位置上小于0.1 mm。
+In our test cases, we have the test tolerance point 86 degrees in orientation and less than .1 .5 mm in position.
+
+101
+00:14:17,720 --> 00:14:25,310
+对于相同的任务用例，重复运行也可以取得相同的成功性能。
+And the same successful performance can be accomplished in repeated runs of the same task case.
+
+102
+00:14:25,470 --> 00:14:32,270
+该方法具有很强的确定性，适用于任意几何形状零件的装配。
+It's very deterministic, and the method is general to assembly of parts of arbitrary geometry.
+
+103
+00:14:32,430 --> 00:14:34,270
+任意形状的填料不一定是孔。
+Arbitrary shape doesn't have to be packing hole.
+
+104
+00:14:34,430 --> 00:14:43,520
+只要接触情境丰富、容忍度高，都可以用这种方法完成。
+It's just anything with rich contact situations and tight tolerance in this method can accomplish.
+
+105
+00:14:44,860 --> 00:14:49,080
+现在我想讲一些不同的东西。
+So now I'd like to talk about something different.
+
+106
+00:14:49,240 --> 00:14:54,120
+自主对象建模和识别在我的小组中应用较多。
+Autonomous object modeling and recognition in my group were more applied.
+
+107
+00:14:54,280 --> 00:15:01,500
+所以我听到了一些非常有趣，很棒的想法，关于更多的发现，更好的研究。
+So I hear some very interesting, great ideas for more discovery, kind of research better.
+
+108
+00:15:01,680 --> 00:15:06,440
+这更多的是源于一些实际需要。
+This is kind of more always originated from some practical need.
+
+109
+00:15:08,300 --> 00:15:12,230
+所以我们经常需要以外表为基础
+So we often need to have appearance based
+
+110
+00:15:12,300 --> 00:15:17,230
+3 d对象建模。我们想要
+3D object modeling. And we want to
+
+111
+00:15:17,230 --> 00:15:21,630
+为了识别目的，为了操纵目的。
+for for recognition purpose, for manipulation purpose.
+
+112
+00:15:21,970 --> 00:15:24,930
+常见的方法有两种。
+The common approaches can be of two types.
+
+113
+00:15:25,090 --> 00:15:31,710
+要么你有一个固定的摄像头，然后有一些转盘，把物体放在上面，然后转过身来显示面部
+Either you have a fixed camera and then some turntable, put object on it and turning around to show the faces
+
+114
+00:15:31,710 --> 00:15:43,100
+或者一些菜单干预，或者一个固定的物体和一个移动的摄像机，这可以是，我更自主的行动，但视图规划。
+of the objects, or some menu intervention, or a fixed object and a moving camera, that can be, I'm more autonomous action, but view planning.
+
+115
+00:15:43,260 --> 00:15:49,470
+但是，第一种方法可能很乏味，因为有人工干预。
+But, um, the 1st type of approach can be tedious because of human intervention.
+
+116
+00:15:49,550 --> 00:16:00,180
+第二种方法可能不会产生完整的模型，因为对象必须改变，为了一些极点，为了捕捉所有的面。
+And 2nd type of approach may not result in the complete model, because the object has to be changed in order to some poles, in order to capture all the faces.
+
+117
+00:16:00,380 --> 00:16:08,580
+所以我们使用UM，自主的交错方法，相互生活的感知和操纵。
+So we use, UM, the autonomous approach of interleave, inter living perception and manipulation.
+
+118
+00:16:08,830 --> 00:16:15,110
+我正在制作，这只是一些设置。
+I'm in the process, so this shows just some setting.
+
+119
+00:16:15,520 --> 00:16:21,580
+我们有固定摄像机，RGB摄像机，物体和机械手。
+We have a fixed camera, RGB camera and object and robot manipulator.
+
+120
+00:16:22,110 --> 00:16:47,190
+所以非常简单的方法是把一个图像,建立局部模型,然后将对象网络感知和行动,推动物体表面,就会露出更多的摄像机,和成长的压力模型,等等,直到大约360度丰富,然后我们为终止条件的方法。
+And so the very simple approach is to take an image, build partial model, and then push the object the Internet perception and action, push the object to expose more surface to the camera, and grow the pressure model, and so on, until some 360 degrees are rich, and then we the approach for termination condition.
+
+121
+00:16:47,250 --> 00:16:58,550
+是否所有的表面都被捕获，如果没有，那么通过操纵改变物体的所谓支持表面，并再次执行相同的过程。
+Has all the surfaces been captured, if not, then change the so called support surface of the object by manipulation, and do the the same process again.
+
+122
+00:16:59,150 --> 00:17:11,720
+好的，对于A物体建模，三维物体建模，我们使用两个相邻的R-G-B-D图像有足够的海洋重叠。
+Okay, so for the A object modeling, the three D object modeling, we use the two, two adjacent R-G-B-D images with sufficient overlapping of the sea.
+
+123
+00:17:11,940 --> 00:17:26,820
+然后做一个para，就是图像配准使用的特征是从视觉中保存的，也用CP算法来做。
+And to do a para, was image registration using the feature is saved for from the vision, and also I CP algorithm to do that.
+
+124
+00:17:27,100 --> 00:17:34,060
+所以我想，嗯，是的。
+So I think, I um, yeah.
+
+125
+00:17:34,240 --> 00:17:48,560
+然后在a - a近似后，通过全局优化进一步消除paravise配准中的累积误差和不准确性。
+And then after A-A look is close, we use a global optimization to further eliminate the accumulated errors and inaccuracies in paravise registration.
+
+126
+00:17:48,720 --> 00:17:52,480
+这是一个例子。我们有年龄和牛奶容器。
+So this is an example. We have ages and milk container.
+
+127
+00:17:52,640 --> 00:17:58,130
+这是第一张图片和第一个模型，机器人开始推动。
+This is the very 1st image and 1st model, and robots started to to push.
+
+128
+00:17:58,330 --> 00:18:03,980
+所以当考虑操作时，我们总是想让机器人做一些更简单的事情。
+So when to think about manipulation, we always want to think of something simpler for robot to do.
+
+129
+00:18:04,140 --> 00:18:07,880
+推送本质上更稳定。
+Pushing is inherently much more stable.
+
+130
+00:18:08,860 --> 00:18:14,800
+这个方法不关心推力是否是纯旋转。
+And this method doesn't really care if the push is a pure rotation or not.
+
+131
+00:18:14,960 --> 00:18:23,300
+这无关紧要，只要我们有图像和相邻图像中的重叠图像，对吧?
+It doesn't matter, as long as we have the image and overlapping seen image in indjacent images, right?
+
+132
+00:18:23,460 --> 00:18:30,960
+它对运动精度和不确定性有很强的容忍度。
+So it has, it's a very tolerant of motion accuracy or uncertainty.
+
+133
+00:18:32,450 --> 00:18:40,050
+这是View 18 Now，这是当前模型。
+And this is, this is the View 18 Now, this is the current model.
+
+134
+00:18:40,890 --> 00:18:46,690
+最后，这是View 19，完成360度。
+And finally, this is View 19, 360 degrees accomplished.
+
+135
+00:18:47,290 --> 00:18:50,970
+这是在全球组织之后。
+And this is after the Global Organization.
+
+136
+00:18:51,550 --> 00:18:55,130
+操作就是找到一个新的支撑面。
+So the manipulation is to find a new support surface.
+
+137
+00:18:55,290 --> 00:18:58,050
+可以看到我们有不同的标准。
+And can see we have different criterias for that.
+
+138
+00:18:58,210 --> 00:19:07,750
+我们希望新的表面使对象稳定，也使它仍然容易操作。
+We want the new surface to make the object stable and also make it still easy possible for manipulation.
+
+139
+00:19:08,140 --> 00:19:13,160
+在这个例子中，支撑面和前一个面是相对的。
+So in this particular case, the support surface is one opposite to the previous surface.
+
+140
+00:19:13,400 --> 00:19:15,360
+这是最终的模型。
+And this is a final model.
+
+141
+00:19:17,890 --> 00:19:21,170
+这显示了全球组织的一些影响。
+So this just shows some effect of global organization.
+
+142
+00:19:21,420 --> 00:19:30,920
+与之前的全局组织一样，您可以在这里看到导致一些缺口的箭头的积累。
+As before the global organization, you can see the accumulation of arrows leading to some gaps here.
+
+143
+00:19:30,920 --> 00:19:34,760
+但在全球组织之后，这些差距就消失了。
+But after the global organization, those gaps are gone.
+
+144
+00:19:35,440 --> 00:19:43,170
+还有一些其他的物体模型，只是一个图像，还有瑞典模型。
+And some other objects model, the just an image, and the Sweden model.
+
+145
+00:19:44,250 --> 00:19:47,810
+问题是，这是一个非常工程的环境。
+So question is, that's a very engineering environment.
+
+146
+00:19:47,970 --> 00:19:57,310
+我们有对象在那里，如果有人仍然需要把对象放在设置中，那么整个事情就会自动完成。
+We have the the object there, if somebody still has to put the object there to the setting, and then the whole thing can be done automatically.
+
+147
+00:19:57,570 --> 00:20:02,490
+如果环境是杂乱的，就像在这个例子中一样，该怎么办?
+What if the environment is cluttered, like in this case?
+
+148
+00:20:02,650 --> 00:20:26,870
+所以如果我们有，我们用一个带尖端摄像头的连续机器人试着用同样的方法建模，基本上就是我描述的，但把它放在一个不同的机器人上带有移动摄像头，试着做一个表面空间模型
+So if we have, I we use a continuing robot with a tip camera to try to model using the same same method, basically what I described, but put it on a different robot with with a moving camera, and to try to do a surface space modeling of the
+
+149
+00:20:27,210 --> 00:20:28,750
+目标对象。周围的
+target object. The surrounding
+
+150
+00:20:29,080 --> 00:20:34,660
+物体是障碍，是一些我们不关心但必须避免的东西，对吧?
+objects are obstacles, are some something we don't care but have to avoid, right?
+
+151
+00:20:35,010 --> 00:20:40,990
+再一次，感知和操作与第一幅图像交织在一起。
+So here again, interlive perception and manipulation with the 1st image.
+
+152
+00:20:41,100 --> 00:20:48,520
+机器人已经在使用这个信息来尝试移动到继续运动的机器人。
+The robot already using that information to try to move to motion of the continuing robot.
+
+153
+00:20:48,620 --> 00:20:52,000
+或者，顺便说一下，这是三个部分，或者四个部分继续机器人。
+Or, by the way, this is three sections, or four sections continue robot.
+
+154
+00:20:52,160 --> 00:21:06,310
+我们的模型是基于，我是沃克学校的合作者，我在克莱姆森，他们使用手臂的牛，一个连续的机器人，数字的，不同的机器人。
+We model this based on, and I collaborator in Walk School, I'm at Clemson, they use the ox of the arm a continuing robot, numatic, different robot.
+
+155
+00:21:06,510 --> 00:21:22,500
+现在我们使用这个机器人，我们可以把动作作为扩展角色或者a -我实际上减少了问题，扩展了部分，然后增加了生物来产生这种卷曲的效果。
+Now we use that robot, we have the motion as either expand character or A-I actually reduce the question, expand the section, and then increased creature to have this curling effect.
+
+156
+00:21:22,900 --> 00:21:29,830
+这里只显示了一些快照。
+And this shows just a number of a snapshots.
+
+157
+00:21:29,990 --> 00:21:36,530
+当它移动时，它会看到更多的目标物体，但它也会看到一些障碍。
+As it moves, it sees more of the target object, but it also sees some obstacles.
+
+158
+00:21:36,690 --> 00:21:48,620
+它不试图模拟障碍物，只是试图当它做实时运动规划时避免障碍物做这个操作。
+It doesn't try to to model the obstacles, just try to when it does real time motion planning to avoid obstacles doing this um operation.
+
+159
+00:21:48,780 --> 00:21:55,120
+这表明我们有这个，这个机器人在移动的同时也开始移动。
+So this shows that we have this, this robot that started moving as it moves.
+
+160
+00:21:55,140 --> 00:22:01,010
+它在左上角看到的就是它在每个图像中看到的。
+What it sees on the upper left corner is the what it sees in each image.
+
+161
+00:22:06,290 --> 00:22:10,230
+现在它是一个循环。
+So now it's is a loop.
+
+162
+00:22:10,390 --> 00:22:16,690
+循环是闭合的。现在它只是一个不同的物体吗?
+Loop is closed. Now is it just a different object?
+
+163
+00:22:16,930 --> 00:22:18,810
+这一次是一个咖啡容器。
+This time is a coffee container.
+
+164
+00:22:18,970 --> 00:22:23,970
+是较大的，所以机器人一个形状的时候是完全扩展的。
+Is larger, so the robot a shape when is fully extended.
+
+165
+00:22:24,130 --> 00:22:40,840
+仍然不能环绕被试者，但是，它会使用另一种构型，向另一个逆时针方向移动以覆盖被试者的整个侧面。
+Still cannot wrap around this the subject, but um, it will use the other configuration, going to to the other counter clockwise direction in order to cover the whole side surface of the subject.
+
+166
+00:22:45,160 --> 00:23:01,960
+啊哈。这个计划，我这个计划是一种增量尝试首先移动尖端摄像机来决定下一步尖端摄像机应该在哪里。
+Uh-huh. The planning, I the planning is a kind of incremental try to 1st move the tip camera to decide where the tip camera should be next.
+
+167
+00:23:02,000 --> 00:23:07,000
+整个手臂遵循这个连续机器人的逆运动学。
+And the whole arm follows in inverse kinematics for this continuing robot.
+
+168
+00:23:07,420 --> 00:23:11,910
+但这个动作也必须是为了躲避障碍物。
+But also the motion has to be, uh, to avoid obstacles.
+
+169
+00:23:12,070 --> 00:23:19,930
+它检测到。是的，这是实时的，但这是因为他的增量只需要知道下一个是什么。
+It detected. Yeah, so that's, that's real time, but it's because his incremental is only needs to know what's the next.
+
+170
+00:23:20,110 --> 00:23:23,410
+这是下一个视图规划。
+So kind of the next view planning in this case.
+
+171
+00:23:23,750 --> 00:23:33,090
+是的。这显示的是自动对象。
+Yeah. Okay, so this is, this shows automatic object.
+
+172
+00:23:33,110 --> 00:23:38,390
+哦，我忘了说了。你所看到的就是总的计划时间。
+Oh, I forgot to mention. So this, what you see is what you get the total planning time.
+
+173
+00:23:38,630 --> 00:23:45,840
+第一个例子的整个闭环只需要20毫秒。
+It's only like 20 milliseconds for for the entire close loop of the 1st example.
+
+174
+00:23:45,900 --> 00:23:49,980
+第二个例子，很相似，它只是在那个时候。
+For the 2nd example, very similar, it just went round, is about that time.
+
+175
+00:23:50,660 --> 00:24:00,530
+好吧?第一个大概有11张图片，足够覆盖整个站点来建立三维的侧面模型。
+Okay? And the 1st one has about eleven images, enough to cover the whole site to build the 3D side model.
+
+176
+00:24:00,740 --> 00:24:07,760
+在这个例子中，我们没有做顶部和底部，但是，嗯，这是可以做到的。
+We didn't do the the top and bottom in this case, but, um, it's just something that can be done.
+
+177
+00:24:08,000 --> 00:24:23,940
+我们还没有，所以这整个小插曲是关于，我正在使用这种相互生活的感知和操作，基于RGBD的感知，并大声地做自动物体。
+We we haven't done So this whole little episode is about I'm using this inter living perception and manipulation based on RGBD sensing and to do automatic object loudly.
+
+178
+00:24:24,280 --> 00:24:30,230
+该方法具有自身的图像基础，对机器人姿态和运动不确定性具有鲁棒性。
+And the method is robust to robot pose and motion uncertainty, because its own image base.
+
+179
+00:24:30,390 --> 00:24:48,970
+是的，看起来你能再重复一遍问题吗?
+Yeah, it it looks Can you repeat the question again?
+
+180
+00:24:48,990 --> 00:24:57,860
+它看起来像一个圆形的物体。你会问，它是什么它实际上并没有移动物体。
+It looks round object. You say, what is it's it's actually not displaceing the object.
+
+181
+00:24:58,020 --> 00:25:01,100
+所以它没有使用图像接触物体。
+So it's not touching the object using the image.
+
+182
+00:25:01,480 --> 00:25:09,720
+它有一个法线方向，它只是试图绕着物体弯曲，以保持一定的距离。
+It has kind of a normal direction, and it just try to to curve around the object to maintain certain distance.
+
+183
+00:25:09,880 --> 00:25:17,250
+这是一个约束运动。它试图保持接近地面的距离。
+It's a constraint motion. It tried to maintain almost the same distance towards the surface.
+
+184
+00:25:23,850 --> 00:25:23,910
+是的,
+Yes,
+
+185
+00:25:25,760 --> 00:25:31,360
+它不会产生碰撞，因为它使用相机来检测物体。
+it's not going to make a collision, because it uses the camera to detect object.
+
+186
+00:25:31,740 --> 00:25:31,940
+所以它
+So it
+
+187
+00:25:32,300 --> 00:25:33,630
+似乎在现在
+seems that within now
+
+188
+00:25:33,640 --> 00:25:40,260
+然后，一个很短的距离，比如3厘米，没有碰撞。
+and next, a short distance, like 3 cm, there's no collision.
+
+189
+00:25:40,680 --> 00:25:47,590
+是的。好吧，这对婴儿用品有用?
+Yes. Okay, so it works for baby objects, um?
+
+190
+00:25:47,830 --> 00:25:58,110
+你可以想象如果这种东西可以在一个非常有限的空间里，只有你看不见，只有机器人可以进去。
+And you can imagine if this kind of thing can be in a very confined space, and only you cannot see, only the robot can get in.
+
+191
+00:25:58,290 --> 00:26:07,640
+就是看看里面有什么东西，然后用它来建立模型并识别对象。
+And is try to see what something in it, and try to use that to to get model and to recognize the object.
+
+192
+00:26:08,680 --> 00:26:12,160
+那么，如果RGBT意识不有效呢?
+Now, what if RGBT sense is not effective?
+
+193
+00:26:12,240 --> 00:26:27,640
+我要感谢Chris Close Coasters在这项工作中的合作。
+And this I have to, I'm to say something to thank Chris Close Coasters Um for for your collaboration in this work.
+
+194
+00:26:27,800 --> 00:26:29,900
+我认为这是一个很酷的想法。
+And I think it's a very cool idea.
+
+195
+00:26:30,180 --> 00:26:44,300
+所以Toasta和他以前的学生，mabel Um，和我的学生一起工作，我们一起做了这个，但是这个想法最初被杯垫公司反对。
+So Toasta, and and also his former student, mabel Um, worked with my students, and we we kind of did that together, but the idea was initially actually opposed by coasters.
+
+196
+00:26:44,370 --> 00:26:48,550
+那么，如果RGB Sunday没有效果呢?
+So what if RGB Sunday is not effective, e.g.
+
+197
+00:26:48,710 --> 00:26:56,770
+对于透明的物体或非常暗的房间，所以你没有视觉，我们还能识别物体吗?
+for transparen't objects or a very dark room, so you don't have the vision, and can we still recognize objects?
+
+198
+00:26:57,110 --> 00:27:07,950
+我们的想法是用这种连续机器人来缠绕一个未知的物体并用机器人的形状来编码物体的形状。
+So the idea is that we use this kind of continue robot to wrap around an unknown object and use the shape robot shape to encode the object shape.
+
+199
+00:27:08,350 --> 00:27:23,730
+所以，行动就是感知。我们不直接使用感官，但我们可以利用机器人的形状，机器人的动作以及由此产生的形状作为一种分类物体，识别物体的方法。
+So effectively, action is perception. We don't directly use sensory, but we can use the robot shape, robot action and shape resulted from that as a means of classifying objects, recognizing objects.
+
+200
+00:27:24,490 --> 00:27:28,770
+所以我们仍然会使用感应，就像这里显示的。
+So we still use sensing a little bit, as shown here.
+
+201
+00:27:29,020 --> 00:27:31,700
+这是一个连续的机器人。
+We have this, this is a continual robot.
+
+202
+00:27:31,860 --> 00:27:45,630
+我们有这个稀疏。他们放置了非常简单的触摸传感器，但触摸传感器只用于指导机器人的行动，在物体周围写字，而不是感知本身。
+We have this sparse. They place very simple touch sensors, but the touch sensors is only used for guiding the robot action, for writing around objects, not for perception itself.
+
+203
+00:27:46,910 --> 00:27:55,300
+所以我们的方法是，我们过去一直在驱动整个物体，然后把物体包装起来，然后用球场直方图来描述机器人的形状。
+So the approach is we have past driven whole and wrapping up the objects, and then the robot shape is described with the court histogram.
+
+204
+00:27:55,940 --> 00:28:03,210
+接下来我们根据这些机器人的形状建立一个分类器，为每个对象收集机器人的形状。
+And next we build a classifier from these robot shapes, collection robot shapes for each object.
+
+205
+00:28:03,630 --> 00:28:09,450
+然后我们对未知的物体进行主动包装来进行物体识别。
+And then we do object recognition with active a wrapping for unknown objects.
+
+206
+00:28:10,010 --> 00:28:13,690
+这是，这是触摸驱动的整个手臂包裹。
+So this is, this shows the touch driven whole arm wrapping.
+
+207
+00:28:14,920 --> 00:28:18,820
+这是刻录。有非常相似的想法。
+And this is the ripping. Has very similar idea as.
+
+208
+00:28:18,980 --> 00:28:29,250
+你展示的是伸展手臂的尖端然后逐渐改变曲率。
+What you show is extend the tip of the arm and then also change the curvature so incrementally.
+
+209
+00:28:29,650 --> 00:28:32,970
+这次是由触摸传感器引导的。
+And this time is guided by touch sensor.
+
+210
+00:28:33,610 --> 00:28:45,400
+好吧?这个触摸给出了一个简单的信号一个正常的，正常的接触力方向，然后机器人就在做这种缠绕。
+Okay? The touches gives a simple signal of a normal, normal contact force direction, and then the robot is just doing this type of wrapping around.
+
+211
+00:28:45,420 --> 00:28:50,340
+当然，这只是模拟，但稍后，我会向你们展示真实的机器人动作。
+Of course, this is the simulation, but later on, I'll show you the real robot actions.
+
+212
+00:28:53,060 --> 00:29:00,020
+我们有这个例子来编码对象横截面所有类型的对象。
+So we have this shows the example raps to encode object cross sections all kinds of objects.
+
+213
+00:29:00,250 --> 00:29:07,290
+注意物体的形状和包裹物体的机器人形状是完全不同的。
+And notice that the object shape and robot shape wrapping around the object can be totally different.
+
+214
+00:29:07,450 --> 00:29:12,320
+它们不需要看起来很相似，只要有匹配的就行。
+They don't have to look similar, as long as they have a match.
+
+215
+00:29:12,480 --> 00:29:24,890
+只要我们能使用这些物体中的一些，机器人的形状，来给一个物体分类，一个物体类别，在这个例子中也是如此。
+As long as we can use a number of those objects, robot shapes, to classify an object, an object category, also in this case.
+
+216
+00:29:25,190 --> 00:29:41,350
+怎么做呢?我们试图通过将机器人的工作空间分解成不同的平面来捕捉物体的三维形状，然后在每个平面上，我们可以围绕着三维物体画一个rap。
+So how to do that? We actually try to capture the three D shape of the object by decomposing the workspace of the robot into different planes, and then wait for each plane, we can have a plan a rap around the three D object.
+
+217
+00:29:41,530 --> 00:29:46,210
+我们这样做是为了覆盖整个三维空间。
+So we do that to cover the entire are three D space, if you like.
+
+218
+00:29:46,810 --> 00:29:52,070
+所以我们把胳膊表示成一组，当然，每个球场都准备好了。
+So we represent arm as a set, of course, and each court is ready.
+
+219
+00:29:52,230 --> 00:30:01,710
+球场在长度上由三、七个参数表示，称为角度，也有端点面法线。
+Court is represented by some three, seven parameters at length, called angles, and also end point surface normals.
+
+220
+00:30:02,390 --> 00:30:07,360
+每条蓝线都是一致的。
+So a each blue line is accord.
+
+221
+00:30:07,580 --> 00:30:10,760
+就形状而言，可以有很多这样的法庭。
+And for shape, there can be many such courts.
+
+222
+00:30:11,680 --> 00:30:31,230
+在这种情况下，对象的表示，是将对象的不同部分放入一个七维直方图的集合，每个维度代表一个参数，我们使用PCA
+So the object representation, in this case, and is the set of courts of different raps of the object put into a seven dimensional histogram, and each dimension represents a parameter, which is so and we use PCA to
+
+223
+00:30:31,490 --> 00:30:33,950
+减少数据冗余
+reduce the redundancy of the data, and
+
+224
+00:30:34,010 --> 00:30:35,790
+在这种情况下，只是一个支持
+in this case, just a support
+
+225
+00:30:36,030 --> 00:30:40,410
+再回到机器训练，基于代码直方图对对象进行分类。
+back to machine train to classify objects based on code histograms.
+
+226
+00:30:41,290 --> 00:30:51,760
+因此，一旦分类完成，问题就给出了一个未知的对象，如何进行包装识别。
+So a next once the classifies are done, the problem is given an unknown object how to conduct wrapping for recognition.
+
+227
+00:30:52,140 --> 00:30:56,690
+这里我们使用决策过程和多色研究的标记。
+And here we use the mark of decision process and multicolor research.
+
+228
+00:30:57,530 --> 00:31:07,730
+这里的整个想法是平衡错误识别的成本和机器人移动包装的成本。
+The whole idea here is to balance the cost of incorrect recognition and cost of a robot movement of wrapping.
+
+229
+00:31:09,010 --> 00:31:16,530
+所以在这项研究中，每个节点都是到目前为止观察到的旧rap的直方图。
+So in this research, each node is a called histogram of old raps observed so far.
+
+230
+00:31:16,850 --> 00:31:19,590
+从第一段说唱开始。
+And it was starting from the 1st rap.
+
+231
+00:31:19,890 --> 00:31:28,840
+它决定如何将各机构的动作都达到另一个境界。
+It decides to how to add the agencies are movement to reach another rap.
+
+232
+00:31:29,140 --> 00:31:45,690
+为了达到另一种状态，我要搜索整个树来找到一系列的动作来最小化某个因果函数。
+And so to reach another state, I'm and the searches to go through this whole tree to find the sequence of actions that minimize some combined cause function.
+
+233
+00:31:46,030 --> 00:31:50,830
+在这种情况下，原因。它有两个组成部分移动成本。
+In this case, the cause. It has two components the movement cost.
+
+234
+00:31:51,250 --> 00:32:00,900
+这是累加，实际上是步数的平均移动成本除以步数，还有MS的成本。
+This is accumulation, and actually average movement costs for the steps divided by the number of steps, and also the cost of MS.
+
+235
+00:32:01,220 --> 00:32:06,360
+预测。所以我等待了一些成本。
+prediction. So so I kind of awaited some of the cost.
+
+236
+00:32:07,880 --> 00:32:16,730
+下面是一些实验结果。我会向你们展示更多关于这个消息的实际操作。
+Now, the some experimental results. I'll show you a little bit more real actions with this message.
+
+237
+00:32:17,070 --> 00:32:21,490
+我们发现这些日常用品通常十卷就足够了。
+We find that ten wraps are usually sufficient for these daily objects.
+
+238
+00:32:21,830 --> 00:32:28,730
+在每一个物体1500到300英里的速度下，每一次敲击需要1亿秒。
+At 15 hundred to 300 course per object, a hundred million seconds to 1 s per rap.
+
+239
+00:32:29,000 --> 00:32:41,150
+对10类185个目标进行了分类，使用线性sbm进行分类，准确率达76%。
+And classification has been performed for 185 objects from ten categories, with the accuracy being 76% using the linear sbm.
+
+240
+00:32:41,450 --> 00:32:49,810
+显然，我们可以做很多事情来改善这一点，但这只是展示这种概念的最初词汇。
+Obviously a lot can be done to improve that, but this is just really the very initial word to show the this kind of concept.
+
+241
+00:32:50,240 --> 00:32:55,840
+所以这是对每一项研究的认可与积极指导。
+So this is for a recognition with active guidance each research.
+
+242
+00:32:56,640 --> 00:33:01,800
+它被称为迭代。那么树的大小是如何决定的呢?
+It's called iteration. So the tree, how how do you decide the size of the tree?
+
+243
+00:33:02,180 --> 00:33:11,150
+分支是预先决定的，分支因素，透镜也是，或者说是预先决定的。
+And the branching is kind of predecided, a branching factor, and the lens is also, or that is also predecided.
+
+244
+00:33:11,310 --> 00:33:18,590
+这是一种视野搜索，看我们在决定下一个说唱动作之前要提前考虑多少步。
+That as a horizon search to see how many steps we want to look ahead before determine the next rap movement.
+
+245
+00:33:18,750 --> 00:33:27,030
+定义树的每一步，每一次迭代，都是一个完整的研究。
+So justified, define the step of the tree, and each um, each iteration, is entire research.
+
+246
+00:33:27,460 --> 00:33:31,360
+可以进行多次迭代，就像有多个研究者一样。
+There can be multiple iterations, so it's like a multiple researcher.
+
+247
+00:33:31,520 --> 00:33:45,760
+或者，您可以考虑在同一棵树中添加分支，使这棵树更加杂乱，并只包含增加的识别的置信度。
+Or you can consider adding branches the same tree to make the tree much busher, and to to just include the increased the confidence level of the recognition.
+
+248
+00:33:46,060 --> 00:33:53,530
+这里我们有不同的迭代预测的对象，概率和包装的数量。
+So here we have different iterations predicted object and probability and number of wraps.
+
+249
+00:33:53,910 --> 00:33:58,210
+举个例子，瓶子，记号和杯子。
+And some example here, bottle or mark and cup.
+
+250
+00:33:58,410 --> 00:34:04,630
+你可以看到，随着迭代的进行，预测的概率越来越大。
+You can see, as the iteration goes, the prediction probabilities become stronger.
+
+251
+00:34:05,050 --> 00:34:10,130
+当然，也有更多的说唱，更强的预测。
+But there are, of course, more raps too, stronger prediction.
+
+252
+00:34:10,290 --> 00:34:12,630
+但有时候，当我们幸运的时候。
+But sometimes, when we we can get lucky.
+
+253
+00:34:12,820 --> 00:34:22,890
+在这种情况下，对于锤子来说，只要一次迭代，两次敲击就可以决定一个给定的非常强的识别概率。
+Uh, in this case, for the hammer, just one iteration are two raps can decide a given a very strong probability of recognition.
+
+254
+00:34:22,930 --> 00:34:33,130
+所以我和WPI传统现在的同事以及他的团队，用他们的真实机器人做了真实的实验。
+So with my colleagues at the WPI Traditional Now and his group, we used their real robot to do the real experiments.
+
+255
+00:34:33,470 --> 00:34:36,710
+这是三部分机器人，并展示了触摸传感器。
+These are three section robots, and show the touch sensors.
+
+256
+00:34:36,870 --> 00:34:44,350
+这个透明的不是瓶子的物体。这只是不同对象的包装。
+And this transparen't bottle object. And this is just wrapping of different objects.
+
+257
+00:34:44,510 --> 00:34:55,940
+这都是由类型传感器驱动的，在这个例子中，A和盒子也一样。
+This is all just driven by the type sensor, A and box also in this case.
+
+258
+00:34:56,280 --> 00:34:58,680
+但是你已经看到了一个小问题。
+But you can already see a little bit of a problem.
+
+259
+00:34:58,840 --> 00:35:21,220
+我来解释一下还有茶壶。好了，我们实际上是在模拟中训练分类器，然后使用模拟使用模拟训练的分类器来应用到真正的说唱中。
+I'll explain that and teapot. Okay, so we actually train the classifiers in simulation entirely, and then use the simulate use the classifiers trained in simulation to apply to the real raps.
+
+260
+00:35:21,420 --> 00:35:26,380
+这是一种看似真实的传递。
+And this is a so seem to real and kind of transfer.
+
+261
+00:35:26,790 --> 00:35:28,470
+如你所见，
+And as you can see,
+
+262
+00:35:29,050 --> 00:35:34,190
+对于这个瓶子和预测
+for this bottle and prediction or
+
+263
+00:35:34,580 --> 00:35:37,400
+识别概率很高，而且是正确的。
+recognition probabilities pretty high, and is correct.
+
+264
+00:35:37,560 --> 00:35:37,710
+但这
+But this
+
+265
+00:35:37,960 --> 00:35:41,960
+其中一个是完全错误的。这个也是对的。
+one is totally wrong. And this one's also correct.
+
+266
+00:35:42,140 --> 00:35:51,600
+这是因为这个盒子，实际上，其中一个触觉传感器故障了，所以机器人不知道。
+This is because for this box, actually, one of the touch sensor sensors was malfunctioning, so the robot didn't know it.
+
+267
+00:35:51,760 --> 00:35:58,130
+它会在那个角上撞击物体，然后不断变形。
+It actually hit the object at that corners keep on deforming itself to wrap.
+
+268
+00:35:58,130 --> 00:36:04,460
+所以得到某种形状。你看，这个形状和瓶子的形状很相似。
+So result in some shape. You look at this, the shape is very similar to do the bottle shape.
+
+269
+00:36:04,720 --> 00:36:25,810
+这实际上表明，对于使用形状，你可以，一个人可以增加识别的准确性通过更成熟的考虑变形，或在感官上，我们只是使用非常原始，非常稀疏的触摸传感器。
+And that that actually shows that for using shapes, you can, one can increase the accuracy of a recognition by more riping right of considering deformation, or at the senses, just we use extremely primitive, very sparse touch sensors here.
+
+270
+00:36:27,770 --> 00:36:35,470
+只是一些物体。是的，它在动。
+So just some objects. Yeah, it is moving.
+
+271
+00:36:35,630 --> 00:36:37,730
+我要在这里表演一些真正的说唱。
+And I'll show some real rap here.
+
+272
+00:36:37,920 --> 00:36:44,280
+不仅仅是在地板上包扎，还有另一种，我们称之为特殊包扎。
+And not just wrap on the floor, but other kind of, we call special wrap.
+
+273
+00:36:44,440 --> 00:36:48,510
+这是其他星球的包裹，但有点悬浮在空气中。
+It's other planet wrap, but kind of suspending the air.
+
+274
+00:36:48,990 --> 00:36:53,190
+这些是不同的，这个是相同的物体。
+And these are for different, well, this is for the same object.
+
+275
+00:36:53,930 --> 00:37:07,330
+我们也可以看到不同物体的物体，对吧?
+And we can also see things for different objects, right?
+
+276
+00:37:08,810 --> 00:37:22,410
+数字校准，因为你要用某种方式超过体操，然后乘客的位置，甚至只是加入。
+The number calibration, because you have to use somehow over gymnastics, and then the position to the passengers, or even just join.
+
+277
+00:37:26,290 --> 00:37:30,210
+它，它实际上，它实际上是敏感的。
+It's, it's actually, it's actually sensitive.
+
+278
+00:37:30,290 --> 00:37:45,280
+我来告诉你为什么。对于。对于。如果包装真的只是在水平面上，这不是很敏感，因为我们确实有一种计算形状的方法。
+I'll show you why. Um, for for the for the one that if, if the wrapping is really just on the horizontal plane, it's not very sensitive, because we do have A-A way of calculating the shape.
+
+279
+00:37:45,730 --> 00:37:48,110
+但是看看分类结果。
+But look at the classification results.
+
+280
+00:37:48,370 --> 00:37:53,780
+当我们有特殊包装时，发生的概率就会变得更糟。
+When we have special wraps, the probabilities going is become much worse.
+
+281
+00:37:54,200 --> 00:37:56,240
+这是因为重力效应。
+This is because of a gravity effect.
+
+282
+00:37:56,400 --> 00:38:08,610
+所以，当我们做模拟的时候，我在火车分类中，我们没有考虑真实机器人的重力影响。
+So that we, when we do the simulation I'm in classification for train classifies, we didn't consider the gravity effect of the real robot.
+
+283
+00:38:08,990 --> 00:38:11,790
+同时也不考虑变形效应。
+And also the deformation effect is not considered.
+
+284
+00:38:11,950 --> 00:38:23,190
+因此，在模拟真实迁移时，很多真实世界的因素没有被考虑到，从而影响分类结果。
+So the the simulation to real transfer that a lot of the real world factor was not considered in the classified that affects the classification results.
+
+285
+00:38:23,370 --> 00:38:25,650
+而且，我们做得还不够。
+And also, we didn't do enough.
+
+286
+00:38:25,810 --> 00:38:30,590
+我们可以写更多的东西，但在这个例子中可能写得不够。
+We could do more writing, but probably not enough writing in this real case.
+
+287
+00:38:31,190 --> 00:38:37,050
+这说明锁丝是可以做的。
+So that shows that a lock silk can be done.
+
+288
+00:38:37,210 --> 00:38:48,040
+但我们已经展示了由触觉驱动的包裹物体，通过包裹后机器人的形状进行识别，以及最小限度地使用触觉来指导行动，而不是用于识别。
+But we have shown touch driven wrapping up objects for recognition through robot shapes after wrapping, and minimum use of touch sensing for guiding action, but not for recognition.
+
+289
+00:38:48,200 --> 00:39:00,020
+所以这是一个很好的例子，行动本身直接就是知觉，而不是直接感觉，适用于我们的GPD感觉不起作用的物体。
+So this is a great example that action itself directly is perception, not direct sensory, and applicable to objects where our GPD sense is not effective.
+
+290
+00:39:00,040 --> 00:39:07,520
+但更多的工作，肯定会工作，需要改进机器人，提高想象力，甚至学习。
+But more work, definitely will work, is needed to improve the robot, improve the fancy And even learning.
+
+291
+00:39:07,960 --> 00:39:17,300
+现在有很多不同的学习方法，深度学习，强化学习，各种各样可以考虑的方法。
+There are so many different kinds of learning methods now, deep learning, reinforcement learning, all kinds that could be considered.
+
+292
+00:39:18,460 --> 00:39:24,380
+好了，现在我想简单讲讲不确定环境下的实时适应情绪规划。
+Okay, so now I'd like to briefly talk about real time adapt emotion planning in uncertain environments.
+
+293
+00:39:24,850 --> 00:39:51,250
+这实际上是我第一次由我的学生提出的，早在两岁，八岁的时候就很烦人后来我的学生把我的衣服串起来搅拌到现在，如何运用经济系统，最近，另一个学生做了约束运动规划。
+This actually is something that I was 1st proposed by my students, annoying in as early as two, oh, eight I and then later my student string and stirring my clothes applied to now, how economic systems, and more recently, another student did it for um constrained motion planning.
+
+294
+00:39:51,430 --> 00:40:01,310
+整个想法是环境是动态的机器人不知道动态的障碍物，不知道障碍物在哪里，等等。
+The whole idea is the environment's very dynamic with dynamic obstacles that the robot doesn't know, doesn't know where the obstacles go, and so on.
+
+295
+00:40:01,470 --> 00:40:07,190
+所以你必须同时感知，感知和计划，而且是实时的。
+So you has to do sensing, perception and planning all at the same time, in real time.
+
+296
+00:40:07,350 --> 00:40:09,880
+那么如何才能使规划有效呢?
+So how can make the planning effective?
+
+297
+00:40:09,900 --> 00:40:17,420
+这部分与其他运动规划方法有很大的不同你们可能已经接触过很多了。
+This is, this part is very different from all the other motion planning methods you probably have be more exposed to.
+
+298
+00:40:17,580 --> 00:40:37,830
+这是正确的。整个想法是我们保持一组不同的轨迹，然后当机器人移动时，它所做的就是进化这些轨迹，有点像进化计算的灵感，但重新排序，重新排序，看看哪个是最好的，并随时准备切换
+This is true. The whole idea is we maintain a set of diverse trajectories, and then as the robot moves, all it does is to evolve those trajectory, kind of inspired by evolutionary computation, but re rank, re rank to see which one is the best, and constantly ready to switch
+
+299
+00:40:38,010 --> 00:40:39,190
+献给最好的人
+to the best one
+
+300
+00:40:39,490 --> 00:40:41,350
+来处理
+to to deal with the
+
+301
+00:40:41,630 --> 00:40:43,650
+环境。所以我们称之为自适应运动规划。
+environment. So we call adaptive motion planning.
+
+302
+00:40:44,070 --> 00:40:48,890
+这就是机器人的想法。你可以把它看成一个构型空间。
+So here's the idea robot. You can consider this as a configuration space.
+
+303
+00:40:49,300 --> 00:40:53,960
+机器人试图从一个起始位置移动到另一个位置。
+The robot is trying to move from a starting location to go location.
+
+304
+00:40:54,240 --> 00:40:58,960
+这适用于所有的移动操纵者，所有的?
+This applies to all kinds of mobile manipulators, all kinds of Okay?
+
+305
+00:40:59,260 --> 00:41:12,580
+所以当它移动时，物体也在移动，它意识到它发现的第一个轨迹不够好，就切换到新的好轨迹。
+So as it moves, object moves, and it realize that the 1st trajec it found is not good enough, is switched to the newly ranked good trajectory.
+
+306
+00:41:12,960 --> 00:41:20,580
+你可以看到，这个良好的轨迹，也不同于最初的形状，因为它不断地自我进化。
+And this good trajectory, you can see, is also different from the initial shape, because it constantly evolved by itself.
+
+307
+00:41:20,990 --> 00:41:24,230
+当机器人来到这里，就切换一下。
+And as the robot come here, just switch.
+
+308
+00:41:24,270 --> 00:41:30,910
+当然，在实现目标的整个过程中，它可以多次转换。
+Of course, it can switch multiple times for this whole course of trying to reach the goal.
+
+309
+00:41:31,390 --> 00:41:39,650
+中国的夏季意识不断进化，并转向更好的轨道。
+And repeatedly it does summer Chinese sense move evolve and switch to the better trajectories.
+
+310
+00:41:39,760 --> 00:41:43,660
+但这是一个很像玩具的例子。
+But this is a very pretty toy like example.
+
+311
+00:41:43,760 --> 00:41:49,330
+只是为了展示机器人抓住什么并试图改变它的运动。
+But to just to show the idea what the robot seize and try to change its motion.
+
+312
+00:41:49,670 --> 00:41:53,430
+它对这个环境一无所知。
+It has nothing, no idea at all about this environment.
+
+313
+00:41:53,590 --> 00:41:59,530
+只需要看一点触控感应器来引导他的动作。
+Just view a little bit of tap sensor and to to to guide his motions.
+
+314
+00:41:59,690 --> 00:42:03,830
+蓝色机器人和个人或障碍。
+So the blue robot and the personal or obstacles.
+
+315
+00:42:05,610 --> 00:42:09,570
+最近，我们考虑了任务约束。
+And more recently, we consider the task constraint.
+
+316
+00:42:09,650 --> 00:42:11,690
+我们会制定一个严格的情绪计划。
+We'll have a tough emotion planning.
+
+317
+00:42:12,030 --> 00:42:20,760
+所以我们要找出差异。这里我们有过去的约束轨迹和非任务约束轨迹。
+So we the differences. Here we have past constraint trajectories and also non task constraint trajectory.
+
+318
+00:42:20,920 --> 00:42:25,680
+或者在相同的种群中，机器人将不得不根据环境进行切换。
+Or in the same population, the robot will have to switch based on the circumstances.
+
+319
+00:42:25,840 --> 00:42:33,280
+有时它必须释放任务约束以避免障碍，有时也可以恢复。
+Sometimes it has to release task constraint to avoid obstacles, and can and sometimes and also recover.
+
+320
+00:42:39,000 --> 00:42:48,540
+这是一个机器人试图移动一杯水而不把水洒出来。
+So this is a robot trying to move a cup of water without spilling the water.
+
+321
+00:42:48,600 --> 00:42:50,320
+这是过去的约束条件。
+So that's the past constraint case.
+
+322
+00:42:50,770 --> 00:42:55,090
+然后是动态障碍，它必须避开障碍。
+Then there's a dynamic obstacle, and it has to avoid obstacles.
+
+323
+00:42:55,250 --> 00:42:58,590
+有时它可以避免很好地维护任务约束。
+Sometimes it can avoid well maintaining the task constrained.
+
+324
+00:42:58,900 --> 00:43:06,500
+有时它必须找到一个中间目标，然后放下，等待。
+Sometimes it has to find an intermediate goal to put down and wait.
+
+325
+00:43:06,670 --> 00:43:12,830
+也要避开障碍，直到我远离障碍。
+Also avoid obstacles until I'm obstacles away.
+
+326
+00:43:13,110 --> 00:43:22,770
+现在，如果简历是熔化的，你考虑一下，一个机器人服务员在动态环境中必须做一些像这样的操作。
+Now, if resumes is molten, you consider this, a robot waiter in the dynamic environment will have to do some of the maneuvers like this.
+
+327
+00:43:26,370 --> 00:43:29,930
+这只是一个不同的例子，不同的任务约束。
+And it's just a different example, so different task constraints.
+
+328
+00:43:30,620 --> 00:43:35,080
+所以机器人试图推动抽屉，然后找到一些障碍。
+So the robots trying to push the drawer, then find some obstacle.
+
+329
+00:43:35,180 --> 00:43:37,160
+当然，这是非常模拟的。
+This is, of course, very simulation.
+
+330
+00:43:37,320 --> 00:43:42,660
+这是A-U-A-B，这说明了规划师是完全一样的。
+It's A-U-A-B, and it just shows the whole idea that the planner is exactly the same.
+
+331
+00:43:42,660 --> 00:43:45,480
+它不，我们不担心任何事情。
+It doesn't, we don't heartcoat anything.
+
+332
+00:43:45,640 --> 00:43:50,690
+这颗行星通过探测来决定它的去向。
+This is the the planet used detection to decide where it goes.
+
+333
+00:43:55,970 --> 00:44:03,290
+好，最后，我们用几分钟的时间来讨论一下savantic SLAMI和没有环境。
+OK, so finally, our use may be a couple of minutes to talk a little bit about savantic SLAMI and no environments.
+
+334
+00:44:03,330 --> 00:44:06,930
+我们知道Aslam是同步本地化。
+We know Aslam is for simultaneous localization.
+
+335
+00:44:07,190 --> 00:44:25,430
+映射语义大满贯。我相信这让我们和其他人付出了代价，在环境的语义表征上做了很多工作，就是捕捉地图的语义信息，地图上的语义对象。
+Mapping semantics slam. I'm sure it cost us and others, and working on a lot of semantic characterization of the environment, is to capture map the semantic information, semantic objects in the map of slam.
+
+336
+00:44:25,850 --> 00:44:52,800
+但是相关的工作，要么很少考虑语义级的数据关联，要么在某种程度上表示是语义对象的低级表示，很难进行实时操作，所以我们考虑了一种具有自主对象级数据关联的语义slime方法。
+But related work, um either hardly considered data association at the semantic level, or um at some point representations is a low level representation of semantic objects and difficult to do real time operations, so we considered a semantic slime method with autonomous object level data association.
+
+337
+00:44:53,040 --> 00:45:01,550
+整个想法是，首先，我们使用一些方法，比如ready。
+The whole idea is that we 1st, we use the in some method, like the ready.
+
+338
+00:45:01,710 --> 00:45:08,160
+你将是三个来识别对象在现场与toody碰撞盒和标签。
+You will be three to to identify objects in the scene with a toody bumping box and a label.
+
+339
+00:45:08,380 --> 00:45:26,430
+然后我们将这个物体与二维形状匹配三维大小和形状，同时捕捉三维物体的位置和方向，我们将它构建到um寄存器中作为数学对象。
+And then we fit that object with the quadric shape for three D size and shape, capturing also with the position and orientation of the three D objects, and we we build this into the um registers as math objects.
+
+340
+00:45:26,590 --> 00:45:42,720
+现在，当一个新的c新帧um被考虑，我们做一个关联的地图，新对象到旧的地图对象通过水泥信息，分层匹配第一。
+Now, when a new c new frame um is considered, we do an association with map, the new object to old map object by cement information, hierarchical matching 1ST.
+
+341
+00:45:42,930 --> 00:45:42,990
+所以
+So
+
+342
+00:45:43,260 --> 00:45:44,390
+如水泥资料
+if the cement information
+
+343
+00:45:44,740 --> 00:45:46,550
+匹配，我们去几何学
+matches, we go to the geometrical
+
+344
+00:45:46,820 --> 00:45:55,470
+信息，如形状的表示，位置等，并找到相应的候选者。
+information, like the representation of the shape, the location and so on, and to find the corresponding candidate.
+
+345
+00:45:55,630 --> 00:46:00,280
+这个物体以前见过，或者不总是新物体。
+So see, this object has been seen before, or not always a new object.
+
+346
+00:46:00,440 --> 00:46:05,200
+这就是数据关联的全部思想。
+So that's the whole idea about the data association.
+
+347
+00:46:05,540 --> 00:46:14,190
+这是T-O-M-R GB I-F-I, 1, X-Y-Z序列，我们用它来尝试我们的算法。
+And this is the T-O-M-R, GB, I-F-I, one, X-Y-Z sequence, and we just use that to try our algorithms.
+
+348
+00:46:14,410 --> 00:46:26,470
+你将会是三是用来检测带有标签的物体，然后我们把二次曲面捕捉到形状，你可以看到标签从一帧到另一帧。
+And you will be three is used to detect objects with labels, and then we put the quadric to capture the shape, and you can see the labels from from one frame to another.
+
+349
+00:46:26,470 --> 00:46:32,610
+UM，如果标签没有改变，那就表明有看得见的物体。
+UM, if the labels don't change, that that shows there seeing objects.
+
+350
+00:46:33,250 --> 00:46:44,790
+这是实时的。我们也使用三维高水平水泥信息来辅助。
+And this is real time. UM We also used three D high level cement information for aiding.
+
+351
+00:46:45,170 --> 00:46:54,130
+循环文化循环。靠近点发现，使用低等级或a - b两击可能会有问题。
+Loop culture loop. Closer detection, I'm can be a problem using low level or A-B slam two.
+
+352
+00:46:54,310 --> 00:47:04,280
+Abuselam三人。很多时候，非常相似的场景，就像我认为的一样，如果细节看起来非常相似，就无法区分细节。
+Abuselam three. A lot of times, very similar scenes, like I considered the same, cannot differentiate the detail if the details look very similar.
+
+353
+00:47:04,690 --> 00:47:12,710
+因此，我们考虑使用语义对象的三维语义可见图。
+So we consider using a 3D semantical visibility graph of the semantic objects.
+
+354
+00:47:13,490 --> 00:47:17,730
+共通性图的每个节点都是一个对象，语义对象。
+Each node of covasibility graph is an object, semantic object.
+
+355
+00:47:17,990 --> 00:47:34,250
+如果两个物体在一起被观察了三次，我们就添加一条边，我们对每一帧进行比较，我们将这个图与下一个图进行比较，看看它们是否真的代表了相同的位置。
+And we add an edge if two objects are observed together for three times, and we compare for each frame, we compare this corvasibility graph with the next free to see if they really represent the same location, saying or not.
+
+356
+00:47:34,510 --> 00:47:38,050
+在这个例子中，我们有两间公寓。
+So in this example, we have two apartments.
+
+357
+00:47:38,410 --> 00:47:43,380
+它们看起来很相似。其实，都是伊斯兰教，或者是暴跌三。
+They look very similar. Actually, all be Islam too, or be Slump Three.
+
+358
+00:47:43,760 --> 00:47:52,450
+认不出他们的不同。考虑A环是封闭的，但不同楼层有不同的公寓。
+Could not recognize their differences. Consider that the A loop is closed, but there are different apartments in different floors.
+
+359
+00:47:52,630 --> 00:47:57,470
+我们使用了高层次的语义可见性图。
+And for the we use a high level semantic visibility graphs.
+
+360
+00:47:57,690 --> 00:48:01,530
+我们可以用我们的方法成功地检测出差异。
+We can our methods successfully detect the differences.
+
+361
+00:48:03,370 --> 00:48:06,960
+好了，时间差不多到了。
+OK, I think my time is up, almost.
+
+362
+00:48:07,120 --> 00:48:12,900
+总结一下，我介绍了这四个领域的一些研究。
+Just to summarize, I've introduced a bit of research in these four areas.
+
+363
+00:48:13,130 --> 00:48:21,580
+当然，在每个领域，都可以做更多的研究，也可以探索更多有趣的事情。
+Of course, in each area, the more research can be done, and and more interesting things can can be explored.
+
+364
+00:48:21,840 --> 00:48:26,350
+但有趣的是看到它们之间的联系，对吧?
+But also interesting thing is to see the connections of them, right?
+
+365
+00:48:26,690 --> 00:48:37,400
+我们看到了很多实时规划工作，但是实时规划和实时规划应该结合起来才能让机器人真正成功。
+We see a lot of slam work or real time planning work, but slam and real time planning really should be combine in order for the robot to be really successful.
+
+366
+00:48:37,560 --> 00:48:39,940
+不仅仅是移动机器人。
+And it's not just about mobile robot.
+
+367
+00:48:40,130 --> 00:48:44,530
+这是一个操纵器，操纵器等等。
+This one manipulation, manipulators and so on an object.
+
+368
+00:48:44,690 --> 00:48:55,120
+模型。呃。和机器人组装。这也可以携手并进，组装不只是在工业环境中。
+Modelly. Uh. And robotic assembly. This can also go hands in Hands assembly is not just in the industrial setting.
+
+369
+00:48:55,280 --> 00:48:57,480
+我们有很多日常生活组装。
+We have a lot of daily life assembly.
+
+370
+00:48:57,500 --> 00:49:02,060
+只是把东西放在一起，在一个非常疲惫的间隙。
+Just put things together in a very tired clearance.
+
+371
+00:49:02,280 --> 00:49:09,620
+宽容需要处理这些策略，嗯等等。
+Tolerance requires the handling of these strategies, um and so on.
+
+372
+00:49:09,780 --> 00:49:21,170
+这些是参与我所展示的研究的学生，还有合作者，当然包括costa和level。
+So just very These are the students involved in the research I presented, and collaborators, including, of course, costa here and level.
+
+373
+00:49:22,130 --> 00:49:24,670
+我还是很感激你的好意。
+I still really appreciate that the whole idea.
+
+374
+00:49:24,830 --> 00:49:26,130
+我觉得这太酷了。
+I think this was so cool.
+
+375
+00:49:26,570 --> 00:49:33,950
+在一些正在进行的工作中，我让学生们做受限的，连续的覆盖运动，针对自由曲面。
+And as some ongoing work, I have students doing constrained, continuous coverage motion for a free form of surfaces.
+
+376
+00:49:34,120 --> 00:49:41,630
+机器人冷泉或绘画的动机是非常实用的问题。
+A robot cold spring or painting was really very applied problems at the motivations.
+
+377
+00:49:41,790 --> 00:49:45,310
+但后来我们发现，或者说理解不足，操纵者受到约束。
+But then we discovered, or undertasten, manipulator constrained.
+
+378
+00:49:45,470 --> 00:49:51,060
+然后我们发现了一种自由曲面表示，这是一种很好的机器人路径规划方法。
+Then we discover a free form surface representation, a very good one for robot pass planning.
+
+379
+00:49:51,100 --> 00:49:54,720
+操纵者并不存在。
+I with, manipulator is not really there.
+
+380
+00:49:54,880 --> 00:50:08,620
+我们还进行了可行性研究。给定一个机器人，给定表面，你有很多参数在哪里运行机器人，在哪里运行表面，以及关节约束和任务约束，它们都匹配吗?
+We also feasibility study. Given a robot, given the surface, you have a lot of parameters where to play the robot, where to play the surface, and the joint constraints and task constraints, do they all match?
+
+381
+00:50:08,920 --> 00:50:12,660
+我们可以对整个式子做一个连续的覆盖吗，还是需要分割?
+Can we do a continuous covering of the whole thing, or have to divide it?
+
+382
+00:50:12,820 --> 00:50:17,740
+然后进行可行性研究，最后进行复盖运动模式路径优化。
+So, feasibility study, and finally, coverage motion pattern path optimization.
+
+383
+00:50:17,900 --> 00:50:28,140
+我们在这方面做了一些工作，我也是一名学生，一直在研究3d重建动物结构的商业探索。
+So we've done some work in that, and also a student, have been working on the commerce exploration of animal structure for three D reconstruction.
+
+384
+00:50:28,480 --> 00:50:34,830
+这是旅行，推销员的问题，画廊，画廊的问题，和
+That's a really a combination of travelling, salesman's problem, an artry gallery, art gallery problem, and
+
+385
+00:50:35,120 --> 00:50:39,240
+大满贯。这只是一个范围。
+slam. And this is, this shows just a scope of things.
+
+386
+00:50:39,240 --> 00:50:39,270
+和
+And
+
+387
+00:50:39,600 --> 00:50:49,830
+他花了很多精力试图建立一个有效的数据结构或者管理结构来管理所有这些数据
+he put a lot of effort try to build an efficient data structure or management structure for all these the data in in this kind
+
+388
+00:50:49,990 --> 00:50:55,360
+的过程。但这也是人类正在进行的。
+of process. But this is also ongoing human really.
+
+389
+00:50:56,920 --> 00:51:01,360
+很巨大的努力。好了，我的演讲就到这里。
+A-A huge effort. Okay, so that's it for my talk.
+
+390
+00:51:01,520 --> 00:51:10,000
+非常感谢。我谢谢你的下巴。
+Thank you very much. I thanks Chin.
+
+391
+00:51:10,060 --> 00:51:15,340
+这是惊人的。就呼吸而言，在我看来，这很好。
+That was amazing. In terms of the breath, that's nice from my point of view.
+
+392
+00:51:15,500 --> 00:51:21,740
+所以，下一个环节会有一个讨论小组成员，所以我会在网上主持。
+So, um, the next section will have A-A panelist, so I will be moderating the online.
+
+393
+00:51:21,900 --> 00:51:26,050
+这是迈克尔·波瑟乐队的里昂·金。
+And we've got Leon Kim from a Michael poser's group.
+
+394
+00:51:26,070 --> 00:51:28,030
+他是博士生，二年级。
+He's a PHD student, a 2nd year.
+
+395
+00:51:28,030 --> 00:51:31,940
+他会亲自处理问题。
+He will be um handling the in person questions.
+
+396
+00:51:32,100 --> 00:51:39,150
+同样，如果你自己，不要忘记我们需要把麦克风递给你这样网上的人就能听到了。
+So also, if your own person, don't forget that we need to hand you the mike so so that the online people can hear.
+
+397
+00:51:39,310 --> 00:51:44,510
+如果你在网上，不要放入聊天，请使用问答按钮，并将从那里开始。
+And if you're online, don't put in chat, please use the Q and A button, and will go from there.
+
+398
+00:51:44,670 --> 00:51:47,090
+里昂将从第一个问题开始。
+So, uh, leon will start with the 1st question.
+
+399
+00:51:48,050 --> 00:51:50,990
+谢谢你！京。我只是想感谢你精彩的演讲。
+Thank you. Jing. I just wanted to thank you for the wonderful talk.
+
+400
+00:51:51,150 --> 00:51:57,480
+这很有趣。嗯。我想问第一个，一个非常简单的澄清问题。
+That was very interesting. Um. And I wanted to ask a 1st, a very quick clarification question.
+
+401
+00:51:57,640 --> 00:52:01,310
+UM真的是针对你的第一个作品吗?
+UM is really directed at the 1st work that you've presented?
+
+402
+00:52:01,570 --> 00:52:10,050
+我只是想确认一下，我理解了，你只取了一个税收力测量的样本。
+UM So I just wanted to make sure I understood, um, you only take a single sample of the force measurement for your taxes.
+
+403
+00:52:10,210 --> 00:52:14,090
+这正确吗?实际上，这不仅仅是一个样本。
+That correct? Well, actually, it's not just a single sample.
+
+404
+00:52:14,250 --> 00:52:18,760
+我们等了一段时间，所以第四段一直在做对吗?
+We we wait a little bit, so the 4th something just continuously doing right?
+
+405
+00:52:18,820 --> 00:52:22,660
+我们有点平均，不只是。
+We kind of average little bit, not just.
+
+406
+00:52:22,850 --> 00:52:25,010
+这很难说，什么是单一样本?
+It means hard to say, what is a single sample?
+
+407
+00:52:25,070 --> 00:52:27,350
+如果你找到联络人，就留在那里。
+If you have the contact, you stay there.
+
+408
+00:52:27,650 --> 00:52:31,950
+然后，由于不确定性，数字可能会发生变化。
+Then, because of uncertainty, the numbers can change.
+
+409
+00:52:32,110 --> 00:52:38,350
+但是我们，我们使用了一点，但是我们没有使用任何过滤器或类似的东西。
+But we, we kind of used a little, but we didn't use any filter or anything like that.
+
+410
+00:52:38,510 --> 00:52:57,860
+我们可以。但是，是的，我在想，嗯，我可以想象，只是，我猜，从一个，呃，我猜，平均测量，我们说，呃，可能有，呃，非信息性的环境是可能的，你有多个潜在的后期创作来解释同一种感知力。
+We could. But, yeah, I was wondering, um, I can imagine, just, I guess, from a single, uh, I guess, average measurement, let's say, uh, there might be, um, non informative contexts that are possible where you have multiple potential postcretions that explain the same sort of sensed force.
+
+411
+00:52:58,040 --> 00:53:13,840
+我想知道你是否探索，比如说，一个实际的窗口，以某种方式，比如，匹配这个姿势来解释，比如，四个样本的窗口，而不仅仅是，一个快照，或者只是平均值，是的，有点平均值。
+And I'm wondering if you explore, like, actual, a window, let's say, of uh, and somehow, like, match the f uh, the pose to explain, like, that window of four samples, rather than just, like a single snapshot, or maybe just average, yeah, a little bit average.
+
+412
+00:53:14,000 --> 00:53:17,000
+但你刚才提到的是非常正确的。
+But what you just it mention is very correct.
+
+413
+00:53:17,180 --> 00:53:23,200
+对于不同的接触状态，你可以有相同的力音传感数据。
+You can have the same force talk sensing data for very different contact states.
+
+414
+00:53:23,570 --> 00:53:35,460
+所以在这种情况下，这就是为什么有时候，我们预测接触状态，力会匹配，但它不能成功插入。
+And so in this case, we, that's why sometimes we have, we predicted contact state, the forces will match, but it doesn't lead to successful insertion.
+
+415
+00:53:35,460 --> 00:53:45,060
+所以我们意识到，我的意思是，系统意识到这一点，然后再做一个又一个预测，但通常两次，我们会到达那里。
+So we realize that, I mean, the system realize that, and do another prediction or another prediction, but usually twice, we will get there.
+
+416
+00:53:45,220 --> 00:53:51,700
+在所有例子中，似乎只有两种竞赛的结果完全相同。
+In all the examples, it seems like just two kinds of contests give you exactly the same.
+
+417
+00:53:51,860 --> 00:53:54,120
+看起来不太像。
+Would not exactly seem very similar.
+
+418
+00:53:54,520 --> 00:54:00,440
+科学力量和谈话。我还有一个问题要问。
+Science force and talk. And I have one really quick, uh, follow a question to that.
+
+419
+00:54:00,450 --> 00:54:12,880
+我想知道，就像，在这个感知动作，呃，管道，它似乎有点单向，感知主要是通知动作，然后它就像是再生。
+And I was wondering, like, in this perception action, uh, pipeline, it seems a little bit one directional, where the perception is mostly informing the action, and then it sort of just replants.
+
+420
+00:54:13,060 --> 00:54:28,700
+但我想知道你是否会探索，在感知和行动之间直接耦合，政策实际上试图采取额外的行动来明确地消除这些，模糊的，像接触场景。
+But I'm wondering if you explore more like, direct a coupling between the perception and action, where the policy actually tries to take additional actions to explicitly disembiguate these, like, ambiguous, like contact scenarios.
+
+421
+00:54:28,900 --> 00:54:34,940
+是的，事实上，很多都是在装配的时候。
+Yeah, for actually, a lot of this is especially the assembling situation.
+
+422
+00:54:35,100 --> 00:54:39,700
+它更像是一种消解情境的行动。
+It's a more action to to disembiguate situation.
+
+423
+00:54:39,860 --> 00:54:48,700
+有时候，当我们只有一个接触阶段时，嗯，预测不正确，然后动作显示了这一点，对吧?
+Sometimes when we just have one contact stage, well, the predictions incorrect, then the action shows shows that, right?
+
+424
+00:54:48,720 --> 00:54:51,840
+所以我们有一个不同的势能。
+So we have a different potential in action shows that.
+
+425
+00:54:51,860 --> 00:54:57,900
+或者有时位置不正确，机器人可以实际移动，仍然可以尝试到达目标。
+Or sometimes the position incorrect, and robots can move actually, and can still try to go to the goal.
+
+426
+00:54:58,120 --> 00:55:12,630
+然后它会导致另一个不正确的结构，此时，新的感知力可以准确地作用与他的新结构相匹配，然后我们就成功了。
+And then it leads to another incorrect configuration, at this time that the newly sense force can act accurately a match his new configuration, and then we can be successful.
+
+427
+00:55:12,790 --> 00:55:19,230
+所以这个行动有助于将它提炼成一种去功能化的情况。
+So the action is helping to distil it a disabbiguate situations.
+
+428
+00:55:19,870 --> 00:55:27,710
+非常感谢。我想马克会在第一网上搜索。
+Thank you so much. I guess Mark will search on, um, the 1st online.
+
+429
+00:55:34,440 --> 00:55:37,400
+好吧。谢谢，第一个在线问题。嗯。
+Okay. Thanks. 1st online question. Um.
+
+430
+00:55:37,560 --> 00:55:44,710
+也许是两个问题。我们如何处理需要更多交互才能收集到的对象，例如
+And maybe it's two questions. How can we handle objects that require more involved in interaction to gather about, such as
+
+431
+00:55:45,080 --> 00:55:46,970
+的对象?然后把它联系起来。
+articulated objects? And then related that.
+
+432
+00:55:47,130 --> 00:55:59,500
+对你来说有意义吗，神经内隐表征的一些最新进展，比如深度stf神经，等等，来瞬间塑造物体模型，我认为这有意义。
+Would it make sense to you some recent advances in neural implicit representations, like deep stf nerve, etcetera, to instant shape the object models on I think that makes sense.
+
+433
+00:55:59,980 --> 00:56:00,990
+是的。你的意思是
+Yeah. You mean
+
+434
+00:56:01,020 --> 00:56:04,400
+这也是装配问题，对吧?
+the this is also the assembly problem, right?
+
+435
+00:56:04,560 --> 00:56:08,680
+是关于装配的问题吗?是的,是的。
+Is that about assembly problem? Yeah, yeah.
+
+436
+00:56:08,840 --> 00:56:19,360
+如果你有清晰表达的客体，我们实际上，在很多年前，我们对各种语境进行了分类描述。
+Then if you have articulate object, we were actually, very years ago, we had work classifying all kinds of characterizing all kinds of context.
+
+437
+00:56:19,520 --> 00:56:25,430
+有清晰表达的物体的日子，维度肯定会上升很多。
+Days with articulate objects, it's certainly the dimensionality goes up a lot.
+
+438
+00:56:25,850 --> 00:56:33,820
+呃?是的，我们还没有探索这个问题，但更多的学习可以帮助解决这个问题。
+Uh? So yeah, we haven't explored this, but more learning can help with with this.
+
+439
+00:56:33,980 --> 00:56:41,720
+是的。好的，非常感谢你的演讲。
+Yeah. Okay, thank you very much for the talk.
+
+440
+00:56:42,060 --> 00:56:47,400
+这其实也是第一部分，所以也许现在是问这个问题的好时机。
+Drink the This is actually also about the 1st part, so maybe it's a good time to ask that question.
+
+441
+00:56:47,680 --> 00:56:59,130
+如果我没理解错的话，我认为你在做的是，你在用模拟的接触力来验证你关于物体姿势的假设，对吗?
+Um, the So I think what you were doing, if I understood correctly, was you were using simulated contact forces to verify your hypothesis about the object pose, right?
+
+442
+00:56:59,330 --> 00:57:09,080
+嗯。但这通常倾向于。我的意思是，很难像菲德尔一样对现实世界保持高度的忠诚。
+Um. But this typically tends to have some I mean, it's hard to be kind of fidel to the real world, to have high fidelity to the real world.
+
+443
+00:57:09,300 --> 00:57:16,840
+我记得你简要地提到你做了一些事情来纠正这个问题，但我没听清楚，我想知道你能不能跟我说一下。
+And I think you mentioned briefly that you kind of did something to correct for this, but I didn't quite catch it, and I-I was wondering if you would be able to talk about it for a little bit.
+
+444
+00:57:17,130 --> 00:57:28,210
+非常好的问题。是的。我说，我们有校准，我们有计算出来的力，我们做了一个校准以使第4天早上与真正感觉的力一致。
+Yeah, very good question. Yeah. I said, we have the calibration, we we have the computed force, and we do a calibration to to be the 4th morning in line with the real sense force.
+
+445
+00:57:28,590 --> 00:57:37,360
+这个校准模型是习得的，但它不是一个超级复杂或深奥的不，那是一个简单的新语言。
+And this calibration model is learned, but it's not a super complicated or deep no, that is a simple new language.
+
+446
+00:57:37,520 --> 00:57:50,300
+只要适应就好，因为我们，我们，我们只是收集一些力的数据，然后，嗯，然后用真实的力的数据和我们计算的力的数据相匹配。
+Just fit forward, because we, we, we just collect some force data, and then, uh, then with the real force data and match to the to our computed force data.
+
+447
+00:57:50,320 --> 00:57:58,780
+它运行得很好，只需要几千个数据，一些用于培训，一些用于测试。
+And then it worked very well, by just a few thousand um data, and some for training, for some testing.
+
+448
+00:57:58,800 --> 00:58:04,600
+但我认为结果是令人惊讶的好，因为这是学习的东西很简单。
+But the results is surprisingly good, I think, because it's what what is learned is very simple.
+
+449
+00:58:04,760 --> 00:58:08,490
+没有那么复杂。它只是让这两个力相匹配。
+It's not so complicated. It's just matching these two forces.
+
+450
+00:58:08,650 --> 00:58:26,390
+我们称之为校准器。很棒的成绩，也从最近三年的成绩中看出来。
+So we call it calibrater. Great results, also from the last three years in the look closing.
+
+451
+00:58:26,690 --> 00:58:33,870
+它只是对看不见的物体的统计，还是像图表匹配?
+Is it just statistics of pairs of, uh, invisible objects, or is it like a graph matching?
+
+452
+00:58:35,230 --> 00:58:44,890
+这是一个图匹配，你在其中，你的建筑的图是从可见对象锁定局部。
+It is graph matching where you are in the among the and the graph your building is from the visible objects lock locally.
+
+453
+00:58:45,730 --> 00:58:50,990
+好吧，在你还在记录整个环境的时候?
+Okay, while you still keep a graph of the whole, uh, environment?
+
+454
+00:58:51,070 --> 00:58:54,370
+因为我们不知道，因为这太猛了，对吧?
+Because we don't know, because this is slam, right?
+
+455
+00:58:54,530 --> 00:59:03,310
+如果我们语义slam意味着探索新的环境，你有新的对象，但我们不知道这是一个新的环境还是环境。
+If we semantic slam means exploring new environment, you have new objects and but we don't know if this is a new environment or environment.
+
+456
+00:59:03,390 --> 00:59:24,140
+这就是为什么，是的，我想问一个关于我们如何与它们互动的问题，一个可能会落入陷阱的物体，我想把这个问题概括一下。
+That's why, yeah, I wanted to ask a question about how we go about interacting with them, with an object that might fall for something, and it's, I want to generalize the question a little bit.
+
+457
+00:59:24,300 --> 00:59:37,990
+假设你有一个带轮子的机器人想要穿过草地，这种情况下，你可能没有，你正在探索这个物体，可能有个日期，然后你摔倒了。
+So if you have, let's say, a wheeled robot that would like to go through grass, this is a situation where you do not have, perhaps, and you are exploring the object, and maybe there is a date, and you fall down.
+
+458
+00:59:38,010 --> 00:59:50,940
+那么我们从中学到了什么或者我们应该如何与物体进行互动当我们不知道如果我们的互动再差一点会发生什么。
+So what do we learn by or how should we interact with objects when we do not know what will happen if we interact a tiny bit worse.
+
+459
+00:59:53,060 --> 00:59:59,790
+如何与物体交互，你们说过这个基于触摸的。
+OK, how to interact the object with Do you talk about this touch based.
+
+460
+00:59:59,940 --> 01:00:06,040
+是的。那么，当你什么都不知道的时候，如何与物体交互呢?
+Yes. So how to interact with the object when you don't know anything?
+
+461
+01:00:06,200 --> 01:00:24,150
+对吧?当你真正探索这个系统的时候，试着越来越接近极限，在互动中，这是关于草，或者触摸一个没有太多重量的瓶子
+Right? When you're really probing the system to push, to try going closer and closer to the limit, right for for you in interaction, it is about grass, or touching and touching a bottle that does not have too much weight
+
+462
+01:00:24,340 --> 01:00:31,430
+这可能会下降。嗯，你可以想到其他的情况，我们在一个新的地点停车。
+that could fall. Um, you can think of other situations where we are parking a car in a new spot.
+
+463
+01:00:31,650 --> 01:00:40,950
+这是个好问题。到目前为止，我们还没有考虑如果瓶子像这样，或者像这样?
+Yeah, it's a good question. We so far, we haven't considered what if A that the bottle is just like this, or something like that?
+
+464
+01:00:41,210 --> 01:00:45,090
+我们还没有考虑过。但正因如此，这只是个开始。
+We we haven't considered that. But that's why this is just the beginning.
+
+465
+01:00:45,250 --> 01:00:54,410
+有很多事情可以考虑，你也可以，所以这是，这是一个很好的问题。
+There's so many things can consider, and also you can So so this is, yeah, this is a very good question.
+
+466
+01:00:54,470 --> 01:01:02,190
+我想，然后我们仍然，我不知道如果像这样，我没有任何其他感官。
+I think, then we still, I don't know if if this is like that, I don't have any other sense sensors.
+
+467
+01:01:02,270 --> 01:01:04,810
+它是非常艰难的。它必须是有意义的。
+It's tough. It has to have some sense.
+
+468
+01:01:04,970 --> 01:01:07,050
+也许我们可以做一个探索。
+Maybe we can do an exploration.
+
+469
+01:01:07,210 --> 01:01:16,710
+我们可以说，如果我们进行探索，试着捕捉到不同的情况，我们可以预测，对吧?
+We can say, if we do an exploration, to kind of try to capture this as a different situation, we can anticipate, right?
+
+470
+01:01:16,870 --> 01:01:27,070
+不同的坠落，性，坠落场景试着捕捉它们，甚至把它们分类，然后这样就可以处理了。
+Different falling, sex, falling scenarios and try to capture them, even classify them, then then that kind kind of can can handle it.
+
+471
+01:01:27,070 --> 01:01:42,610
+但,是的。而且，另一件有趣的事情是互动可以让你认识到这种包装真的可以让机器人意识到，嗯，除了形状。
+But, yeah. And also, another interesting thing is interaction can make you recognize this kind of wrapping can really make make the robot reckon that something, uh, other than the shape.
+
+472
+01:01:42,610 --> 01:01:45,050
+可以像这样柔软，对吧?
+Can like this a softness, right?
+
+473
+01:01:45,230 --> 01:01:50,250
+这是满瓶、半瓶还是空瓶?
+Is this a full bottle or half or empty?
+
+474
+01:01:50,690 --> 01:02:10,610
+通过挤压机器人变形更多如果我们捕捉到变形，就可以用来识别这种类型的特征，或者描述，是的，识别这种特征，比如标记。
+By squeezing further than the the robot deforms more if we capture the deformation, that can be used to recognize this type of characteristics, or characterize, yeah, recognize these kind of characteristics like mark.
+
+475
+01:02:10,770 --> 01:02:29,070
+你所展示的研究成果也给我留下了深刻的印象，所以我想问你关于你所展示的一些分支的建议组合，以及你认为在下一个演示中这些研究领域的组合可能是什么样子的。
+I'm also very impressed by the breath of the research you presented, and so I'd like to ask you about the proposed combinations of some of the branches that you presented, and what you think combining those areas of research might look like in terms of next demos, for instance.
+
+476
+01:02:29,070 --> 01:02:45,030
+特别是在模型构建项目和自主组装项目中，你认为你可以通过尝试组装新的对象来完成什么你可能需要对它们建模?
+So particularly in the model building projects and be autonomous assembly projects, what do you think you might be able to accomplish by trying to assemble objects that are new and you may have to model them?
+
+477
+01:02:45,190 --> 01:02:50,610
+你认为建立在这两个领域上的示范会是什么样子?
+1st What do you think demonstrations might look like that build upon both of those areas?
+
+478
+01:02:51,040 --> 01:02:57,500
+哦,太棒了。的问题。可以，如果我们有零件要组装的话。
+Oh, great. Question. Um, we can, if we have some parts to for assembly.
+
+479
+01:02:57,940 --> 01:03:02,440
+我们没有CAT模型，因为这只是日常用品，对吧?
+We don't have the CAT model anywhere, because this is just a daily object, right?
+
+480
+01:03:02,620 --> 01:03:11,550
+我们可以用我们的建模方法来获取一个模型，点云模型之类的?
+We can use our modeling method to to to capture a model, A-A point cloud model, something like that, okay?
+
+481
+01:03:11,710 --> 01:03:17,430
+这个模型可以转换成混合模型，或者我们的精神模型。
+And that model can be converted to a mash model, or our spiritual model.
+
+482
+01:03:17,450 --> 01:03:20,810
+这些转换实际上也可以自动完成。
+These conversions can be done actually automatically, too.
+
+483
+01:03:20,880 --> 01:03:35,450
+一旦有了这些模型，我们的装配方法就可以应用了，注意，我们甚至不考虑夹具之类的东西，因为我们可以处理不确定性。
+And once these models are there and our assembly method can be applied, and notice that we don't, even, we don't consider a fixture or things like that, because we can handle the uncertainty.
+
+484
+01:03:35,630 --> 01:03:43,830
+我们可以结合视觉。现在，我们只专注于使用武力来处理接触情况。
+And we can combine vision. Right now, we only focus on using the force for for dealing with contact situation.
+
+485
+01:03:43,990 --> 01:03:55,990
+但是当你有东西的时候，你可以很容易地用视觉把机器人移动到你新捕获的物体上。
+But the gross motion when you have something, you can use vision easily, right to move the robot to to to the to your newly captured objects.
+
+486
+01:03:56,670 --> 01:04:08,620
+然后我们可以抓，需要和抓，然后这种方法的力引导组装可以，可以做到。
+And then we may be grasping, needed and grasp and then this method for force guided assembly can be, can be done.
+
+487
+01:04:08,960 --> 01:04:17,220
+所以这是。好吧。你设想如何把新奇的物体组合在一起?
+So this is yeah. Okay. How do you envision figuring out how to novel objects assemble together?
+
+488
+01:04:17,540 --> 01:04:20,940
+在我看来，这似乎很难。
+That seems difficult in my opinion.
+
+489
+01:04:21,100 --> 01:04:27,400
+但是也许你会发现一些方法可以简化它或者使这个任务更简单。
+But maybe you see some ways that it could either be simplified or ways to make this task easier.
+
+490
+01:04:28,320 --> 01:04:36,420
+一旦我们有了模型，我们是的，我认为我们必须有更多的知识，对吗?
+I once we have the models, we Yeah, I think we have to have more knowledge, right?
+
+491
+01:04:36,580 --> 01:04:41,700
+这些模型对于机器人来说可能是新的，因为它没有这个对象的内部模型。
+The models may be new for for the robot, because it doesn't have an internal model for this object.
+
+492
+01:04:41,860 --> 01:04:57,990
+但是这个物体，就像我们有各种各样的物体检测方法一样，这是，这是一个杯子，你给它戴上一个盖子，然后这是正常的装配运动应该是已知的，所以它可以被捕捉到。
+But the object, like we have all kinds of object detection method, says, this is, this is a cup, and you put a cap on it, and that's then the normal assembly motion should be is known, so this can be captured.
+
+493
+01:04:58,150 --> 01:05:05,590
+在这种情况下，我们还考虑了人类与机器人的互动，因为如果我们有一个安全、灵活的环境，
+We also consider human robot interaction in this case, because if we have safe, a very flexible environment,
+
+494
+01:05:06,020 --> 01:05:07,190
+嗯,
+um to
+
+495
+01:05:07,600 --> 01:05:13,510
+让it机器人做各种各样的组装，各种各样的事情，以及如何改变事情。
+have a it robots doing all kinds of assembly, all kinds of things, and how to change things.
+
+496
+01:05:13,670 --> 01:05:15,360
+我们确实需要一些人。在那里。
+We do need some people. There.
+
+497
+01:05:15,420 --> 01:05:17,600
+一个BB有这个联合机器人。
+An a BB has this union robot.
+
+498
+01:05:17,660 --> 01:05:24,500
+我的实验室里就有一个这样的机器人，让人类和机器人一起组装。
+I have one in my lab for this purpose, for the human and robot work together for the assembly.
+
+499
+01:05:24,880 --> 01:05:29,840
+所以一个人能做什么应该做什么，我认为这是很好的。
+And so what what the person can should do, I think this is actually good.
+
+500
+01:05:30,000 --> 01:05:49,650
+关于jambo Xi教授的研究，对于一个人来说，更好的是帮助什么应该是什么自动自动化，我们，我们最近得到了军队的一项拨款，用于人类机器人交互的界面评估。
+Relate to Professor jambo Xi research, A better for for a person to to help what the what should be the Autonomous automation Prior So, we we've just recently got A-A Army grant for human robot interaction kind of interface evaluation.
+
+501
+01:05:49,810 --> 01:06:32,990
+我们想用这种装配的操作任务,这样的一种研究与连续体机器人形状重建和形状分类,我认为你在做重建和分类,但是如果我记得正确的话,分类,你没有真正使用的输出,类形估计作为分类的输入。
+And we want to use this assembly type of manipulation as a task case for for this kind of a study for kind of shape reconstruction and shape classification with the continuum robot, I think you were doing both the reconstruction and the classification, but if I remember, right, for classification, you weren't really using the output, kind of shape estimate as the input for classification.
+
+502
+01:06:33,150 --> 01:06:39,730
+相反，你是在根据脐带长度的直方图来构建特征。
+You were instead kind of constructing the feature based on A-A histogram of cord lengths.
+
+503
+01:06:39,890 --> 01:06:45,830
+我想，是的，这就是你说的，为什么这是分类任务的好选择。
+I think, yeah, yeah, that's what you speak about, why that was a good choice for the classification task.
+
+504
+01:06:46,130 --> 01:06:50,760
+举例来说，进行形状重建不是一件显而易见的事情吗
+Would it not have been kind of the obvious thing to do to take the shape reconstruction, E.G.
+
+505
+01:06:50,920 --> 01:06:57,200
+或者类似的东西?这是一种信息较少的估计吗?
+or something like this? Was that kind of A-A less say, informative estimate?
+
+506
+01:06:57,360 --> 01:07:00,480
+实际上更简单，对吧?因为绳子就是一条直线。
+It's actually simpler, right? Because cord is just a straight line.
+
+507
+01:07:00,640 --> 01:07:11,200
+即使对于街道线，我们也需要7个参数来解释它，因为它有位置参数，位置参数和镜头参数。
+So even for the street line, we have some seven parameters necessary to explain it, because it has a position, position parameters and the lens parameter.
+
+508
+01:07:11,510 --> 01:07:18,490
+如果我们试图捕捉所有不同形状的机器人，我们直接使用，我们使用更多的参数。
+And if we we try to capture all different shapes of robots, we use directly, we use more parameters.
+
+509
+01:07:26,200 --> 01:07:33,920
+嗯。所以那是，呃，我只是有一个快速的后续问题，对其中一个。
+UM. So that was, uh, I just have a kind of quick follow up question, um to one of them.
+
+510
+01:07:34,000 --> 01:07:37,810
+我刚才在想一个特别的演示可能会很有趣。
+What I was just thinking about a particular demo that could be kind of interesting.
+
+511
+01:07:38,070 --> 01:07:42,440
+假设你有一个花瓶打碎了。
+Let's say you have a vase that falls apart or is broken.
+
+512
+01:07:42,860 --> 01:07:49,590
+你能使用，你知道的，检测建模方法来看看这些部分是什么吗?
+Could you use, you know, the detection modeling method to see what the parts are?
+
+513
+01:07:49,670 --> 01:08:01,610
+然后，你知道，不知怎么的，我找到了，零件应该放在哪里，然后把组装好的零件重新组装起来从一个完全未知的地方是的，这是一个很好的建议。
+And then, you know, somehow I figure out, like, where where the pieces should go, and then have the assembly pieces put it back together again from a completely unknown Yeah, that's a great that's a great suggestion.
+
+514
+01:08:01,870 --> 01:08:16,580
+这是个很好的建议。我们应该尝试一下，因为如果，如果你知道，你知道，你知道，组装的形状是什么然后把它分解，然后重新组装。
+That's a great suggestion. We should try because if, if you know, you know, what is the shape of the assembled and then have break it down and say, assembly back.
+
+515
+01:08:16,740 --> 01:08:21,360
+所以我认为这可以是，是的，是的。
+So I think that that can be A-A-A, yeah, yeah.
+
+516
+01:08:21,660 --> 01:08:24,040
+太好了。演示一下就好了。
+Great. Demo to do it will be great.
+
+517
+01:08:24,200 --> 01:08:30,360
+是的。而且，我想我没有回答你的下一个问题，也没有说，如何建立这种联系。
+Yeah. And also, I think I-I didn't answer your next question and say, how to do this connection.
+
+518
+01:08:30,660 --> 01:08:38,030
+举个例子，联系。我们尝试做的另一种联系是语义slam和任务级规划。
+You say, one example, connection. Another connection we're trying to do is the semantic slam and task level planning.
+
+519
+01:08:38,210 --> 01:08:53,610
+很多任务都是计划的方法，但我们很少，你知道，结合这个地图和定位，人们倾向于假设机器人所处的任何地方都不是，对吧?
+Lots of tasks that were planning approaches, but hardly we, you know, combined with with with this mapping and localization, people tend to assume everything that everywhere robot is is no somehow, right?
+
+520
+01:08:53,950 --> 01:08:56,150
+非常准确的定位。但事实果真如此吗?
+Very accurate localization. But is that the case?
+
+521
+01:08:56,310 --> 01:08:59,360
+如果是在真实的环境中，那就不是。
+It's, it's not, if in a real environment.
+
+522
+01:09:01,400 --> 01:09:04,980
+好吧，让我们思考，或者说话。
+All right, but let's think, or speak.
