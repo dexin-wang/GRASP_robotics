@@ -3,7 +3,9 @@
 
 原youtube网址：https://www.youtube.com/user/grasplab/videos
 
-字幕文件(.srt)及对应的视频链接如下：
+机翻软件：网易见外 https://jianwai.youdao.com/index/0
+
+### 字幕文件(.srt)及对应的视频链接
 
 1、SPRING 2022 GRASP on Robotics - Vincent Sitzmann, Massachusetts Institute of Technology.srt
 https://www.bilibili.com/video/BV1XF411M7t8
